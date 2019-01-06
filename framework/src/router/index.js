@@ -6,6 +6,10 @@ import Scart  from "../components/scart";
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
+
+import Money from "../components/my/components/money";
+import Setting from "../components/my/components/setting";
+import Info from "../components/my/components/info";
 Vue.use(Router)
 
 const router = new Router({
@@ -58,6 +62,39 @@ const router = new Router({
         requireAuth:true
       }
     },
+		{
+		  path:"/money",
+		  name:"money",
+		  component:Money,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
+		{
+		  path:"/info",
+		  name:"info",
+		  component:Info,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
+		{
+		  path:"/setting",
+		  name:"setting",
+		  component:Setting,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
     {
       path:"/login",
       name:"login",
