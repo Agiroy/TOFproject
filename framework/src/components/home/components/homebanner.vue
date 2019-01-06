@@ -61,8 +61,6 @@ export default {
         border-radius: .4rem;   
          width: 6.68rem;
         height: 3.78rem;
-        width: 6.68rem;
-        height: 3.78rem;
         box-shadow:0rem .06rem .24rem 0rem rgba(225, 217, 217, 0.35);
     }
 
