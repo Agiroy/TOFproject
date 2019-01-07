@@ -7,6 +7,9 @@ import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
 
+//home
+import Search from "../components/home/components/search";
+
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
 import Info from "../components/my/components/info";
@@ -22,6 +25,17 @@ const router = new Router({
       path:"/home",
       name:"home",
       component:Home,
+      meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+    },
+    {
+      path:"/search",
+      name:"search",
+      component:Search,
       meta:{
         //tab栏的显示
         flag:true,
