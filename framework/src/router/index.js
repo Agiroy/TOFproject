@@ -10,6 +10,12 @@ import Login from "../components/login/login";
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
 import Info from "../components/my/components/info";
+import Integral from "../components/my/components/integral";
+import Infochange from "../components/my/components/infochange";
+import News from "../components/my/components/news";
+import Address from "../components/my/components/address";
+import Addaddress from "../components/my/components/addaddress";
+
 Vue.use(Router)
 
 const router = new Router({
@@ -40,6 +46,50 @@ const router = new Router({
         requireAuth:true
       }
     },
+	{
+	  path:"/news",
+	  name:"news",
+	  component:News,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/address",
+	  name:"address",
+	  component:Address,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/addaddress",
+	  name:"addaddress",
+	  component:Addaddress,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/infochange",
+	  name:"infochange",
+	  component:Infochange,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
     {
       path:"/scart",
       name:"scart",
@@ -88,6 +138,18 @@ const router = new Router({
 		  path:"/setting",
 		  name:"setting",
 		  component:Setting,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
+		,
+		{
+		  path:"/integral",
+		  name:"integral",
+		  component:Integral,
 		  meta:{
 		    //tab栏的显示
 		    flag:false,

@@ -6,7 +6,12 @@
 					红包<img src="../../../assets/my/jt1@2x.png">
 				</router-link>
 			</li>
-			<li>积分<img src="../../../assets/my/jt1@2x.png"></li>
+			
+			<li>
+				<router-link to="integral">
+					积分<img src="../../../assets/my/jt1@2x.png">
+				</router-link>
+			</li>
 			<li>余额<img src="../../../assets/my/jt1@2x.png"></li>
 			<li>意见反馈<img src="../../../assets/my/jt1@2x.png"></li>
 			<li>在线客服<img src="../../../assets/my/jt1@2x.png"></li>
