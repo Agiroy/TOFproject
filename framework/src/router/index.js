@@ -15,6 +15,8 @@ import Infochange from "../components/my/components/infochange";
 import News from "../components/my/components/news";
 import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
+import Nickname from "../components/my/components/nickname";
+import Advise from "../components/my/components/advise";
 
 Vue.use(Router)
 
@@ -46,6 +48,28 @@ const router = new Router({
         requireAuth:true
       }
     },
+	{
+	  path:"/advise",
+	  name:"advise",
+	  component:Advise,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	 {
+	  path:"/nickname",
+	  name:"nickname",
+	  component:Nickname,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
 	{
 	  path:"/news",
 	  name:"news",

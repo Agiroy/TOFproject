@@ -49,7 +49,7 @@
 	color: #231010;
 	font-size:17px;
 	font-family:PingFang-SC-Regular;
-	font-weight:400;
+	font-weight:500;
 	color:rgba(35,16,16,1);
 }
 </style>
