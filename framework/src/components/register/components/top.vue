@@ -1,13 +1,17 @@
 <template>
     <div class="top">
-            <img src="../../../assets/icon_fh@2x.png" class="back">
+            <router-link to="" class="backHome"><img src="../../../assets/icon_fh@2x.png" class="back" @click="handleClick()"></router-link>
             <span>注册</span>
-            <a href="/login">登录</a>
+            <router-link :to="{name:'login'}">登录</router-link>
     </div>
 </template>
 <script>
 export default {
-    
+    methods:{
+        handleClick(){
+            this.$router.go(-1)
+        }
+    }
 }
 </script>
 <style>
@@ -36,6 +40,5 @@ export default {
         font-weight:400;
         color:rgba(41,41,41,1);
         line-height:0.15rem;
-
     }
 </style>

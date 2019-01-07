@@ -7,6 +7,7 @@ import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
 import Register from "../components/register/register";
+import Firstlogin from "../components/Firstlogin/Firstlogin";
 
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
@@ -34,7 +35,6 @@ const router = new Router({
       meta:{
         //tab栏的显示
         flag:true,
-        //路由守卫
         requireAuth:true
       }
     },
@@ -45,7 +45,6 @@ const router = new Router({
       meta:{
         //tab栏的显示
         flag:true,
-        //路由守卫
         requireAuth:true
       }
     },
@@ -194,6 +193,14 @@ const router = new Router({
       path:"/register",
       name:"register",
       component:Register,
+      meta:{
+        flag:false
+      }
+    },
+    {
+      path:"/Firstlogin",
+      name:"Firstlogin",
+      component:Firstlogin,
       meta:{
         flag:false
       }
