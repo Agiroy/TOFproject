@@ -6,6 +6,7 @@ import Scart  from "../components/scart";
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
+import Register from "../components/register/register";
 
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
@@ -99,6 +100,14 @@ const router = new Router({
       path:"/login",
       name:"login",
       component:Login,
+      meta:{
+        flag:false
+      }
+    },
+    {
+      path:"/register",
+      name:"register",
+      component:Register,
       meta:{
         flag:false
       }
