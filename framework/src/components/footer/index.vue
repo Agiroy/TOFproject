@@ -48,6 +48,7 @@ export default {
         position: fixed;
         left: 0;
         bottom:0;
+        background: #fff;
     }
      #footer>ul{
          display: flex;
