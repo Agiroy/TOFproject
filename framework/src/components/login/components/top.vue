@@ -1,12 +1,18 @@
  <template>
      <div class="top">
-	<img class="back" src="../../../assets/icon_fh@2x.png">
+	<img class="back" src="../../../assets/icon_fh@2x.png"  @click="handlelead()">
 <span class="title">登录</span>
-<a class="sig" href="/register">注册</a>
+<router-link :to="{name:'register'}">注册</router-link>
      </div>
  </template>
  <script>
- 
+ export default{
+ 	methods:{
+ 	handlelead(){
+ 		this.$router.go(-1)
+ 	}
+ 	}
+ }
  </script>
  <style scoped>
  .top{
