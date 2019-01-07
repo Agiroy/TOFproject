@@ -6,6 +6,7 @@ import Scart  from "../components/scart";
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
+import Message from "../components/my/components/message";
 
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
@@ -99,6 +100,15 @@ const router = new Router({
       path:"/login",
       name:"login",
       component:Login,
+      meta:{
+        flag:false
+      }
+    },
+    {
+      //我的消息
+      path:"/message",
+      name:"message",
+      component:Message,
       meta:{
         flag:false
       }
