@@ -2,7 +2,7 @@
     <diV class="searchhot">
         <div class="hot-top">
             <img class="history-logo" src="@/assets/搜索_slices/icon_rm@2x.png">
-            <h3>热门搜索</h3>
+            <h3>热门搜索123</h3>
         </div>
         <ul class="hot-box">
             <li>
