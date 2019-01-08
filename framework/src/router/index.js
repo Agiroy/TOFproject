@@ -261,7 +261,6 @@ const router = new Router({
       }
     },
     {
-<<<<<<< HEAD
       path:"/register",
       name:"register",
       component:Register,
@@ -273,16 +272,19 @@ const router = new Router({
       path:"/Firstlogin",
       name:"Firstlogin",
       component:Firstlogin,
-=======
-      //我的消息
-      path:"/message",
-      name:"message",
-      component:Message,
->>>>>>> sxx
       meta:{
         flag:false
       }
-    },
+		},
+		{
+     //我的消息
+			path:"/message",
+      name:"message",
+      component:Message,
+      meta:{
+        flag:false
+      }
+		},
     {
       path:"**",
       component:Err
