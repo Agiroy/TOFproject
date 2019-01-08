@@ -35,7 +35,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 #main>ul>li{
 	width: 6.4rem;
 	height: 1.5rem;
