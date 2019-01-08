@@ -1,5 +1,5 @@
 <template>
-  <div clsaa="bottom_bar">
+  <div class="bottom_bar">
 
   </div>
 </template>
