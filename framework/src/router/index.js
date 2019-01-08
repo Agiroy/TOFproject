@@ -9,6 +9,8 @@ import Login from "../components/login/login";
 import Register from "../components/register/register";
 import Firstlogin from "../components/Firstlogin/Firstlogin";
 import Search from "../components/home/components/search";
+import Message from "../components/my/components/message";
+
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
 import Info from "../components/my/components/info";
@@ -259,6 +261,7 @@ const router = new Router({
       }
     },
     {
+<<<<<<< HEAD
       path:"/register",
       name:"register",
       component:Register,
@@ -270,6 +273,12 @@ const router = new Router({
       path:"/Firstlogin",
       name:"Firstlogin",
       component:Firstlogin,
+=======
+      //我的消息
+      path:"/message",
+      name:"message",
+      component:Message,
+>>>>>>> sxx
       meta:{
         flag:false
       }
