@@ -1,5 +1,5 @@
 <template>
-    <div id="scart">
+    <div class="scart">
         <top-com/>
         <nav-com/>
         <main-com/>
@@ -25,5 +25,8 @@ export default {
 
 
 <style lang="">
-   
+  .scart{
+      width:100%;
+      height:100%;
+  }
 </style>
