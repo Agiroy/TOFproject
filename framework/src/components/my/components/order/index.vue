@@ -1,38 +1,44 @@
 <template>
-	<div id="top">
-		<div class="nav">
-			<img @click="handleBack()" src="../../../../../assets/my/jt@2x.png">
-			<span>消息</span>
-			<router-link to="setting">
-				<img class='pic' src="../../../../../assets/my/dd@2x.png">
-			</router-link>
-		</div>
+	<div id="order">
+			<div class="nav">
+				<router-link to="my">
+					<img src="../../../../assets/my/jt@2x.png">
+				</router-link>
+				<span>我的订单</span>
+				<router-link to="setting">
+					<img class='pic' src="../../../../assets/my/dd@2x.png">
+				</router-link>
+			</div>
+		<Ordernavs-com/>
+		<Main-com/>
 	</div>
 </template>
 
 <script>
+	import Ordernavs from "./components/ordernavs"
+	import Main from "./components/main"
+		
 	export default {
 		data() {
 			return {
 				
 			};
 		},
-		methods:{
-			handleBack(){
-				this.$router.go(-1);
-			}
+		components:{
+			"Ordernavs-com":Ordernavs,
+			"Main-com":Main
 		}
 	}
 </script>
 
 <style scoped>
-#top{
+#order{
 	width: 100%;
 	height: 100%;
 }
 .nav{
 	width:100%;
-	height: 1.18rem;
+	height: 1rem;
 	display: flex;
 	background:#FFD900;
 	background:rgba(255,217,0,1);
@@ -50,7 +56,7 @@
 }
 .nav>span{
 	display: inline-block;
-	margin-left: 2.89rem;
+	margin-left: 2.3rem;
 	margin-top: .42rem;
 	color: #231010;
 	font-size:17px;

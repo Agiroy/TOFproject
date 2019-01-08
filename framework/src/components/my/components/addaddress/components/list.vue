@@ -6,7 +6,7 @@
 			<p><label>备用电话</label><input type="text" placeholder="请输入备用联系电话"></p>
 		</div>
 		<div>
-			<p><label>收货地址</label><input type="text" placeholder="小区/学校/写字楼" @focus="handleClick()"></p>
+			<p><label>收货地址</label><input type="text" placeholder="小区/学校/写字楼"></p>
 			<p><label>&nbsp;&nbsp;&nbsp;</label><input type="text" placeholder="详细地址 （如楼号/楼层/房号）"></p>
 			<p><label>标签</label> 
 			<span v-for="(item,index) in labels" @click="handleToggle(index)" :class="activeIndex==index?'active':''">{{item}}</span>
@@ -29,9 +29,6 @@
 			};
 		},
 		methods:{
-			handleClick(){
-				console.log(this);
-			},
 			handleToggle(val){
 			    this.activeIndex=val;
 			}
@@ -72,6 +69,7 @@
 }
 #list>div>p>input{
 	border: 0;
+	outline:none;
 }
 #list>div:nth-child(1){
 	margin-top: .1rem;
