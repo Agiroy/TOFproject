@@ -7,10 +7,22 @@ import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
 import Register from "../components/register/register";
-
+import Firstlogin from "../components/Firstlogin/Firstlogin";
+import Search from "../components/home/components/search";
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
 import Info from "../components/my/components/info";
+import Integral from "../components/my/components/integral";
+import Infochange from "../components/my/components/infochange";
+import News from "../components/my/components/news";
+import Address from "../components/my/components/address";
+import Addaddress from "../components/my/components/addaddress";
+import Nickname from "../components/my/components/nickname";
+import Advise from "../components/my/components/advise";
+import All from "../components/all/all";
+import Food from "../components/food/food";
+import Light from "../components/light/light";
+import Drink from "../components/drink/drink";
 Vue.use(Router)
 
 const router = new Router({
@@ -26,6 +38,71 @@ const router = new Router({
       meta:{
         //tab栏的显示
         flag:true,
+        requireAuth:true
+      }
+    },
+    {
+		  path:"/all",
+		  name:"all",
+		  component:All,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+    },
+    {
+		  path:"/food",
+		  name:"food",
+		  component:Food,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+    },
+    {
+		  path:"/light",
+		  name:"light",
+		  component:Light,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+    },
+    {
+		  path:"/drink",
+		  name:"drink",
+		  component:Drink,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
+    {
+      path:"/search",
+      name:"search",
+      component:Search,
+      meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+    },
+    {
+      path:"/search",
+      name:"search",
+      component:Search,
+      meta:{
+        //tab栏的显示
+        flag:true,
         //路由守卫
         requireAuth:true
       }
@@ -37,10 +114,75 @@ const router = new Router({
       meta:{
         //tab栏的显示
         flag:true,
-        //路由守卫
         requireAuth:true
       }
     },
+	{
+	  path:"/advise",
+	  name:"advise",
+	  component:Advise,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	 {
+	  path:"/nickname",
+	  name:"nickname",
+	  component:Nickname,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/news",
+	  name:"news",
+	  component:News,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/address",
+	  name:"address",
+	  component:Address,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/addaddress",
+	  name:"addaddress",
+	  component:Addaddress,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/infochange",
+	  name:"infochange",
+	  component:Infochange,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
     {
       path:"/scart",
       name:"scart",
@@ -96,6 +238,18 @@ const router = new Router({
 		    requireAuth:true
 		  }
 		},
+		,
+		{
+		  path:"/integral",
+		  name:"integral",
+		  component:Integral,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
     {
       path:"/login",
       name:"login",
@@ -108,6 +262,14 @@ const router = new Router({
       path:"/register",
       name:"register",
       component:Register,
+      meta:{
+        flag:false
+      }
+    },
+    {
+      path:"/Firstlogin",
+      name:"Firstlogin",
+      component:Firstlogin,
       meta:{
         flag:false
       }
