@@ -2,12 +2,12 @@
     <div class="home-header">
         <div class="home-logo"><img src="@/assets/食令已改1 副本_slices/log@2x.png"></div>
         <div class="home-search">
-            <router-link :to="{name:''}">
+            <router-link to="search">
                 <img src="@/assets/食令已改1 副本_slices/biaoti@2x.png">
             </router-link>
         </div>
         <div class="home-message">
-            <router-link :to="{name:''}">
+            <router-link to="">
                 <img src="@/assets/食令已改1 副本_slices/log@2x.png">
             </router-link>
         </div>

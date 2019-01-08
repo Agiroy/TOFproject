@@ -40,7 +40,7 @@ export default {
                     el: '.banner-pagination',
                 },
             }) 
-        },300)
+        },100)
     }
 }
 </script>

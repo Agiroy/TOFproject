@@ -2,25 +2,25 @@
     <div class="home-nav">
             <ul class="nav-box">
                 <li class="nav-box-first">
-                    <router-link :to="{name:''}">
+                    <router-link to="">
                         <img src="@/assets/首页_slices/xinp@2x.png">
                         新品
                     </router-link>
                 </li>
                 <li>
-                    <router-link :to="{name:''}">
+                    <router-link to="">
                         <img src="@/assets/首页_slices/shicai@2x.png">
                         食材
                     </router-link >
                 </li>
                 <li>
-                    <router-link :to="{name:''}">
+                    <router-link to="">
                         <img src="@/assets/首页_slices/qingshi @2x.png">
                         轻食
                     </router-link>
                 </li>
                 <li>
-                    <router-link :to="{name:''}">
+                    <router-link to="">
                         <img src="@/assets/首页_slices/yinp@2x.png">
                         饮品
                     </router-link>
