@@ -19,7 +19,10 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-
+import All from "../components/all/all";
+import Food from "../components/food/food";
+import Light from "../components/light/light";
+import Drink from "../components/drink/drink";
 Vue.use(Router)
 
 const router = new Router({
@@ -38,6 +41,50 @@ const router = new Router({
         requireAuth:true
       }
     },
+    {
+		  path:"/all",
+		  name:"all",
+		  component:All,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+    },
+    {
+		  path:"/food",
+		  name:"food",
+		  component:Food,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+    },
+    {
+		  path:"/light",
+		  name:"light",
+		  component:Light,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+    },
+    {
+		  path:"/drink",
+		  name:"drink",
+		  component:Drink,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
     {
       path:"/search",
       name:"search",
