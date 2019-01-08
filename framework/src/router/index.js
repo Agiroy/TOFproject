@@ -50,17 +50,6 @@ const router = new Router({
       }
     },
     {
-      path:"/search",
-      name:"search",
-      component:Search,
-      meta:{
-        //tab栏的显示
-        flag:true,
-        //路由守卫
-        requireAuth:true
-      }
-    },
-    {
       path:"/classify",
       name:"classify",
       component:Classify,

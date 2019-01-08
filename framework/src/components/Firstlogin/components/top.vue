@@ -1,6 +1,6 @@
 <template>
         <div class="top">
-            <img src="../../../assets/icon_fh@2x.png" alt="">
+            <router-link :to="{name:'home'}"><img src="../../../assets/icon_fh@2x.png" alt=""></router-link>
             <span>登录</span>
         </div>
 </template>
@@ -28,7 +28,6 @@ export default {
         height:1rem;
         font-size:0.36rem;
         font-family:PingFang-SC-Bold;
-        font-weight:bold;
         color:rgba(51,51,51,1);
         line-height: 1rem;
         text-align: center
