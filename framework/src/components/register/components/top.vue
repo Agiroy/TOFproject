@@ -14,14 +14,15 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
     .top{
         width: 100%;
         height:0.88rem;
         background:rgba(255,217,0,1);
         display: flex;
-        justify-content: space-around;
-        align-items: center
+        justify-content: space-between;
+        align-items: center;
+        padding: 0  0.3rem;
     }
     .top .back{
         width:0.17rem;

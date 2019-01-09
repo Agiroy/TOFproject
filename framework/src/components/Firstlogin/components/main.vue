@@ -9,8 +9,8 @@
               <div class="pic"><img src="../../../assets/登录 副本_slices/icon_mm@2x.png" alt=""></div> 
                <input type="text" placeholder="请输入密码">
            </div>
-           <div class="btn"><router-link :to="{name:'login'}"><button>登录</button></router-link></div>
-           <div class="foot"><router-link :to="{name:'register'}">注册</router-link><router-link to="">忘记密码?</router-link></div>
+           <div class="btn"><router-link :to="{name:'home'}"><button>登录</button></router-link></div>
+           <div class="foot"><router-link :to="{name:'register'}"><button>注册</button></router-link></div>
         <p><span class="ops"></span><span>其他登录方式</span><span class="ops"></span></p>
         <div class="find">
             <img src="../../../assets/登录 副本_slices/icon_wx@2x.png" alt="">

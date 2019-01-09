@@ -22,26 +22,33 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
-=======
+// =======
 import Evaluation from "../components/my/components/evaluation";
 import Service from "../components/my/components/service";
 import Order from "../components/my/components/order";
+import Welcome from "../components/welcome";
 
 
 
->>>>>>> zhouyuying
+// >>>>>>> zhouyuying
 Vue.use(Router)
 
 const router = new Router({
   routes: [
     {
       path: '/',
-      redirect:"/home"
+			name:"welcome",
+			component:Welcome,
+			meta:{
+        //tab栏的显示
+        flag:false,
+        requireAuth:false
+      }
     },
     {
       path:"/home",

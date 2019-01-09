@@ -7,7 +7,7 @@
                 <a href="#">获取验证码</a>
             </div>
             <input type="text" placeholder="设置登录密码">
-            <button>注册</button><br>
+            <router-link :to="{name:'home'}"><button>注册</button></router-link><br>
             <span>注册即表示您已同意《食令用户协议》</span>
         </div>
         
@@ -18,7 +18,7 @@ export default {
     
 }
 </script>
-<style>
+<style scoped>
     .main input{
         width:6.66rem;
         height:0.86rem;
