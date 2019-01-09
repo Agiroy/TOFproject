@@ -62,7 +62,7 @@
  <script>
 export default {};
 </script> 
- <style>
+ <style scoped>
 .main_bar {
   width: 100%;
   height: 7.01rem;

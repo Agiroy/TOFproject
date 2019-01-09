@@ -1,9 +1,7 @@
 <template>
 	<div id="addaddress">
 		<div class="nav">
-			<router-link to="info">
-				<img src="../../../../assets/my/jt@2x.png">
-			</router-link>
+			<img  @click="handleback()" src="../../../../assets/my/jt@2x.png">
 			<span>新增地址</span>
 		</div>
 		<List-com/>
@@ -20,11 +18,16 @@
 		},
 		components:{
 			"List-com":List
+		},
+		methods:{
+			handleback(){
+				this.$router.go(-1);
+			}
 		}
 	}
 </script>
 
-<style>
+<style scoped>
 #addaddress{
 	width: 100%;
 	height: 100%;
@@ -47,7 +50,7 @@
 	margin-left: 2.89rem;
 	margin-top: .3rem;
 	color: #231010;
-	font-size:17px;
+	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:500;
 	color:rgba(35,16,16,1);

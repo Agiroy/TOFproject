@@ -4,7 +4,7 @@
 			<router-link to="my">
 				<img src="../../../../assets/my/jt@2x.png">
 			</router-link>
-			<span>退款/售后</span>
+			<span>待发货</span>
 		</div>
 		<div class="list2">
 			<div>
@@ -16,7 +16,7 @@
 						<p class="p3"><span>￥</span><span>25</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>正在处理中...</span><button>商品详情</button></p>
+				<p class="bottom"><span>共2件</span><button>提醒发货</button></p>
 			</div>
 			
 			<div>
@@ -28,7 +28,7 @@
 						<p class="p3"><span>￥</span><span>50</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>正在处理中...</span><button>商品详情</button></p>
+				<p class="bottom"><span>共2件</span><button>提醒发货</button></p>
 			</div>
 			
 			<div>
@@ -40,7 +40,7 @@
 						<p class="p3"><span>￥</span><span>100</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>正在处理中...</span><button>商品详情</button></p>
+				<p class="bottom"><span>共2件</span><button>提醒发货</button></p>
 			</div>
 		</div>
 	</div>
@@ -134,16 +134,15 @@
 	color:rgba(81,75,75,1);
 	margin-top: .3rem;
 	margin-left: .12rem;
-	margin-right: 1.6rem;
+	margin-right: 4rem;
 }
 #evaluation>.list2>div>.bottom button{
 	width: 1.5rem;
 	height: .6rem;
 	background:rgba(251,246,246,1);
-	border:.02rem solid #ccc;
+	border:1px solid #ccc;
 	border-radius:.1rem;
-	margin-right: .2rem;
-	margin-left: 1.7rem;
+	margin-right: .1rem;
 	font-size:.2rem;
 	font-family:Adobe Heiti Std R;
 	font-weight:normal;

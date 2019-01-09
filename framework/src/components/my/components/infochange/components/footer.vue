@@ -37,7 +37,7 @@
 	background: #FFD900;
 	margin: 0 auto;
 	margin-bottom: .4rem;
-	font-size:16px;
+	font-size:.32rem;
 	font-family:MicrosoftYaHei;
 	font-weight:400;
 	color:rgba(0,0,0,1);
@@ -48,11 +48,11 @@
 	line-height: 1rem;
 	text-align: center;
 	background:rgba(255,217,0,1);
-	border-radius:10px;
+	border-radius:.1rem;
 	background: #fff;
 	margin: 0 auto;
 	margin-bottom: .4rem;
-	font-size:16px;
+	font-size:.32rem;
 	font-family:MicrosoftYaHei;
 	font-weight:400;
 }

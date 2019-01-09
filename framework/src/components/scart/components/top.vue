@@ -15,7 +15,7 @@
      
  }
  </script> 
- <style lang="">
+ <style scoped>
   .top_bar{
 width:7.5rem;
 height:.88rem;

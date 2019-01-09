@@ -1,9 +1,7 @@
 <template>
 	<div id="address">
 			<div class="nav">
-				<router-link to="info">
-					<img src="../../../../assets/my/jt@2x.png">
-				</router-link>
+				<img  @click="handleBack()" src="../../../../assets/my/jt@2x.png">
 				<span>地址信息</span>
 			</div>
 			<div class="n2">
@@ -26,11 +24,16 @@
 			return {
 				
 			};
+		},
+		methods:{
+			handleBack(){
+				this.$router.back(-1);
+			}
 		}
 	}
 </script>
 
-<style>
+<style scoped>
 #address{
 	width: 100%;
 	height: 100%;
