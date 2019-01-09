@@ -19,7 +19,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 #money{
 	width: 100%;
 	height: 100%;
