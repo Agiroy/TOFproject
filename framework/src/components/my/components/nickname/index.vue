@@ -47,14 +47,14 @@
 	margin-left: 2.7rem;
 	margin-top: .25rem;
 	color: #231010;
-	font-size:17px;
+	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);
 }
 #top .login{
 	display: inline-block;
-	font-size:12px;
+	font-size:.24rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(41,41,41,1);
@@ -68,16 +68,16 @@
 	width: 6.66rem;
 	height: .86rem;
 	border:1px solid rgba(204,204,204,1);
-	border-radius:40px;
+	border-radius:.4rem;
 	padding: .28rem .46rem;
-	font-size:16px;
+	font-size:.32rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(120,120,120,1);
 	outline:none;
 }
 #nickname>div:nth-child(2) p{
-	font-size:12px;
+	font-size:.24rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(120,120,120,1);
@@ -90,7 +90,7 @@
 	padding-left: 3rem;
 	line-height: .86rem;
 	background:rgba(255,217,0,1);
-	border-radius:40px;
+	border-radius:.4rem;
 	margin: .6rem auto;
 	font-size:16px;
 	font-family:PingFang-SC-Regular;

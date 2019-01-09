@@ -53,7 +53,7 @@
 	margin-left: 2.89rem;
 	margin-top: .42rem;
 	color: #231010;
-	font-size:17px;
+	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);

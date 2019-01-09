@@ -24,6 +24,7 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
+<<<<<<< HEAD
 
 import All from "../components/all/all";
 import Food from "../components/food/food";
@@ -34,11 +35,30 @@ import Evaluation from "../components/my/components/evaluation";
 import Service from "../components/my/components/service";
 import Order from "../components/my/components/order";
 import Welcome from "../components/welcome";
+=======
+import Remain from "../components/my/components/remain";
+import Addressmanage from "../components/my/components/addressmanage";
+import Evaluation from "../components/my/components/evaluation";
+import Service from "../components/my/components/service";
+import Order from "../components/my/components/order";
+import Delivery from "../components/my/components/delivery";
+import Pay from "../components/my/components/pay";
+import Nologin from "../components/my/components/nologin";
+>>>>>>> zhouyuying
 
 import Evaluation from "../components/my/components/evaluation";
 import Service from "../components/my/components/service";
 import Order from "../components/my/components/order";
 
+<<<<<<< HEAD
+=======
+import All from "../components/all/all";
+import Food from "../components/food/food";
+import Light from "../components/light/light";
+import Drink from "../components/drink/drink";
+
+
+>>>>>>> zhouyuying
 Vue.use(Router)
 
 const router = new Router({
@@ -74,6 +94,28 @@ const router = new Router({
 		    requireAuth:true
 		  }
     },
+		{
+		  path:"/remain",
+		  name:"remain",
+		  component:Remain,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
+		{
+		  path:"/addressmanage",
+		  name:"addressmanage",
+		  component:Addressmanage,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    //路由守卫
+		    requireAuth:true
+		  }
+		},
     {
 		  path:"/food",
 		  name:"food",
@@ -119,17 +161,6 @@ const router = new Router({
       }
     },
     {
-      path:"/search",
-      name:"search",
-      component:Search,
-      meta:{
-        //tab栏的显示
-        flag:true,
-        //路由守卫
-        requireAuth:true
-      }
-    },
-    {
       path:"/classify",
       name:"classify",
       component:Classify,
@@ -139,6 +170,36 @@ const router = new Router({
         requireAuth:true
       }
     },
+		{
+		  path:"/pay",
+		  name:"pay",
+		  component:Pay,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    requireAuth:true
+		  }
+		},
+		{
+		  path:"/nologin",
+		  name:"nologin",
+		  component:Nologin,
+		  meta:{
+		    //tab栏的显示
+		    flag:true,
+		    requireAuth:false
+		  }
+		},
+		{
+		  path:"/delivery",
+		  name:"delivery",
+		  component:Delivery,
+		  meta:{
+		    //tab栏的显示
+		    flag:false,
+		    requireAuth:true
+		  }
+		},
 	{
 	  path:"/advise",
 	  name:"advise",
@@ -304,7 +365,6 @@ const router = new Router({
 		    requireAuth:true
 		  }
 		},
-		,
 		{
 		  path:"/integral",
 		  name:"integral",

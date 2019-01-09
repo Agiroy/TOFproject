@@ -1,19 +1,24 @@
 <template>
-	<div id="integral">
+	<div id="remain">
 		<div class="nav">
-			<img @click="handleBack()" src="../../../../assets/my/jt@2x.png">
-			<span>积分明细</span>
+				<img @click="handleBack()" src="../../../../assets/my/jt@2x.png">
+				<span>现有余额</span>
 		</div>
 		<div class="main">
 			<div>  
-				<p class="p1">现有积分</p>
+				<p class="p1">现有余额</p>
 				<p class="p2"><span>200</span></p>
 				<p class="p4"></p>
-				<p class="p3">当前积分可抵扣0.2元    (1000积分=1元)</p>
+				<p class="p3">消费可获得相应积分 抵扣现金</p>
 			</div>
 		</div>
 		<div class="consume">
-			<p>积分明细</p>
+			<p>消费明细</p>
+			<div>
+				<img src="../../../../assets/my/t1@2x.png">
+				<p>新鲜水果红心红肉菠萝蜜，8斤装 限时特惠<span>￥50</span></p>
+				<span>-50</span>
+			</div>
 			<div>
 				<img src="../../../../assets/my/t1@2x.png">
 				<p>新鲜水果红心红肉菠萝蜜，8斤装 限时特惠<span>￥50</span></p>
@@ -39,7 +44,7 @@
 </script>
 
 <style scoped>
-#money{
+#remain{
 	width: 100%;
 	height: 100%;
 }
@@ -65,43 +70,43 @@
 	font-weight:400;
 	color:rgba(35,16,16,1);
 }
-#integral>.main{
+#remain>.main{
 	width:6.61rem;
 	height:2.6rem;
 	background:linear-gradient(-90deg,rgba(255,220,89,1),rgba(255,184,99,1));
 	border-radius:.08rem;
 	margin: .3rem auto;
 }
-#integral>.main>div{
+#remain>.main>div{
 	padding-left: .31rem;
 	padding-top: .2rem;
 }
-#integral>.main>div .p1{
+#remain>.main>div .p1{
 	font-size:.3rem;
 	font-family:PingFang-SC-Bold;
 	font-weight:bold;
 	color:rgba(251,250,250,1);
 }
-#integral>.main>div .p2{
+#remain>.main>div .p2{
 	font-size:.7rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(251,250,250,1)
 }
-#integral>.main>div .p3{
+#remain>.main>div .p3{
 	font-size:.3rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(251,250,250,1);
 	margin-top: .33rem;
 }
-#integral>.main>div .p4{
+#remain>.main>div .p4{
 	width:6.08rem;
 	height:.02rem;
 	background:rgba(255,255,249,1);
 	margin: 0 auto;
 }
-#integral>.consume>p{
+#remain>.consume>p{
 	width: 100%;
 	height: .3rem;
 	font-size:.32rem;
@@ -110,7 +115,7 @@
 	color:rgba(64,64,64,1);
 	padding-left: .27rem;
 }
-#integral>.consume>div{
+#remain>.consume>div{
 	width:6.89rem;
 	height:1.6rem;
 	background:rgba(255,228,201,1);
@@ -120,11 +125,11 @@
 	display: flex;
 	margin-bottom: .38rem;
 }
-#integral>.consume>div>img{
+#remain>.consume>div>img{
 	width: 1.12rem;
 	height: 1.12rem;
 }
-#integral>.consume>div>p{
+#remain>.consume>div>p{
 	width: 3.01rem;
 	height: .65rem;
 	font-size:.24rem;
@@ -134,7 +139,7 @@
 	margin-left: .11rem;
 	line-height: ;
 }
-#integral>.consume>div>p>span{
+#remain>.consume>div>p>span{
 	display: block;
 	font-size:.24rem;
 	font-family:PingFang-SC-Regular;
@@ -142,7 +147,7 @@
 	color:rgba(64,64,64,1);
 	margin-top: .1rem;
 }
-#integral>.consume>div>span{
+#remain>.consume>div>span{
 	display: inline-block;
 	font-size:.36rem;
 	font-family:PingFang-SC-Regular;
@@ -151,4 +156,6 @@
 	margin-left: 1.4rem;
 	margin-top: .30rem;
 }
+
+
 </style>

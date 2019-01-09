@@ -2,36 +2,29 @@
 	<div id="list1">
 		<ul>
 			<li>
-				<router-link to="money">
-					红包<img src="../../../assets/my/jt1@2x.png">
-				</router-link>
+					红包<img src="../../../../../assets/my/jt1@2x.png">
 			</li>
 			
 			<li>
-				<router-link to="integral">
-					积分<img src="../../../assets/my/jt1@2x.png">
-				</router-link>
+					积分<img src="../../../../../assets/my/jt1@2x.png">
 			</li>
 			
 			<li>
-				<router-link to="remain">
-					余额<img src="../../../assets/my/jt1@2x.png">
-				</router-link>
+					余额<img src="../../../../../assets/my/jt1@2x.png">
 			</li>
 			<li>
-				<router-link to="advise">
-					意见反馈<img src="../../../assets/my/jt1@2x.png">
-				</router-link>
+					意见反馈<img src="../../../../../assets/my/jt1@2x.png">
 			</li>
-			<li>在线客服<img src="../../../assets/my/jt1@2x.png"></li>
+			<li>在线客服<img src="../../../../../assets/my/jt1@2x.png"></li>
 			<li>
 				<router-link to="setting">
-				  设置<img src="../../../assets/my/jt1@2x.png">
+				  设置<img src="../../../../../assets/my/jt1@2x.png">
 				</router-link>
 			</li>
 		</ul>
 	</div>
 </template>
+
 <script>
 	export default {
 		data() {
@@ -41,6 +34,7 @@
 		}
 	}
 </script>
+
 <style scoped>
 #list1{
 	width: 6.96rem;
@@ -61,7 +55,7 @@
 	width: 100%;
 	color: #666666;
 	height: 1.12rem;
-	line-height: 1.12rem;
+	line-height:.56rem;
 	border-bottom: .01rem solid #ECECEC;
 }
 #list1>ul>li img{

@@ -1,40 +1,24 @@
 <template>
 	<div id="myorder">
 		<p>
-				<span>
-					<router-link to="order">
-						我的订单
-					</router-link>
-				</span>
-		    <span>
-				<router-link to="order">
-					查看全部
-				</router-link>
-			</span>
-			<img src="../../../assets/my/jt0@2x.png">
+			<span>我的订单</span>	
+		    <span>查看全部</span>
+			<img src="../../../../../assets/my/jt0@2x.png">
 		</p>
 		<div class="line"></div>
 		<div>
 			<ul>
 				<li>
-					<router-link to="pay">
-						<img src="../../../assets/my/icon_dfk@2x.png" alt=""><span>待支付</span>
-					</router-link>
+						<img src="../../../../../assets/my/icon_dfk@2x.png" alt=""><span>待支付</span>
 				</li>
 				<li>
-					<router-link to="delivery">
-					 <img src="../../../assets/my/icon_dfh@2x.png" alt=""><span>待发货</span>
-					</router-link>
+					 <img src="../../../../../assets/my/icon_dfh@2x.png" alt=""><span>待发货</span>
 				</li>
 				<li>
-					<router-link to="evaluation">
-						<img src="../../../assets/my/icon_dpj@2x.png" alt=""><span>待评价</span>
-					</router-link>
+						<img src="../../../../../assets/my/icon_dpj@2x.png" alt=""><span>待评价</span>
 				</li>
 				<li>
-					<router-link to="service">
-						<img src="../../../assets/my/icon_th@2x.png" alt=""><span>退换/售后</span>
-				    </router-link>
+						<img src="../../../../../assets/my/icon_th@2x.png" alt=""><span>退换/售后</span>
 				</li>
 			</ul>
 		</div>

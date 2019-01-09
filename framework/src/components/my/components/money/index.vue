@@ -1,9 +1,7 @@
 <template>
 	<div id="money">
 		<div class="nav">
-			<router-link to="my">
-				<img src="../../../../assets/my/jt@2x.png">
-			</router-link>
+			<img @click="handleBack()" src="../../../../assets/my/jt@2x.png">
 			<span>红包</span>
 		</div>
 		<div class="main">
@@ -18,6 +16,11 @@
 			return {
 				
 			};
+		},
+		methods:{
+			handleBack(){
+				this.$router.go(-1);
+			}
 		}
 	}
 </script>
@@ -29,7 +32,7 @@
 }
 .nav{
 	width:100%;
-	height: .88rem;
+	height: 1rem;
 	display: flex;
 	background:#FFD900;
 	background:rgba(255,217,0,1);
@@ -37,14 +40,14 @@
 .nav img{
 	width: .17rem;
 	height: .34rem;
-	margin: .3rem .17rem;
+	margin: .42rem .17rem;
 }
 .nav>span{
 	display: inline-block;
 	margin-left: 2.89rem;
-	margin-top: .2rem;
+	margin-top: .36rem;
 	color: #231010;
-	font-size:17px;
+	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);

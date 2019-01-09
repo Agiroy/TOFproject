@@ -42,7 +42,7 @@
 	margin: 0 auto;
 	align-items: center;
 	padding-top: .29rem;
-	border-bottom: 1px solid #ccc;
+	border-bottom: .02rem solid #ccc;
 }
 #main>ul>li>div{
 	width: .88rem;
@@ -60,14 +60,14 @@
 #main>ul>li>span{
 	display: inline-block;
 	margin-left: .39rem;
-	font-size:16px;
+	font-size:.32rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(51,51,51,1);
 }
 #main>ul>li>p{
 	margin-top: .25rem;
-	font-size:12px;
+	font-size:.24rem;
 	/* margin-left: .39rem; */
 	margin-left: 1.23rem;
 	font-family:PingFang-SC-Regular;
