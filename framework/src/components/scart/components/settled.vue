@@ -1,24 +1,24 @@
 <template>
     <div class="car">
-        <cartop-com/>
-      
+        <top-com/>
+        <main-com/>
       
         </div>
 </template>
 
 <script>
-import CarTop from './components/car_top';
-
+import Top from './top';
+import Main from './main';
 
 
 export default {
     components:{
-    "cartop-com":CarTop
-    
+    "top-com":Top,
+    "main-com":Main
    },
 }
 </script>
-
+ 
 
 <style lang="">
   .car{

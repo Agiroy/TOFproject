@@ -3,10 +3,8 @@
      <router-link to="/settled">
       <img class="top_pic1" src="../../../assets/icon_fh@2x.png">
     </router-link>
-    <p class="top_p">结账</p> 
-  <router-link to="setting">
-      <img class="top_pic2" src="../../../assets/结账_slices-2/icon_gd@2x.png">
-    </router-link> 
+    <p class="top_p">购物车</p> 
+     <button class="top_pic2">编辑</button>
      </div>
   
 </template>
@@ -39,9 +37,12 @@ color:rgba(51,51,51,1);
     margin-left:.3rem; 
   }
   .top_bar .top_pic2{
-    width:.17rem;
-    height:.3rem; 
+    width:.9rem;
+    height:.5rem; 
     margin-right:.3rem; 
+    background:#FFD900;
+    border:0;
+    outline: none;
   }
 </style>
 

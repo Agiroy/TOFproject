@@ -5,7 +5,7 @@
 				<img src="../../../../assets/my/jt@2x.png">
 			</router-link>
 			<span>设置昵称</span>
-			<router-link to="info">
+			<router-link to="login">
 				<span class="login">登录</span>
 			</router-link>
 		</div>
@@ -29,7 +29,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 #top{
 	width:100%;
 	height: 1rem;
@@ -74,6 +74,7 @@
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(120,120,120,1);
+	outline:none;
 }
 #nickname>div:nth-child(2) p{
 	font-size:12px;

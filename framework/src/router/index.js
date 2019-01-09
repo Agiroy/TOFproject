@@ -11,6 +11,7 @@ import Firstlogin from "../components/Firstlogin/Firstlogin";
 import Search from "../components/home/components/search";
 import Message from "../components/my/components/message";
 
+
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
 import Info from "../components/my/components/info";
@@ -21,11 +22,19 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
+
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
-import PaySuccess from '../components/scart/components/paysuccess'
+
+import Evaluation from "../components/my/components/evaluation";
+import Service from "../components/my/components/service";
+import Order from "../components/my/components/order";
+
+
+
+
 Vue.use(Router)
 
 const router = new Router({
@@ -131,6 +140,28 @@ const router = new Router({
 	    requireAuth:true
 	  }
 	},
+	{
+	  path:"/order",
+	  name:"order",
+	  component:Order,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
+	{
+	  path:"/service",
+	  name:"service",
+	  component:Service,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
 	 {
 	  path:"/nickname",
 	  name:"nickname",
@@ -196,18 +227,7 @@ const router = new Router({
         //路由守卫
         requireAuth:true
       }
-		},
-		{
-			path:"/paysuccess",
-			name:'paysuccess',
-			component:PaySuccess,
-			meta:{
-        //tab栏的显示
-        flag:true,
-        //路由守卫
-        requireAuth:true
-      }
-		},
+    },
     {
       path:"/my",
       name:"my",
@@ -269,7 +289,8 @@ const router = new Router({
       name:"login",
       component:Login,
       meta:{
-        flag:false
+        flag:false,
+				requireAuth:false
       }
     },
     {
@@ -277,15 +298,26 @@ const router = new Router({
       name:"register",
       component:Register,
       meta:{
-        flag:false
+        flag:false,
+				requireAuth:false
       }
     },
+		 {
+		  path:"/evaluation",
+		  name:"evaluation",
+		  component:Evaluation,
+		  meta:{
+		    flag:false,
+				requireAuth:true
+		  }
+		},
     {
       path:"/Firstlogin",
       name:"Firstlogin",
       component:Firstlogin,
       meta:{
-        flag:false
+        flag:false,
+				requireAuth:false
       }
 		},
 		{
