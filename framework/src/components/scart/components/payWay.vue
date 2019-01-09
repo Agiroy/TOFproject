@@ -38,7 +38,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
     .pay_way{
         width:7.5rem;
         height:5.65rem;
@@ -72,7 +72,7 @@ export default {
         font-size: .34rem;
         margin-top:0;
     }
-    .hr{
+    .box>.hr{
         width:6.89rem;
         height:0.02rem;
         background: #ccc;
