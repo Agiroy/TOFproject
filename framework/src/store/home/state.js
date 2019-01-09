@@ -5,5 +5,46 @@ export default {
     tabs:[],
     searchList:"",
     searchhistory:["花生","瓜子","矿泉水","啤酒","饮料","泡面","辣条","西瓜皮"],
-    
+    searchhot:[
+        {
+            num:1,
+            hotfooter:"三只松鼠",
+            hotactive:"hot-logo"
+        },
+        {
+            num:2,
+            hotfooter:"皮皮虾",
+            hotactive:"hot-logo"
+        },
+        {
+            num:3,
+            hotfooter:"小龙虾",
+            hotactive:"hot-logo"
+        },
+        {
+            num:4,
+            hotfooter:"火锅",
+            hotactive:"hot-logob"
+        },
+        {
+            num:5,
+            hotfooter:"麻辣牛肉",
+            hotactive:"hot-logob"
+        },
+        {
+            num:6,
+            hotfooter:"小汤圆",
+            hotactive:"hot-logob"
+        },
+        {
+            num:7,
+            hotfooter:"铁板八爪鱼",
+            hotactive:"hot-logob"
+        },
+        {
+            num:8,
+            hotfooter:"可乐",
+            hotactive:"hot-logob"
+        },
+    ],
 }
