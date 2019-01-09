@@ -34,7 +34,7 @@ export default {
                     //操作swiper后不关autoplay
                     disableOnInteraction: false,
                 },
-                //防止触摸时跳转
+                //防止触摸时跳转sdasdassdasd
                 preventClicks : false,
                 pagination: {
                     el: '.banner-pagination',

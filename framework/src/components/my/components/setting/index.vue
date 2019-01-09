@@ -1,9 +1,7 @@
 <template>
 	<div id="setting">
 		<div class="nav">
-			<router-link to="my">
-				<img src="../../../../assets/my/jt@2x.png">
-			</router-link>
+			<img  @click="handleback()" src="../../../../assets/my/jt@2x.png">
 			<span>设置</span>
 		</div>
 		<div class="main">
@@ -11,7 +9,7 @@
 			<p>清空设置  <span>8.00 M</span></p>
 		</div>
 		<div class="back">
-			退出当前账号
+			<router-link to="login">退出当前账号</router-link>
 		</div>
 	</div>
 </template>
@@ -20,13 +18,18 @@
 	export default {
 		data() {
 			return {
-				
-			};
+				pathname:'my'
+			}
+		},
+	methods:{
+		handleback(){
+			this.$router.go(-1);
 		}
 	}
+}
 </script>
 
-<style>
+<style scoped>
 #setting{
 	width: 100%;
 	height: 100%;
