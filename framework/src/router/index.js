@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from "../components/home";
 import Classify from "../components/classify";
 import Scart  from "../components/scart";
+import Settled  from "../components/scart/components/settled";
+import PaySuccess from '../components/scart/components/paysuccess'
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
@@ -227,7 +229,29 @@ const router = new Router({
         //路由守卫
         requireAuth:true
       }
-    },
+		},
+		{
+      path:"/settled",
+      name:"settled",
+      component:Settled,
+      meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+		},
+		{
+			path:"/paysuccess",
+			name:'paysuccess',
+			component:PaySuccess,
+			meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+		},
     {
       path:"/my",
       name:"my",

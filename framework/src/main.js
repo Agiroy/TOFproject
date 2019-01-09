@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from "./store";
+import oBserver from "./../observer";
+Vue.prototype.Observer = oBserver;
 import "./common/css/reset.css";
 import "./common/css/iconfont/iconfont.css";
 import "./common/css/iconfontMes/iconfont.css";

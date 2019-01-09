@@ -33,7 +33,7 @@ export default {
     methods: {
         handleBack(){
             
-            this.$emit("pay")
+            this.Observer.$emit("pay")
         }
     }
 }
