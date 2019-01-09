@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from "../components/home";
 import Classify from "../components/classify";
 import Scart  from "../components/scart";
+import Settled  from "../components/scart/components/settled";
+import PaySuccess from '../components/scart/components/paysuccess'
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
@@ -22,33 +24,21 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-<<<<<<< HEAD
 
-
-
-=======
-// <<<<<<< HEAD
->>>>>>> zhangwei
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
-<<<<<<< HEAD
 
-=======
-// =======
->>>>>>> zhangwei
 import Evaluation from "../components/my/components/evaluation";
 import Service from "../components/my/components/service";
 import Order from "../components/my/components/order";
 import Welcome from "../components/welcome";
 
+import Evaluation from "../components/my/components/evaluation";
+import Service from "../components/my/components/service";
+import Order from "../components/my/components/order";
 
-
-<<<<<<< HEAD
-=======
-// >>>>>>> zhouyuying
->>>>>>> zhangwei
 Vue.use(Router)
 
 const router = new Router({
@@ -117,6 +107,17 @@ const router = new Router({
 		    requireAuth:true
 		  }
 		},
+    {
+      path:"/search",
+      name:"search",
+      component:Search,
+      meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+    },
     {
       path:"/search",
       name:"search",
@@ -236,7 +237,29 @@ const router = new Router({
         //路由守卫
         requireAuth:true
       }
-    },
+		},
+		{
+      path:"/settled",
+      name:"settled",
+      component:Settled,
+      meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+		},
+		{
+			path:"/paysuccess",
+			name:'paysuccess',
+			component:PaySuccess,
+			meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+		},
     {
       path:"/my",
       name:"my",

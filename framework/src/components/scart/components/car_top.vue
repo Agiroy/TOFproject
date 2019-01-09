@@ -1,6 +1,6 @@
 <template>
   <div class="top_bar">
-     <router-link to="/my">
+     <router-link to="/settled">
       <img class="top_pic1" src="../../../assets/icon_fh@2x.png">
     </router-link>
     <p class="top_p">购物车</p> 

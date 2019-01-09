@@ -15,7 +15,7 @@
      
  }
  </script> 
- <style lang="">
+ <style scoped>
   .top_bar{
 width:100%;
 height:.88rem;
@@ -39,8 +39,8 @@ color:rgba(51,51,51,1);
     margin-left:.3rem; 
   }
   .top_bar .top_pic2{
-    width:.17rem;
-    height:.3rem; 
+    width:.06rem;
+    height:.28rem; 
     margin-right:.3rem; 
   }
 </style>

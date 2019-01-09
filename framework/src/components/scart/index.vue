@@ -1,28 +1,23 @@
 <template>
-    <div class="car">
-        <cartop-com/>
-      
-      
-        </div>
+  <div class="car">
+    <cartop-com/>
+  </div>
 </template>
 
 <script>
-import CarTop from './components/car_top';
-
-
+import CarTop from "./components/car_top";
 
 export default {
-    components:{
-    "cartop-com":CarTop
-    
-   },
-}
+  components: {
+    "cartop-com": CarTop
+  }
+};
 </script>
 
 
-<style lang="">
-  .car{
-      width:100%;
-      height:100%;
-  }
+<style scoped>
+.car {
+  width: 100%;
+  height: 100%;
+}
 </style>
