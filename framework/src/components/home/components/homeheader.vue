@@ -2,25 +2,21 @@
     <div class="home-header">
         <div class="home-logo"><img src="@/assets/食令已改1 副本_slices/log@2x.png"></div>
         <div class="home-search">
-<<<<<<< HEAD
-<<<<<<< HEAD
+ 
             <router-link :to="{name:'search'}">
-=======
-            <router-link to="/search">
->>>>>>> zhangwei
-=======
-            <router-link to="search">
->>>>>>> guo
+ 
+     
+ 
                 <img src="@/assets/食令已改1 副本_slices/biaoti@2x.png">
             </router-link>
         </div>
         <div class="home-message">
             <router-link to="">
-<<<<<<< HEAD
+ 
                 <img src="@/assets/首页_slices/b2.png">
-=======
+ 
                 <img src="@/assets/食令已改1 副本_slices/log@2x.png">
->>>>>>> guo
+ 
             </router-link>
         </div>
     </div>
@@ -34,11 +30,11 @@ export default {
 
 <style>
     .home-header{
-<<<<<<< HEAD
+
         width:100%;
-=======
+
         width:7.5rem;
->>>>>>> guo
+
         height:2.81rem;
         background:rgba(249,225,115,1);   
         display: flex;

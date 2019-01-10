@@ -24,41 +24,34 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-<<<<<<< HEAD
-
-import All from "../components/all/all";
-import Food from "../components/food/food";
-import Light from "../components/light/light";
-import Drink from "../components/drink/drink";
-
-import Evaluation from "../components/my/components/evaluation";
-import Service from "../components/my/components/service";
-import Order from "../components/my/components/order";
+ 
+ 
+ 
+ 
 import Welcome from "../components/welcome";
-=======
+ 
 import Remain from "../components/my/components/remain";
 import Addressmanage from "../components/my/components/addressmanage";
-import Evaluation from "../components/my/components/evaluation";
-import Service from "../components/my/components/service";
-import Order from "../components/my/components/order";
+
+ 
+ 
 import Delivery from "../components/my/components/delivery";
 import Pay from "../components/my/components/pay";
 import Nologin from "../components/my/components/nologin";
->>>>>>> zhouyuying
+ 
 
 import Evaluation from "../components/my/components/evaluation";
 import Service from "../components/my/components/service";
 import Order from "../components/my/components/order";
 
-<<<<<<< HEAD
-=======
+ 
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
+import Goods_detail from "../components/goods_detail/goods_detail";
 
-
->>>>>>> zhouyuying
+ 
 Vue.use(Router)
 
 const router = new Router({
@@ -419,6 +412,15 @@ const router = new Router({
       component:Message,
       meta:{
         flag:false
+      }
+		},
+		{
+      path:"/goods_detail/:id",
+      name:"goods_detail",
+      component:Goods_detail,
+      meta:{
+        flag:false,
+				requireAuth:false
       }
 		},
     {
