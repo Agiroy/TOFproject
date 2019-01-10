@@ -1,21 +1,25 @@
 <template>
-    <div class="content">
+   <div class="content">
 <ul id="show" class="yg yg_l">
-			<li v-for="(item,index) in showwz" v-if="index%2==0">
+	    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id">
+			<li  v-if="index%2==0">
 				<div style="position: relative;">
-		            <img :src="item.e_img" alt="">  </div>
-			   <p>{{item.e_title}}</p>
-            	<p class="price">￥{{item.e_id}}</p>
+		            <img :src="item.c_url" alt="">  </div>
+			   <p>{{item.c_name}}</p>
+            	<p class="price">￥{{item.c_price}}</p>
 			</li>
+	</router-link>
 		</ul>
 		<ul class="yg yg_r">
-			<li v-for="(item,index) in showwz" v-if="index%2==1" >
+		  <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id">
+			<li  v-if="index%2==1" >
 				<div style="position: relative;">
-		            <img :src="item.e_img" alt=""> 
+		            <img :src="item.c_url" alt=""> 
 		        </div>
-			     <p>{{item.e_title}}</p>
-            	<p class="price">￥{{item.e_id}}</p>
+			     <p>{{item.c_name}}</p>
+            	<p class="price">￥{{item.c_price}}</p>
 			</li>
+			</router-link>
 		</ul>
 		<div style="clear: both;"></div>
 
@@ -30,13 +34,12 @@ export default {
     		wznum:''
     }	},
     	methods:{
-    		getwz:function(){
+ getwz:function(){
 var  that=this;
    axios({
           method:"post",
-          url:"http://xxiaoyuan.top/controller/wz/wz.php",
+          url:"https://www.easy-mock.com/mock/5c36b509ba536b0f6ca629b0/commodity/commodity",
           data:{
-		 u_id:512,
 			        },
           headers:{
             "Content-type":"application/x-www-form-urlencoded"
@@ -44,13 +47,13 @@ var  that=this;
  
         }).then((data)=>{
             console.log(data); 
-            that.showwz = data.data;
+            that.showwz = data.data.commodity;
 		  that.wznum =data.data.length;
         })
          
         }
     	},
-    	mounted:function(){
+    	mounted(){
     		this.getwz();
     	}
 }
