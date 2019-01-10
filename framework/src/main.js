@@ -11,6 +11,9 @@ import "./common/css/iconfont/iconfont.css";
 import "./common/css/iconfontMes/iconfont.css";
 import "../node_modules/swiper/dist/css/swiper.min.css";
 import "./common/js/flexble";
+import Mint from 'mint-ui';
+import "mint-ui/lib/style.css"
+Vue.use(Mint);
 
 Vue.config.productionTip = false
 

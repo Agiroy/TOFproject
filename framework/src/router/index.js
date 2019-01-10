@@ -24,18 +24,6 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-<<<<<<< HEAD
-
-import All from "../components/all/all";
-import Food from "../components/food/food";
-import Light from "../components/light/light";
-import Drink from "../components/drink/drink";
-
-import Evaluation from "../components/my/components/evaluation";
-import Service from "../components/my/components/service";
-import Order from "../components/my/components/order";
-import Welcome from "../components/welcome";
-=======
 import Remain from "../components/my/components/remain";
 import Addressmanage from "../components/my/components/addressmanage";
 import Evaluation from "../components/my/components/evaluation";
@@ -44,21 +32,15 @@ import Order from "../components/my/components/order";
 import Delivery from "../components/my/components/delivery";
 import Pay from "../components/my/components/pay";
 import Nologin from "../components/my/components/nologin";
->>>>>>> zhouyuying
+import Welcome from "../components/welcome"
 
-import Evaluation from "../components/my/components/evaluation";
-import Service from "../components/my/components/service";
-import Order from "../components/my/components/order";
 
-<<<<<<< HEAD
-=======
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
 
 
->>>>>>> zhouyuying
 Vue.use(Router)
 
 const router = new Router({

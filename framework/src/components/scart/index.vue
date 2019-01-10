@@ -16,15 +16,8 @@ export default {
 
 
 <style scoped>
-<<<<<<< HEAD
-.car {
-  width: 100%;
-  height: 100%;
-}
-=======
   .scart{
       width:100%;
       height:100%;
   }
->>>>>>> zhouyuying
 </style>
