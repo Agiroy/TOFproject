@@ -3,8 +3,9 @@ import Router from 'vue-router'
 import Home from "../components/home";
 import Classify from "../components/classify";
 import Scart  from "../components/scart";
-import Settled  from "../components/scart/components/settled";
-import PaySuccess from '../components/scart/components/paysuccess'
+import Settled  from "../components/scart/components/settled/settled"
+import GoodList from "../components/scart/components/settled/goodList"
+import PaySuccess from '../components/scart/components/settled/components/paysuccess'
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
@@ -12,7 +13,7 @@ import Register from "../components/register/register";
 import Firstlogin from "../components/Firstlogin/Firstlogin";
 import Search from "../components/home/components/search";
 import Message from "../components/my/components/message";
-
+import Welcome from "../components/welcome";
 
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
@@ -24,18 +25,6 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-<<<<<<< HEAD
-
-import All from "../components/all/all";
-import Food from "../components/food/food";
-import Light from "../components/light/light";
-import Drink from "../components/drink/drink";
-
-import Evaluation from "../components/my/components/evaluation";
-import Service from "../components/my/components/service";
-import Order from "../components/my/components/order";
-import Welcome from "../components/welcome";
-=======
 import Remain from "../components/my/components/remain";
 import Addressmanage from "../components/my/components/addressmanage";
 import Evaluation from "../components/my/components/evaluation";
@@ -44,21 +33,15 @@ import Order from "../components/my/components/order";
 import Delivery from "../components/my/components/delivery";
 import Pay from "../components/my/components/pay";
 import Nologin from "../components/my/components/nologin";
->>>>>>> zhouyuying
 
-import Evaluation from "../components/my/components/evaluation";
-import Service from "../components/my/components/service";
-import Order from "../components/my/components/order";
 
-<<<<<<< HEAD
-=======
+
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
 
 
->>>>>>> zhouyuying
 Vue.use(Router)
 
 const router = new Router({
@@ -412,6 +395,17 @@ const router = new Router({
 				requireAuth:false
       }
 		},
+		{
+			//商品列表GoodList
+      path:"/GoodList",
+      name:"GoodList",
+      component:GoodList,
+      meta:{
+        flag:false,
+				requireAuth:false
+      }
+		},
+		
 		{
      //我的消息
 			path:"/message",

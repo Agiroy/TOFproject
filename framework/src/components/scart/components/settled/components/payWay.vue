@@ -2,27 +2,27 @@
     <div class="pay_way">
         <div class="box">
             <div class="pay_title">
-                <img @click="handleBack()" src="./../../../../static/images/classify/icon_fh.png" alt="">
+                <img @click="handleBack()" src="./../../../../../../static/images/classify/icon_fh.png" alt="">
                 <span>选择付款方式</span>
             </div>
             <div class="hr"></div>
             <div class="pay_others">
-                <img class="wx" src="./../../../../static/images/classify/icon_wx.png" alt="">
+                <img class="wx" src="./../../../../../../static/images/classify/icon_wx.png" alt="">
                 <span>微信</span>
             </div>
             <div class="hr"></div>
             <div class="pay_others">
-                <img src="./../../../../static/images/classify/icon_zfb.png" alt="">
+                <img src="./../../../../../../static/images/classify/icon_zfb.png" alt="">
                 <span>支付宝</span>
             </div>
             <div class="hr"></div>
             <div class="pay_others">
-                <img src="./../../../../static/images/classify/icon_zgyh.png" alt="">
+                <img src="./../../../../../../static/images/classify/icon_zgyh.png" alt="">
                 <span>中国银行储蓄卡(0584)</span>
             </div>
             <div class="hr"></div>
             <div class="pay_others">
-                <img src="./../../../../static/images/classify/icon_zgjs.png" alt="">
+                <img src="./../../../../../../static/images/classify/icon_zgjs.png" alt="">
                 <span>中国建设银行储蓄卡(1234)</span>
             </div>
         </div>

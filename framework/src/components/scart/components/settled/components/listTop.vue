@@ -1,14 +1,16 @@
 <template>
   <div class="top_bar">
-    <router-link to="/settled">
-      <img class="top_pic1" src="../../../assets/icon_fh@2x.png">
+    <router-link :to="{name:'settled'}">
+      <img class="top_pic1" src="../../../../../assets/icon_fh@2x.png">
     </router-link>
-    <p class="top_p">购物车</p>
+    <p class="top_p">{{this.$store.state.goodlist}}</p>
     <span></span>
   </div>
 </template>
  <script>
-export default {};
+export default {
+
+};
 </script> 
  <style lang="">
 .top_bar {
