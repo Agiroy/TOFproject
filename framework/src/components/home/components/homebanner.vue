@@ -3,10 +3,6 @@
         <div class="swiper-container banner-container" ref="banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide banner-img">
-<<<<<<< HEAD
-=======
- 
->>>>>>> heliling
                     <img src="@/assets/首页_slices/图层 1@2x.png">
                 </div>
                 <div class="swiper-slide banner-img">
@@ -14,12 +10,6 @@
                 </div>
                 <div class="swiper-slide banner-img">
                     <img src="@/assets/首页_slices/bannerpangxie@2x.png">
-<<<<<<< HEAD
-=======
- 
-                    
- 
->>>>>>> heliling
                 </div>
             </div>
             <!-- <div class="swiper-pagination"></div> -->
