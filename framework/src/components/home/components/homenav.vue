@@ -28,10 +28,8 @@
             </ul>
     </div>
 </template>
-
 <script>
 export default {
-    
 }
 </script>
 
@@ -41,9 +39,10 @@ export default {
     }
     .nav-box{
         width: 100%;
-        margin:.13rem 0 .1rem 0;
         display: flex;
         text-align: center;
+		justify-content: space-between;
+		margin:.13rem 0 .1rem 0;
     }
     .nav-box li{
         height:1.07rem;

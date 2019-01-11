@@ -20,7 +20,6 @@
             <img class="home-navg" src="@/assets/首页_slices/qianwang@2x.png">
     </div>
 </template>
-
 <script>
 import Swiper from "swiper";
 export default {
@@ -47,7 +46,6 @@ export default {
     }
 }
 </script>
-
 <style>
 .homesubnav{
     width: 100%;
@@ -57,7 +55,6 @@ export default {
     background:linear-gradient(0deg,rgba(247,247,247,1),rgba(255,249,249,1));
 }
 .homes{
-    
     width:.01rem;
     height:.62rem;
     background:rgba(174,174,174,1);

@@ -3,6 +3,7 @@ import Vuex from "vuex";
 import home from "./home";
 import classify from "./classify";
 import scart from "./scart";
+import my from "./my";
 Vue.use(Vuex);
 let state = {
     settle:"结账",
@@ -13,7 +14,8 @@ const store = new Vuex.Store({
     modules:{
         home,
         classify,
-        scart
+        scart,
+		my
     }
 })
 

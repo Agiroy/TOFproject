@@ -25,6 +25,9 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
+ 
+
+
 import Remain from "../components/my/components/remain";
 import Addressmanage from "../components/my/components/addressmanage";
 import Delivery from "../components/my/components/delivery";
@@ -36,6 +39,11 @@ import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
 import Goods_detail from "../components/goods_detail/goods_detail";
 
+
+import Evaluation from "../components/my/components/evaluation";
+import Service from "../components/my/components/service";
+
+import Order from "../components/my/components/order";
 
 Vue.use(Router)
 

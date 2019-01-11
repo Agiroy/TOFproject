@@ -102,6 +102,10 @@ export default {
   }
 };
 </script> 
+<<<<<<< HEAD:framework/src/components/scart/components/settled/components/main.vue
+=======
+
+>>>>>>> zhouyuying:framework/src/components/scart/components/main.vue
  <style>
 .nav_bar {
   width: 100%;
@@ -165,6 +169,12 @@ export default {
   height: 0.34rem;
   margin-top: 1rem;
 }
+<<<<<<< HEAD:framework/src/components/scart/components/settled/components/main.vue
+=======
+
+ <style scoped>
+
+>>>>>>> zhouyuying:framework/src/components/scart/components/main.vue
 .main_bar {
   width: 100%;
   height: 13.01rem;

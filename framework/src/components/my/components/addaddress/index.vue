@@ -9,6 +9,7 @@
 </template>
 
 <script>
+	import { Toast } from 'mint-ui';
 	import List from "./components/list"
 	export default {
 		data() {
