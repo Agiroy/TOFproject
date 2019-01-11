@@ -4,9 +4,9 @@
 			<img  @click="handleBack()" src="../../../../assets/my/jt@2x.png">
 			<span>地址</span>
 		</div>
-		<div class="main">
-			<p class="p1"><span>李光洙</span> <span>187****7392</span><span>默认</span><img src="../../../../assets/my/jt1@2x.png"></p>
-			<p class="p2">北京市海淀区北四环西路9号银谷大厦2101</p>
+		<div class="main" v-for="(item,index) in addList.datalist">
+			<p class="p1"><span>{{addList.name}}</span> <span>{{addList.tel}}</span><span>默认</span><img src="../../../../assets/my/jt1@2x.png"></p>
+			<p class="p2">{{item.city}}</p>
 		</div>
 		<div class="add">
 			<router-link to="addaddress">
@@ -17,17 +17,18 @@
 </template>
 
 <script>
+import Vuex from "vuex";
 	export default {
-		data() {
-			return {
-				
-			};
+		computed:{
+			...Vuex.mapState({
+				addList:state=>state.my.addList
+			})
 		},
 		methods:{
 			handleBack(){
 				this.$router.go(-1);
 			}
-		}
+		},
 	}
 </script>
 
@@ -82,8 +83,11 @@
 	margin-right: .4rem;
 }
 #addressmanage>.main>.p1>span:nth-child(3){
-	width: 1.2rem;
-	height: .2rem;
+	display: inline-block;
+	text-align: center;
+	width: .5rem;
+	height: .3rem;
+	line-height: .3rem;
 	background:rgba(255,217,0,1);
 	border-radius:.1rem;
 	font-size:.16rem;

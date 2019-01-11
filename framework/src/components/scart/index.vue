@@ -17,20 +17,32 @@ export default {
 
 <style scoped>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  
+=======
+
+>>>>>>> zhouyuying
 .car {
   width: 100%;
   height: 100%;
 }
+<<<<<<< HEAD
  
 >>>>>>> heliling
+=======
+
+>>>>>>> zhouyuying
   .scart{
       width:100%;
       height:100%;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  
 >>>>>>> heliling
+=======
+
+>>>>>>> zhouyuying
 </style>

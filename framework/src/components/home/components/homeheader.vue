@@ -9,6 +9,10 @@
         <div class="home-message">
             <router-link to="">
                 <img src="@/assets/首页_slices/b2.png">
+<<<<<<< HEAD
+=======
+                <img src="@/assets/食令已改1 副本_slices/log@2x.png">
+>>>>>>> zhouyuying
             </router-link>
         </div>
     </div>
@@ -22,7 +26,15 @@ export default {
 
 <style>
     .home-header{
+<<<<<<< HEAD
         width:100%;
+=======
+
+        width:100%;
+
+        width:7.5rem;
+
+>>>>>>> zhouyuying
         height:2.81rem;
         background:rgba(249,225,115,1);   
         display: flex;

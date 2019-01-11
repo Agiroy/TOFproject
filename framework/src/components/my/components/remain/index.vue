@@ -19,11 +19,7 @@
 				<p>新鲜水果红心红肉菠萝蜜，8斤装 限时特惠<span>￥50</span></p>
 				<span>-50</span>
 			</div>
-			<div>
-				<img src="../../../../assets/my/t1@2x.png">
-				<p>新鲜水果红心红肉菠萝蜜，8斤装 限时特惠<span>￥50</span></p>
-				<span>-50</span>
-			</div>
+			
 		</div>
 	</div>
 </template>
@@ -65,7 +61,7 @@
 	margin-left: 2.89rem;
 	margin-top: .36rem;
 	color: #231010;
-	font-size:17px;
+	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);

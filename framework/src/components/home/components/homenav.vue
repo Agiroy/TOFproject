@@ -8,13 +8,21 @@
                     </router-link>
                 </li>
                 <li>
+<<<<<<< HEAD
                     <router-link  :to="{name:'food'}">
+=======
+                    <router-link :to="{name:'food'}">
+>>>>>>> zhouyuying
                         <img src="@/assets/首页_slices/shicai@2x.png">
                         食材
                     </router-link >
                 </li>
                 <li>
+<<<<<<< HEAD
                     <router-link  :to="{name:'light'}">
+=======
+                    <router-link :to="{name:'light'}">
+>>>>>>> zhouyuying
                         <img src="@/assets/首页_slices/qingshi @2x.png">
                         轻食
                     </router-link>
@@ -28,22 +36,30 @@
             </ul>
     </div>
 </template>
-
 <script>
 export default {
-    
 }
 </script>
+<<<<<<< HEAD
 
 <style>
+=======
+<style scoped>
+>>>>>>> zhouyuying
     .home-nav{
         zoom:1;
     }
     .nav-box{
         width: 100%;
+<<<<<<< HEAD
         margin:.13rem 0 .1rem 0;
+=======
+		margin-top:.25rem;
+>>>>>>> zhouyuying
         display: flex;
         text-align: center;
+		justify-content: space-between;
+		margin:.13rem 0 .1rem 0;
     }
     .nav-box li{
         height:1.07rem;
@@ -57,6 +73,16 @@ export default {
     .nav-box img{
         width: .7rem;
         height: .7rem;
+<<<<<<< HEAD
+=======
+        width:.8rem;
+        height:1.07rem;
+        /* margin:0 .45rem; */
+    }
+    .nav-box img{
+        width: .8rem;
+        height: .8rem;
+>>>>>>> zhouyuying
     }
     .nav-box .nav-box-first{
         margin-left:.8rem;
