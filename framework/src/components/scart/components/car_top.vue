@@ -18,6 +18,7 @@ export default {
     "home-gl": Home
   }
 };
+
 </script> 
  <style scoped>
  .top{
