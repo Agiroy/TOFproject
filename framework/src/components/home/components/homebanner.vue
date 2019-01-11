@@ -3,44 +3,22 @@
         <div class="swiper-container banner-container" ref="banner">
             <div class="swiper-wrapper">
                 <div class="swiper-slide banner-img">
-<<<<<<< HEAD
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> zhouyuying
->>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
                     <img src="@/assets/首页_slices/图层 1@2x.png">
                 </div>
                 <div class="swiper-slide banner-img">
                     <img src="@/assets/首页_slices/riyuguang@2x.png">
                 </div>
-              <div class="swiper-slide banner-img">
+                <div class="swiper-slide banner-img">
                     <img src="@/assets/首页_slices/bannerpangxie@2x.png">
-<<<<<<< HEAD
+                    <img src="@/assets/商品详情界面 副本_slices/san@2x.png"
                 </div>
                 <div class="swiper-slide banner-img">
                     <img src="@/assets/首页_slices/riyuguang@2x.png">
-=======
-<<<<<<< HEAD
-                </div>
-=======
-                    <!-- <img src="@/assets/商品详情界面 副本_slices/san@2x.png"> -->
-                </div>
-               <!--   <div class="swiper-slide banner-img">
-                    <img src="@/assets/商品详情界面 副本_slices/si@2x.png">
->>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
                 </div>
                 <div class="swiper-slide banner-img">
                     <img src="@/assets/商品详情界面 副本_slices/yi@2x.png">
 
-<<<<<<< HEAD
                 </div>
-=======
-                </div> -->
->>>>>>> zhouyuying
->>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
             </div>
             <!-- <div class="swiper-pagination"></div> -->
         </div>

@@ -2,11 +2,7 @@
     <div class="home-header">
         <div class="home-logo"><img src="@/assets/食令已改1 副本_slices/log@2x.png"></div>
         <div class="home-search">
-<<<<<<< HEAD
-            <router-link to="/search">
-=======
             <router-link :to="{name:'search'}">
->>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
                 <img src="@/assets/食令已改1 副本_slices/biaoti@2x.png">
             </router-link>
         </div>
