@@ -106,21 +106,21 @@
 	margin-right: .35rem;
 }
 #evaluation>.list2>div>.fruit .p1{
-	font-size:15px;
+	font-size:.3rem;
 	font-family:PingFangSC-Regular;
 	font-weight:400;
 	color:rgba(47,47,47,1);
 	margin-top: .3rem;
 }
 #evaluation>.list2>div>.fruit .p2{
-	font-size:13px;
+	font-size:.26rem;
 	font-family:PingFangSC-Regular;
 	font-weight:400;
 	color:rgba(81,75,75,1);
 	margin-top: .2rem;
 }
 #evaluation>.list2>div>.fruit .p3{
-	font-size:24px;
+	font-size:.48rem;
 	font-family:Adobe Heiti Std R;
 	font-weight:normal;
 	color:rgba(252,84,94,1);
@@ -128,7 +128,7 @@
 }
 #evaluation>.list2>div>.bottom span{
 	display: inline-block;
-	font-size:15px;
+	font-size:.3rem;
 	font-family:PingFangSC-Regular;
 	font-weight:400;
 	color:rgba(81,75,75,1);
@@ -140,7 +140,7 @@
 	width: 1.5rem;
 	height: .6rem;
 	background:rgba(251,246,246,1);
-	border:1px solid #ccc;
+	border:.02rem solid #ccc;
 	border-radius:.1rem;
 	margin-right: .2rem;
 	margin-left: 1.7rem;

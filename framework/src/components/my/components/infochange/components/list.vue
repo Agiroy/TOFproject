@@ -33,7 +33,7 @@
 	height: 1rem;
 	margin-top: .06rem;
 	background: #fff;
-	font-size:15px;
+	font-size:.3rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(41,41,41,1);

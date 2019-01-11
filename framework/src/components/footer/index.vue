@@ -1,8 +1,8 @@
 <template>
     <div id="footer">
         <ul>
-            <li v-for="(item,index) in navs">
-                <router-link :to="{name:item.name}">
+            <li v-for="(item,index) in navs" :key="index" @click="handleToggle(index)" :class="activeIndex==index?'router-link-active':''" >
+                <router-link :to="{name:item.name}" >
                     <i class="iconfont" v-html="item.icon"></i>
                     <span>{{item.title}}</span>
                 </router-link>
@@ -33,9 +33,15 @@ export default {
                     title:"我的",
                     icon:"&#xe8a0;"
                 }
-            ]
+            ],
+			activeIndex:0
         }
-    }
+    },
+	methods:{
+		handleToggle(index){
+			this.activeIndex=index;
+		}
+	}
 }
 </script>
 
@@ -69,7 +75,7 @@ export default {
     #footer>ul>li>a>span{
         font-size: .24rem;
     }
-    #footer>ul>li>.router-link-active{
+  .router-link-active{
         color: #ffc700;
     }
 </style>

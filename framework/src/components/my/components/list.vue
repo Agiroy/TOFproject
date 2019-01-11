@@ -12,7 +12,12 @@
 					积分<img src="../../../assets/my/jt1@2x.png">
 				</router-link>
 			</li>
-			<li>余额<img src="../../../assets/my/jt1@2x.png"></li>
+			
+			<li>
+				<router-link to="remain">
+					余额<img src="../../../assets/my/jt1@2x.png">
+				</router-link>
+			</li>
 			<li>
 				<router-link to="advise">
 					意见反馈<img src="../../../assets/my/jt1@2x.png">
@@ -56,7 +61,7 @@
 	width: 100%;
 	color: #666666;
 	height: 1.12rem;
-	line-height: 56px;
+	line-height: 1.12rem;
 	border-bottom: .01rem solid #ECECEC;
 }
 #list1>ul>li img{

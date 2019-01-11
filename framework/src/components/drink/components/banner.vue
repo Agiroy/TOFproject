@@ -1,7 +1,7 @@
 <template>
     <div class="banner">
 
-   	<img class="back" src="../../../assets/icon_fh@2x.png"  @click="handlelead()">
+   	<img class="back" src="../../../assets/ico_fh2@2x.png"  @click="handlelead()">
 
 
 
@@ -48,7 +48,7 @@ export default {
     },
      	methods:{
  	handlelead(){
- 		this.$router.go(-1)
+  	this.$router.push("/home");
  	}
  	}
 }
@@ -57,7 +57,7 @@ export default {
     .banner{width:100%;
 position: relative;
 height:4.1rem;
-background:rgba(255,255,0,1);} 
+ ;} 
 .back{position:absolute; top: 0.3rem;
 left :0.2rem;
 z-index: 3;

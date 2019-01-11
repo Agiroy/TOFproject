@@ -7,7 +7,7 @@
 		</div>
 		<div>
 			<p><label>收货地址</label><input type="text" placeholder="小区/学校/写字楼"></p>
-			<p><label>&nbsp;&nbsp;&nbsp;</label><input type="text" placeholder="详细地址 （如楼号/楼层/房号）"></p>
+			<p><label>&nbsp;&nbsp;&nbsp;</label><input type="text" placeholder="详细地址(如楼号/楼层/房号)"></p>
 			<p><label>标签</label> 
 			<span v-for="(item,index) in labels" @click="handleToggle(index)" :class="activeIndex==index?'active':''">{{item}}</span>
 			</p>
@@ -52,9 +52,9 @@
 #list>div>p{
 	width: 6.89rem;
 	height: .85rem;
-	border-bottom: 1px solid #ccc;
+	border-bottom:.02rem solid #ccc;
 	margin: 0 auto;
-	font-size:14px;
+	font-size:.28rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(58,58,58,1);
@@ -70,6 +70,7 @@
 #list>div>p>input{
 	border: 0;
 	outline:none;
+	font-size: .24rem;
 }
 #list>div:nth-child(1){
 	margin-top: .1rem;
@@ -77,7 +78,7 @@
 #list>div>p>span{
 	padding: .1rem .25rem;
 	border-radius: .28rem;
-	font-size:14px;
+	font-size:.28rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(58,58,58,1);
@@ -101,7 +102,7 @@
 	padding-top: .3rem;
 }
 #list>div:nth-child(3) p{
-	font-size:13px;
+	font-size:.26rem;
 	width: 1rem;
 	height: .56rem;
 	background: #E7E7E7;
@@ -122,7 +123,7 @@
 	background:rgba(252,221,37,1);
     border-radius:.4rem;
 	text-align: center;
-	font-size:16px;
+	font-size:.32rem;
 	padding-top: .23rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:bold;

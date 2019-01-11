@@ -1,7 +1,7 @@
 <template>
 	<div id="main">
 		<div >
-			<div class="goodsShop"><img src="../../../../../assets/my/log_1@2x.png"><span>嘻嘻哈哈旗舰店 </span><img class="pic" src="../../../../../assets/my/qianwang@2x.png"><span>交易成功</span></div>
+			<!-- <div class="goodsShop"><img src="../../../../../assets/my/log_1@2x.png"><span>嘻嘻哈哈旗舰店 </span><img class="pic" src="../../../../../assets/my/qianwang@2x.png"><span>交易成功</span></div> -->
 		    <div class="goodsName">
 				<img src="../../../../../assets/my/t1@2x.png">
 				<span>红牛维生素功能饮料<br/>维生素功能饮料...<br/>6元</span>
@@ -32,8 +32,8 @@
 #main>div{
 	width: 6.9rem;
 	height: 2.58rem;
-	border:1px solid rgba(255,255,255,1);
-	border-radius:10px;
+	border:.01rem solid rgba(255,255,255,1);
+	border-radius:.1rem;
 	margin: 0 auto;
 	padding-top: .19rem;
 	margin-bottom: .25rem;
@@ -56,7 +56,7 @@
 }
 #main>div>.goodsShop>span{
 	display: inline-block;
-	font-size:.2rem;
+	font-size:.24rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:800;
 	color:rgba(51,51,51,1);
@@ -77,7 +77,7 @@
 	margin-right: .2rem;
 }
 #main>div>.goodsName>p{
-	font-size:14px;
+	font-size:.24rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(51,51,51,1);
@@ -96,9 +96,9 @@
 	padding-left: 3.7rem;
 }
 #main>div>button{
-	border:1px solid rgba(255,217,0,1);
-	border-radius:18px;
-	font-size:.24rem;
+	border:.02rem solid rgba(255,217,0,1);
+	border-radius:.18rem;
+	font-size:.2rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(255,217,0,1);
@@ -108,7 +108,7 @@
 	outline: none;
 }
 #main>div>.goodsCount>span{
-	font-size:.2rem;
+	font-size:.23rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(51,51,51,1);

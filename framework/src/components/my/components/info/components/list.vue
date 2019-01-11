@@ -13,7 +13,7 @@
 				</router-link>
 			</li>
 			<li>
-				<router-link to="address">
+				<router-link to="addressmanage">
 				地址管理<img src="../../../../../assets/my/jt1@2x.png">
 				</router-link>
 			</li>
@@ -43,7 +43,7 @@
 	height: 1rem;
 	margin-top: .06rem;
 	background: #fff;
-	font-size:15px;
+	font-size:.3rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(41,41,41,1);
