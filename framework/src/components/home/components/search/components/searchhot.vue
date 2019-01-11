@@ -5,13 +5,8 @@
             <h3>热门搜索123</h3>
         </div>
         <ul class="hot-box">
-            <li class="hot-main" v-for="(item,index) in searchhot">
                 <div :class="item.hotactive">{{item.num}}</div>{{item.hotfooter}}
             </li>
-        </ul>
-    </diV>
-</template>
-
 <script>
 import Vuex from "vuex";
 export default {

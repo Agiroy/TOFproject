@@ -15,22 +15,14 @@ export default {
 </script>
 
 
-<style scoped>
-<<<<<<< HEAD
-=======
- 
+<style scoped> 
 .car {
   width: 100%;
   height: 100%;
 }
- 
->>>>>>> heliling
   .scart{
       width:100%;
       height:100%;
   }
-<<<<<<< HEAD
-=======
- 
->>>>>>> heliling
+
 </style>

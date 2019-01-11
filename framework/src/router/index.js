@@ -25,45 +25,18 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-<<<<<<< HEAD
-=======
- 
- 
- 
- 
-import Welcome from "../components/welcome";
- 
->>>>>>> heliling
 import Remain from "../components/my/components/remain";
 import Addressmanage from "../components/my/components/addressmanage";
-
- 
- 
 import Delivery from "../components/my/components/delivery";
 import Pay from "../components/my/components/pay";
 import Nologin from "../components/my/components/nologin";
-<<<<<<< HEAD
-=======
- 
->>>>>>> heliling
-
-
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> heliling
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
 import Goods_detail from "../components/goods_detail/goods_detail";
 
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> heliling
 Vue.use(Router)
 
 const router = new Router({
