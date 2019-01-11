@@ -2,7 +2,7 @@
      <div class="top">
 	<img class="back" src="../../../assets/icon_fh@2x.png"  @click="handlelead()">
 <span class="title">登录</span>
-<router-link :to="{name:'register'}">注册</router-link>
+<router-link :to="{name:'register'}" class="sig">注册</router-link>
      </div>
  </template>
  <script>
@@ -18,12 +18,17 @@
  .top{
 	width:100%;
 	height:0.88rem;
-	background:#FFD900; display: flex;justify-content: space-between;align-items: center;padding: 0 .3rem
+	background:#FFD900;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 .3rem
 	}
     .top .back{
 	width:0.17rem;
 	height:0.3rem;}
 .title{ 
+	display: block;
 	font-size:0.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;

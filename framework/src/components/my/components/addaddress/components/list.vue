@@ -14,23 +14,38 @@
 		</div>
 		<div>
 			<span>设为默认地址</span>
-			<p><span></span></p>
+			<p @click="handleChecked()">
+					<span class="s1" v-show="flag"></span>
+					<span class="s2" v-show="!flag"></span>
+			</p>
 		</div>
-		<div class="save">保存</div>
+		<div class="save" @click="handlesave()">保存</div>
 	</div>
 </template>
 
 <script>
+	import { Toast } from 'mint-ui';
 	export default {
 		data() {
 			return {
 				activeIndex:0,
-				labels:["家庭","父母","公司","自定义"]
+				labels:["家庭","父母","公司","自定义"],
+				flag:true
 			};
 		},
 		methods:{
 			handleToggle(val){
 			    this.activeIndex=val;
+			},
+			handleChecked(){
+				this.flag=!this.flag;
+			},
+			handlesave(){
+					Toast({
+					  message: '保存成功',
+					  duration: 1000,
+					  classname:"tip"
+					});
 			}
 		},
 	}
@@ -58,7 +73,6 @@
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(58,58,58,1);
-	
 }
 #list>div>p>label{
 	height: .7rem;
@@ -93,7 +107,6 @@
 }
 #list>div:nth-child(3){
 	height: .86rem;
-	/* ba; */
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(58,58,58,1);
@@ -111,11 +124,20 @@
 	margin-left: 5.9rem;
 }
 
-#list>div:nth-child(3) p>span{
+#list>div:nth-child(3) p>.s1{
+	display: inline-block;
 	width: .56rem;
 	height: .56rem;
 	background:#fff;
 	border-radius: 50%;
+}
+#list>div:nth-child(3) p>.s2{
+	display: inline-block;
+	width: .56rem;
+	height: .56rem;
+	border-radius: 50%;
+	background:greenyellow ;
+	margin-left: .45rem;
 }
 #list>.save{
 	width: 6.66rem;
@@ -131,4 +153,13 @@
 	margin: 0 auto;
 	margin-top: .5rem;
 }
+
+.mint-toast-text{
+	width:2rem;
+	height:3rem;
+	font-size: .3rem;
+	display: block;
+}
+/* .mint-toast.is-placemiddle.tip{width:4rem;}
+.mint-toast-text{font-size: .4rem;} */
 </style>

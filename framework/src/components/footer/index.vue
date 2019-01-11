@@ -70,12 +70,15 @@ export default {
        align-items: center;
     }
      #footer>ul>li>a>i{
-         font-size: .36rem;
+         font-size: .4rem;
+           font-weight: 900;
      }
     #footer>ul>li>a>span{
-        font-size: .24rem;
+       font-size:0.3rem;
+       font-family:cursive;
+       font-weight: 900;
     }
   .router-link-active{
-        color: #ffc700;
+        color: rgb(161, 40, 40);
     }
 </style>

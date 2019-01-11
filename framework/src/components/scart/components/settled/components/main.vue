@@ -1,7 +1,7 @@
 <template>
   <div class="main_bar">
     <div class="nav_bar">
-      <img class="nav_pic1" src="../../../assets/结账_slices-2/icon_dw@2x.png" alt>
+      <img class="nav_pic1" src="../../../../../assets/结账_slices-2/icon_dw@2x.png" alt>
       <div class="nav_box" v-show="!flag">
         <p>
           <i>收货人：</i>
@@ -22,20 +22,22 @@
         <router-link class="nav_address" to="/addaddress">点击添加地址</router-link>
       </div>
       <router-link to="/addaddress">
-        <img class="nav_pic2" src="../../../assets/首页_slices/qianwang@2x.png" alt>
+        <img class="nav_pic2" src="../../../../../assets/首页_slices/qianwang@2x.png" alt>
       </router-link>
     </div>
     <div class="main_pic1">
-      <img src="../../../assets/结账_slices-2/new_page_1 拷贝 2@2x.png">
+      <img src="../../../../../assets/结账_slices-2/new_page_1 拷贝 2@2x.png">
       <span>
-        <router-link to="classify">吃好玩好专卖店</router-link>
+        <router-link :to="{name:'classify'}">吃好玩好专卖店</router-link>
       </span>
     </div>
     <div class="main_pic2">
-      <img src="../../../assets/结账_slices-2/new_page_1 拷贝 2@3x.png">
-      <img src="../../../assets/结账_slices-2/new_page_1 拷贝 2@3x.png">
+      <img src="../../../../../assets/结账_slices-2/new_page_1 拷贝 2@3x.png">
+      <img src="../../../../../assets/结账_slices-2/new_page_1 拷贝 2@3x.png">
       <span>共两件</span>
-      <img class="main_pic2_pic3" src="../../../assets/首页_slices/qianwang@2x.png">
+      <router-link :to="{name:'GoodList'}" class="main_pic2_pic3">
+      <img  src="../../../../../assets/首页_slices/qianwang@2x.png">
+      </router-link>
     </div>
     <div class="main_money">
       <p>
@@ -48,14 +50,14 @@
         <i>红包</i>
         <span>0个可用</span>
         <router-link to="/money" class="main_pic2_pic33">
-          <img src="../../../assets/首页_slices/qianwang@2x.png">
+          <img src="../../../../../assets/首页_slices/qianwang@2x.png">
         </router-link>
       </P>
       <P>
         <i>积分</i>
         <span>未抵扣</span>
         <router-link to="integral" class="main_pic2_pic33">
-          <img src="../../../assets/首页_slices/qianwang@2x.png">
+          <img src="../../../../../assets/首页_slices/qianwang@2x.png">
         </router-link>
       </P>
       <P class="main_fuli_p">
@@ -73,7 +75,7 @@
       <i>支付方式：</i>
       <span @click="handleSelect()">请选择</span>
       <router-link to="#" class="main_pic2_pic3">
-        <img @click="handleSelect()" src="../../../assets/首页_slices/qianwang@2x.png">
+        <img @click="handleSelect()" src="../../../../../assets/首页_slices/qianwang@2x.png">
       </router-link>
     </div>
     <div class="main_finish">
@@ -100,7 +102,15 @@ export default {
   }
 };
 </script> 
+<<<<<<< HEAD:framework/src/components/scart/components/main.vue
  <style scoped>
+=======
+<<<<<<< HEAD:framework/src/components/scart/components/settled/components/main.vue
+=======
+
+>>>>>>> zhouyuying:framework/src/components/scart/components/main.vue
+ <style>
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399:framework/src/components/scart/components/settled/components/main.vue
 .nav_bar {
   width: 100%;
   height: 3rem;
@@ -129,15 +139,17 @@ export default {
 .nav_bar .nav_box > p > span {
   width: 1.19rem;
   height: 0.31rem;
-  font-size: 0.28rem;
+  font-size: 0.26rem;
   font-family: PingFang-SC-Regular;
   font-weight: 500;
-  color: rgba(51, 51, 51, 1);
+  color: rgb(29, 1, 1);
+  font-weight: 600;
 }
 .nav_bar .nav_box > p > i {
   font-weight: 600;
   font-style: normal;
   color: #333;
+   font-size: 0.24rem;
 }
 .nav_bar .nav_box > em {
   width: 3.74rem;
@@ -161,38 +173,55 @@ export default {
   height: 0.34rem;
   margin-top: 1rem;
 }
+<<<<<<< HEAD:framework/src/components/scart/components/main.vue
+=======
+<<<<<<< HEAD:framework/src/components/scart/components/settled/components/main.vue
+=======
+
+ <style scoped>
+
+>>>>>>> zhouyuying:framework/src/components/scart/components/main.vue
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399:framework/src/components/scart/components/settled/components/main.vue
 .main_bar {
   width: 100%;
   height: 13.01rem;
   background: rgba(253, 253, 253, 1);
   overflow: auto;
+
 }
 .main_bar > .main_pic1 {
-  background: #fff;
+  background: #fdfdfd;
   border-bottom: 0.03rem solid #ccc;
 }
 .main_bar > .main_pic1 > img {
   margin: 0.3rem 0 0.3rem 0.3rem;
 }
 .main_bar > .main_pic1 > span {
-  font-weight: 900;
+  
   float: left;
-  margin-left: 1.5rem;
-  margin-top: -0.8rem;
-}
+  margin-left: 1.2rem;
+  margin-top: -.65rem;
+  font-size:0.24rem;
+  font-family:PingFang-SC-Regular;
+  }
 
 .main_bar > .main_pic2 > img {
+  width: 1rem;
+  height: 1rem;
   float: left;
   margin: 0.3rem 0 0.3rem 0.3rem;
 }
 .main_bar > .main_pic2 > span {
+   font-family:PingFang-SC-Regular;
+  font-weight:600;
+  font-size: .26rem;
   color: black;
   float: left;
-  margin: 0.78rem 0 0 2.5rem;
+  margin: 0.78rem 0 0 3rem;
 }
-.main_bar > .main_pic2 > .main_pic2_pic3 {
+.main_bar > .main_pic2 >.main_pic2_pic3>img {
   float: right;
-  margin: 0.78rem 0.5rem 0 0;
+  margin: 0.78rem 0.6rem 0 0;
   width: 0.2rem;
   height: 0.34rem;
 }
@@ -208,12 +237,16 @@ export default {
 }
 .main_bar > .main_money > p {
   margin-left: 0.3rem;
+  font-size: .26rem;
 }
 .main_bar > .main_money > p > span {
   margin-left: 4.2rem;
 }
 .main_fuli > p {
   border-bottom: 0.03rem solid #ccc;
+  font-size:0.26rem;
+  font-family:PingFang-SC-Regular;
+  font-weight:600;
 }
 .main_fuli > p > i {
   font-style: normal;
@@ -221,9 +254,6 @@ export default {
   width: 3rem;
   height: 0.25rem;
   margin: 0.3rem 0 0.3rem 0.3rem;
-  font-size: 0.26rem;
-  font-family: PingFang-SC-Regular;
-  font-weight: 400;
   color: rgba(0, 0, 0, 1);
   line-height: 0.33rem;
 }
@@ -259,10 +289,10 @@ export default {
 .main_message > span {
   width: 4.89rem;
   height: 0.25rem;
-  font-size: 0.26rem;
+  font-size: 0.28rem;
   font-family: PingFang-SC-Regular;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+  color: rgb(119, 14, 14);
   line-height: 0.33rem;
   margin-left: 0.3rem;
 }
@@ -306,11 +336,12 @@ export default {
 }
 .main_finish {
   width: 100%;
-  height: 1rem;
+  height: 1.25rem;
   font-family: PingFang-SC-Regular;
   font-size: 0.34rem;
   border: 0.05rem solid rgba(246, 246, 246, 1);
   padding-top: 0.15rem;
+  
 }
 .main_finish > i {
   font-weight: 700;
@@ -321,11 +352,13 @@ export default {
   color: red;
 }
 .main_finish > button {
-  height: 100%;
-  background: yellow;
+  width:2rem;
+  height:0.8rem;
+  background:rgba(255,217,0,1);
   outline: none;
   border: 0;
-  margin-left: 3.3rem;
+  margin-left: 2.3rem;
+  font-size: .32rem;
 }
 .main_last {
   width: 100%;

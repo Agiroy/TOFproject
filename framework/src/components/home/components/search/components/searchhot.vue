@@ -5,14 +5,40 @@
             <h3>热门搜索123</h3>
         </div>
         <ul class="hot-box">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
             <li class="hot-main" v-for="(item,index) in searchhot">
+>>>>>>> cce60577e8e056ba0b810f2a4c3baf80185580d1
                 <div :class="item.hotactive">{{item.num}}</div>{{item.hotfooter}}
+<<<<<<< HEAD
             </li>
         </ul>
     </diV>
 </template>
+=======
+=======
 
+            <li class="hot-main" v-for="(item,index) in searchhot">
+                <div :class="item.hotactive">{{item.num}}</div>{{item.hotfooter}}
+
+            <li>
+                <img src="">
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
+
+>>>>>>> zhouyuying
+            </li>
 <script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> zhouyuying
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
 import Vuex from "vuex";
 export default {
     computed:{
@@ -30,6 +56,15 @@ export default {
     justify-content: center;
     flex-direction: column;
     margin-top:.25rem;
+<<<<<<< HEAD
+=======
+=======
+
+    margin-top:.25rem;
+
+
+>>>>>>> zhouyuying
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
 }
 .hot-top{
     width: 6.89rem;
@@ -40,6 +75,18 @@ export default {
     margin-bottom: .4rem;
     
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+.hot-logo{
+    width: .32rem;
+    height: .34rem;
+}
+
+>>>>>>> zhouyuying
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
 .hot-top h3{
 height: .34rem;
 font-size:.34rem;
@@ -48,6 +95,13 @@ font-weight:400;
 color:rgba(51,51,51,1);
 margin:-.03rem 0 0 .25rem;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> zhouyuying
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
 .hot-box{
     width: 5.99rem;
     height: 1.4rem;
@@ -93,4 +147,11 @@ margin:-.03rem 0 0 .25rem;
     overflow: hidden;
     justify-content: start
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> zhouyuying
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
 </style>

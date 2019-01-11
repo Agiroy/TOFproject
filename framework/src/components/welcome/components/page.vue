@@ -34,6 +34,7 @@ export default {
      .swiper-slide button{
          position: absolute;
          bottom:3rem ;
+         font-size: .25rem;
          left: 2.25rem;
          width: 3rem;
          height:1rem;

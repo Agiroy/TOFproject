@@ -24,6 +24,11 @@ export default {
 </script>
 
 <style>
+.mint-toast.is-placemiddle{width:2rem ;height: 1.1rem;border-radius: .1rem; }
+.mint-toast-text{ font-size: .3rem;font-family:PingFang-SC-Regular;}
+.mint-toast-icon{
+    font-size: .3rem
+}
 .homemain{
     width:100%;
     flex: 1;

@@ -12,10 +12,11 @@
 </template>
 
 <script>
-import Top from "./top";
-import Main from "./main";
-import PayWay from "./payWay";
-import paySuccess from "./paysuccess";
+import Top from "./../settled/components/top";
+import Main from "./../settled/components/main";
+import PayWay from "./../settled/components/payWay";
+import paySuccess from "./../settled/components/paysuccess";
+
 
 export default {
     created () {

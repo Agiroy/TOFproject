@@ -8,19 +8,27 @@
                     </router-link>
                 </li>
                 <li>
+<<<<<<< HEAD
 
                     <router-link :to="{name:'food'}">
 
 
+=======
+                    <router-link  :to="{name:'food'}">
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
                         <img src="@/assets/首页_slices/shicai@2x.png">
                         食材
                     </router-link >
                 </li>
                 <li>
+<<<<<<< HEAD
 
                     <router-link :to="{name:'light'}">
 
 
+=======
+                    <router-link  :to="{name:'light'}">
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
                         <img src="@/assets/首页_slices/qingshi @2x.png">
                         轻食
                     </router-link>
@@ -34,10 +42,8 @@
             </ul>
     </div>
 </template>
-
 <script>
 export default {
-    
 }
 </script>
 
@@ -47,12 +53,20 @@ export default {
     }
     .nav-box{
         width: 100%;
+<<<<<<< HEAD
         margin:.13rem 0 .1rem 0;
+=======
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
         display: flex;
         text-align: center;
+		justify-content: space-between;
+		margin:.13rem 0 .1rem 0;
     }
     .nav-box li{
+<<<<<<< HEAD
 
+=======
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
         height:1.07rem;
         margin:0 .46rem;
         font-size:0.24rem;
@@ -64,6 +78,7 @@ export default {
     .nav-box img{
         width: .7rem;
         height: .7rem;
+<<<<<<< HEAD
         height:1.07rem;
         margin:0 .46rem;
         font-size:0.24rem;
@@ -75,6 +90,8 @@ export default {
     .nav-box img{
         width: .8rem;
         height: .8rem;
+=======
+>>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399
     }
     .nav-box .nav-box-first{
         margin-left:.8rem;

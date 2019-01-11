@@ -1,24 +1,30 @@
 <template>
 	<div id="main">
-		<div >
+		<div v-for="(item,index) in recieveData">
 			<!-- <div class="goodsShop"><img src="../../../../../assets/my/log_1@2x.png"><span>嘻嘻哈哈旗舰店 </span><img class="pic" src="../../../../../assets/my/qianwang@2x.png"><span>交易成功</span></div> -->
-		    <div class="goodsName">
+		    <div class="goodsName" >
 				<img src="../../../../../assets/my/t1@2x.png">
-				<span>红牛维生素功能饮料<br/>维生素功能饮料...<br/>6元</span>
-				<p>￥<b>6.00</b><br/>X <span>5</span></p>
+				<span>{{item.goodsname}}</span>
+				<p>￥<span>{{item.goodsprice}}</span><br/>X <span>{{item.goodscount}}</span></p>
 			</div>
-			<div class="goodsCount"><span>共五件商品   合计: ￥</span><span>30.00</span></div>
+			<div class="goodsCount"><span>共五件商品   合计: ￥</span><span>30</span></div>
 			<button>提醒发货</button>
 	    </div>
 	</div>
 </template>
 
 <script>
+	import Vuex from "vuex";
 	export default {
 		data() {
 			return {
-				
+				sum:0
 			};
+		},
+		computed:{
+			...Vuex.mapState({
+				recieveData:state=>state.my.recieveData
+			})
 		}
 	}
 </script>

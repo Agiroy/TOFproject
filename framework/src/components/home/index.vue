@@ -9,13 +9,12 @@
 </template>
 
 <script>
-
 import Vuex from "vuex";
 import Homeheader from "./components/homeheader";
 import Homebanner from "./components/homebanner";
 import Homenav from "./components/homenav";
 import Homesubnav from "./components/homesubnav";
-import Homemain from "./components/homemain"
+import Homemain from "./components/homemain";
 export default {
     components:{
         "Homeheader-com":Homeheader,
@@ -27,8 +26,7 @@ export default {
 }
 </script>
 
-
-<style lang="">
+<style lang="" scoped>
     .home{
         width: 100%;
         height:100%;

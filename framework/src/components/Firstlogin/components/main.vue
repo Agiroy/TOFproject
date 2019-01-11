@@ -9,7 +9,7 @@
               <div class="pic"><img src="../../../assets/登录 副本_slices/icon_mm@2x.png" alt=""></div> 
                <input type="text" placeholder="请输入密码">
            </div>
-           <div class="btn"><router-link :to="{name:'home'}"><button>登录</button></router-link></div>
+           <div class="btn"><router-link :to="{name:'home'}"><button @click="handleClick()">登录</button></router-link></div>
            <div class="foot"><router-link :to="{name:'register'}"><button>注册</button></router-link></div>
         <p><span class="ops"></span><span>其他登录方式</span><span class="ops"></span></p>
         <div class="find">
@@ -19,8 +19,17 @@
     </div>
 </template>
 <script>
+import { Toast } from 'mint-ui';
 export default {
-    
+    methods:{
+        handleClick(){
+            Toast({
+                    message: '登录成功',
+                     duration: 1500,
+                    iconClass: 'mintui mintui-success'
+            });
+        }
+     }
 }
 </script>
 <style scoped>
@@ -51,7 +60,7 @@ export default {
      }
      .main .username .pic{  
         float: left;
-         width:0.8rem;
+        width:0.8rem;
         height:0.8rem;
         background:rgba(255,217,0,1);
         border-radius:.1rem 0rem 0rem 0.1rem;
@@ -67,7 +76,7 @@ export default {
         padding-left: .1rem;
         width:4rem;
         height:100%;
-        font-size:0.2rem;
+        font-size:0.25rem;
         font-family:PingFang-SC-Medium;
         font-weight:500;
         color:rgba(114,114,114,1);

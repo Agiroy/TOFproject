@@ -4,12 +4,12 @@
             <div class="conent">
                 <div class="pay_title">
                     <router-link to="scart">
-                        <img class="pro" src="./../../../../static/images/classify/icon_fh.png">
+                        <img class="pro" src="./../../../../../../static/images/classify/icon_fh.png">
                     </router-link>
                     <span>完成</span>
                 </div>
                 <div class="pay_cont">
-                    <img src="./../../../../static/images/classify/icon_zgjs.png" alt="">
+                    <img src="./../../../../../../static/images/classify/icon_zgjs.png" alt="">
                     <span class="pay_suc">支付成功</span>
                     <span class="pay_price">81.00元</span>
                 </div>
