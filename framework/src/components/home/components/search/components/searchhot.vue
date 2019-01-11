@@ -5,20 +5,20 @@
             <h3>热门搜索123</h3>
         </div>
         <ul class="hot-box">
-<<<<<<< HEAD
+
             <li class="hot-main" v-for="(item,index) in searchhot">
                 <div :class="item.hotactive">{{item.num}}</div>{{item.hotfooter}}
-=======
+
             <li>
                 <img src="">
->>>>>>> guo
+
             </li>
         </ul>
     </diV>
 </template>
 
 <script>
-<<<<<<< HEAD
+
 import Vuex from "vuex";
 export default {
     computed:{
@@ -26,10 +26,6 @@ export default {
             searchhot:state=>state.home.searchhot
         })
     }
-=======
-export default {
-    
->>>>>>> guo
 }
 </script>
 
@@ -39,10 +35,10 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
+
     margin-top:.25rem;
-=======
->>>>>>> guo
+
+
 }
 .hot-top{
     width: 6.89rem;
@@ -53,13 +49,12 @@ export default {
     margin-bottom: .4rem;
     
 }
-<<<<<<< HEAD
-=======
+
 .hot-logo{
     width: .32rem;
     height: .34rem;
 }
->>>>>>> guo
+
 .hot-top h3{
 height: .34rem;
 font-size:.34rem;
@@ -68,7 +63,7 @@ font-weight:400;
 color:rgba(51,51,51,1);
 margin:-.03rem 0 0 .25rem;
 }
-<<<<<<< HEAD
+
 .hot-box{
     width: 5.99rem;
     height: 1.4rem;
@@ -114,7 +109,5 @@ margin:-.03rem 0 0 .25rem;
     overflow: hidden;
     justify-content: start
 }
-=======
 
->>>>>>> guo
 </style>

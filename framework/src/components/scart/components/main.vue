@@ -100,7 +100,7 @@ export default {
   }
 };
 </script> 
-<<<<<<< HEAD
+
  <style>
 .nav_bar {
   width: 100%;
@@ -162,9 +162,9 @@ export default {
   height: 0.34rem;
   margin-top: 1rem;
 }
-=======
+
  <style scoped>
->>>>>>> zhouyuying
+
 .main_bar {
   width: 100%;
   height: 13.01rem;

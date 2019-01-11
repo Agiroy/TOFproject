@@ -46,18 +46,18 @@
 .nav img{
 	width: .17rem;
 	height: .34rem;
-	margin: .49rem .17rem;
+	margin: .39rem .17rem;
 }
 .nav .pic{
 	width: .08rem;
 	height: .35rem;
 	margin-left: 2.9rem;
-	margin-top: .5rem;
+	margin-top: .4rem;
 }
 .nav>span{
 	display: inline-block;
 	margin-left: 2.3rem;
-	margin-top: .42rem;
+	margin-top: .3rem;
 	color: #231010;
 	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
