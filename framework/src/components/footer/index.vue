@@ -74,11 +74,11 @@ export default {
            font-weight: 900;
      }
     #footer>ul>li>a>span{
-       font-size:0.3rem;
-       font-family:cursive;
-       font-weight: 900;
+       font-size:0.24rem;
+       font-family:PingFang-SC-Regular;
+       font-weight: 400;
     }
   .router-link-active{
-        color: rgb(161, 40, 40);
+        color: #ffc700
     }
 </style>

@@ -8,13 +8,13 @@
                     </router-link>
                 </li>
                 <li>
-                    <router-link  :to="{name:'food'}">
+                    <router-link :to="{name:'food'}">
                         <img src="@/assets/首页_slices/shicai@2x.png">
                         食材
                     </router-link >
                 </li>
                 <li>
-                    <router-link  :to="{name:'light'}">
+                    <router-link :to="{name:'light'}">
                         <img src="@/assets/首页_slices/qingshi @2x.png">
                         轻食
                     </router-link>
@@ -39,6 +39,7 @@ export default {
     }
     .nav-box{
         width: 100%;
+        margin:.13rem 0 .1rem 0;
         display: flex;
         text-align: center;
 		justify-content: space-between;
@@ -46,7 +47,6 @@ export default {
     }
     .nav-box li{
         height:1.07rem;
-        margin:0 .46rem;
         font-size:0.24rem;
         font-family:PingFang-SC-Regular;
         font-weight:400;
@@ -56,8 +56,16 @@ export default {
     .nav-box img{
         width: .7rem;
         height: .7rem;
+        height:1.07rem;
+        margin:0 .46rem;
+        font-size:0.24rem;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(99,90,91,1);
+        text-align: center;
     }
-    .nav-box .nav-box-first{
-        margin-left:.8rem;
+    .nav-box img{
+        width: .8rem;
+        height: .8rem;
     }
 </style>

@@ -30,7 +30,6 @@
 import Vuex from "vuex";
 export default {
     created () {
-        console.log(this)
     },
      computed: {
         ...Vuex.mapState({
@@ -40,14 +39,9 @@ export default {
     },
     methods: {
         ...Vuex.mapMutations({
-            // handleChecked:"goodsList/handleChecked",
             handleAdd:"scart/handleAdd",
             handleReduce:"scart/handleReduce"
         })
-        // ,
-        // ...Vuex.mapActions({
-        //     handleDel:"goodsList/handleDel"
-        // })
     }
 }
 </script>
@@ -62,8 +56,8 @@ export default {
         width:100%;
         height:1.91rem;
         display: flex;
-        padding-bottom: .12rem;
         background: #FFF;
+        margin-top: 1rem;
     }
     .scart_list>.checkbox{
         width:.36rem;
@@ -112,7 +106,7 @@ export default {
     .bottom{
         width:4.35rem;
         height:.38rem;
-        margin-top: .46rem;
+        margin-top: .2rem;
         margin-left: .21rem;
         display: flex;
         justify-content: space-between;
@@ -120,17 +114,16 @@ export default {
     .bottom>.bottom_left>span{
         font-size: .22rem;
         color:#FF0E0E;
-        margin-top: .16rem;
         font-family:PingFang-SC-Regular;
         font-weight:400;
         color:rgba(255,14,14,1);
     }
     .bottom_right>button{
-        width:.38rem;
-        height:.38rem;
+        width:.5rem;
+        height:.5rem;
         border:#7D7D7D solid .02rem;
         border-radius: 50%;
-
+        outline: none;
     }
 </style>
 

@@ -8,19 +8,13 @@
                 <div class="swiper-slide banner-img">
                     <img src="@/assets/首页_slices/riyuguang@2x.png">
                 </div>
-                <div class="swiper-slide banner-img">
+              <div class="swiper-slide banner-img">
                     <img src="@/assets/首页_slices/bannerpangxie@2x.png">
-                    <img src="@/assets/商品详情界面 副本_slices/san@2x.png"
                 </div>
-                <div class="swiper-slide banner-img">
-                    <img src="@/assets/首页_slices/riyuguang@2x.png">
                 </div>
-                <div class="swiper-slide banner-img">
-                    <img src="@/assets/商品详情界面 副本_slices/yi@2x.png">
-
+                
                 </div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </div>
 </template>

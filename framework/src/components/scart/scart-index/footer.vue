@@ -8,39 +8,24 @@
         </div>
         <div class="goodsName">已选择<span></span>件商品</div>
         <div class="price">总价<span></span></div>
-        <div class="btnPay">去结算</div>
+       <router-link :to="{name:'settled'}" style="width: 2rem;font-size:.28rem;font-weight: 700;text-align: center;line-height: 250%;margin-right:.2rem;height: 70%;color:#000;font-weight:400;background:#ffd900;"><div class="btnPay">去结算</div></router-link>
     </div>
 </template>
 
 <script>
 import Vuex from "vuex";
 export default {
-    // computed: {
-    //     ...Vuex.mapGetters({
-    //         result:"goodsList/result"
-    //     })
-    // }
 }
 </script>
-
-
 <style scoped>
     .footer{
         width: 100%;
-        height: .44rem;
+        height: 1.1rem;
         border:1px solid #cdcdcd;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: #c09393;
-    }
-    .footer>.btnPay{
-        width: .8rem;
-        height: 100%;
-        text-align: center;
-        line-height: .44rem;
-        color: #fff;
-        background: #c33;
+        background:  #ccc;
     }
     .footer>.checkbox{
         width:.36rem;
@@ -58,9 +43,8 @@ export default {
         background: #FFF;
         border-radius: 50%;
         border:0;
-        margin:0;
-        position: absolute;
-        top:-.05rem;
-        left:-.06rem;
+        margin-left:2rem;
+        vertical-align: middle
+    
     }
 </style>

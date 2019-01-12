@@ -102,15 +102,8 @@ export default {
   }
 };
 </script> 
-<<<<<<< HEAD:framework/src/components/scart/components/main.vue
- <style scoped>
-=======
-<<<<<<< HEAD:framework/src/components/scart/components/settled/components/main.vue
-=======
 
->>>>>>> zhouyuying:framework/src/components/scart/components/main.vue
- <style>
->>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399:framework/src/components/scart/components/settled/components/main.vue
+ <style scoped>
 .nav_bar {
   width: 100%;
   height: 3rem;
@@ -173,15 +166,11 @@ export default {
   height: 0.34rem;
   margin-top: 1rem;
 }
-<<<<<<< HEAD:framework/src/components/scart/components/main.vue
-=======
-<<<<<<< HEAD:framework/src/components/scart/components/settled/components/main.vue
-=======
 
- <style scoped>
 
->>>>>>> zhouyuying:framework/src/components/scart/components/main.vue
->>>>>>> 86e31528cff207f706fdc3df6651f95bd975c399:framework/src/components/scart/components/settled/components/main.vue
+
+
+
 .main_bar {
   width: 100%;
   height: 13.01rem;

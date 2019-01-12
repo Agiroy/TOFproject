@@ -11,9 +11,7 @@
         </ul>
     </diV>
 </template>
-
 <script>
-
 import Vuex from "vuex";
 export default {
     computed:{
@@ -30,6 +28,7 @@ export default {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top:.25rem;
     margin-top:.25rem;
 }
 .hot-top{

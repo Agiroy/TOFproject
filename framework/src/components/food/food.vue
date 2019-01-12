@@ -19,7 +19,7 @@
 
 import Banner from './components/banner';
 import Nav from './components/Nav';
-import Content from './components/Content';
+import Content from './components/content';
 import BScroll from "better-scroll";
 export default {
 	  data(){
