@@ -3,9 +3,8 @@ import Router from 'vue-router'
 import Home from "../components/home";
 import Classify from "../components/classify";
 import Scart  from "../components/scart";
-import Settled  from "../components/scart/components/settled/settled"
-import GoodList from "../components/scart/components/settled/goodList"
-import PaySuccess from '../components/scart/components/settled/components/paysuccess'
+import Settled  from "../components/scart/components/settled/settled";
+import PaySuccess from "../components/scart/components/settled/components/paysuccess.vue";
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
@@ -25,9 +24,6 @@ import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
- 
-
-
 import Remain from "../components/my/components/remain";
 import Addressmanage from "../components/my/components/addressmanage";
 import Delivery from "../components/my/components/delivery";
@@ -38,12 +34,10 @@ import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
 import Goods_detail from "../components/goods_detail/goods_detail";
-
-
 import Evaluation from "../components/my/components/evaluation";
 import Service from "../components/my/components/service";
-
 import Order from "../components/my/components/order";
+import GoodList from "../components/scart/components/settled/goodList"
 
 Vue.use(Router)
 

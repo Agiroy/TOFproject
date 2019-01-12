@@ -1,7 +1,7 @@
 <template>
      <div class="content">
 <ul id="show" class="yg yg_l">
-	    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id">
+	    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id" :key="index"> 
 			<li  v-if="index%2==0">
 				<div style="position: relative;">
 		            <img :src="item.c_url" alt="">  </div>
@@ -11,7 +11,7 @@
 	</router-link>
 		</ul>
 		<ul class="yg yg_r">
-		  <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id" key="index">
+		  <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id" :key="index">
 			<li  v-if="index%2==1" >
 				<div style="position: relative;">
 		            <img :src="item.c_url" alt=""> 

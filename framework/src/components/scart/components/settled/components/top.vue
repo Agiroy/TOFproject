@@ -1,9 +1,7 @@
 <template>
   <div class="top_bar">
-     <router-link to="/my">
-      <img class="top_pic1" src="../../../../../assets/icon_fh@2x.png">
-    </router-link>
-    <p class="top_p">{{this.$store.state.settle}}</p> 
+     <img class="top_pic1" src="../../../../../assets/icon_fh@2x.png" @click="handle()">
+     <p class="top_p">{{this.$store.state.settle}}</p> 
   <router-link to="setting">
       <img class="top_pic2" src="../../../../../assets/结账_slices-2/icon_gd@2x.png">
     </router-link> 
@@ -13,12 +11,11 @@
  <script>
  import Vuex from "vuex";
  export default{
-    //  computed:{
-    //    ...Vuex.mapState({
-    //    state:settle =>statu.settle
-    //    })
-    //  }
-   
+    methods:{
+      handle(){
+        this.$router.go(-1)
+      }
+    }
  }
  </script> 
  <style scoped>
@@ -31,8 +28,9 @@ flex-direction: row;
 justify-content:space-between;
 align-items: center;
 position: fixed;
-  }
-  .top_bar>p{
+top:0;
+}
+.top_bar>p{
   
 font-size:0.34rem;
 font-family:PingFang-SC-Bold;

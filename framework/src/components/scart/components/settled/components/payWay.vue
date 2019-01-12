@@ -68,8 +68,9 @@ export default {
     }
     .pay_title>span{
         font-family: PingFang-SC-Regular;
-        font-weight: SC-Regular;
+        font-weight: 400;
         font-size: .34rem;
+        color:black;
         margin-top:0;
     }
     .box>.hr{

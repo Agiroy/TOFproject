@@ -61,12 +61,15 @@ color:rgba(17,17,17,1);
 font-size:0.38rem;
 font-family:PingFang-SC-Regular;
 font-weight:400;
-color:rgba(241,87,102,1);}
+color:rgba(241,87,102,1);
+margin-top: .5rem;
+}
 .advantage{
-    font-size:0.24rem;
+font-size:0.24rem;
 font-family:PingFang-SC-Regular;
 font-weight:400;
 color:rgba(157,157,157,1);
+margin-top: .4rem;
 }
 .advantage span{margin:  .1rem}
 .notice{

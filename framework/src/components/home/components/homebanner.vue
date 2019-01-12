@@ -11,8 +11,10 @@
               <div class="swiper-slide banner-img">
                     <img src="@/assets/首页_slices/bannerpangxie@2x.png">
                 </div>
+                </div>
+                
+                </div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
         </div>
     </div>
 </template>

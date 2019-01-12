@@ -1,14 +1,14 @@
 <template>
 <div class="goods_bootm">
 <div class="goods_btn">  
-   <router-link to="" ><div class="scart"> 
+   <router-link :to="{name:'scart'}" ><div class="scart"> 
         <img src="@/assets/商品详情界面 副本_slices/gwc@2x.png" alt="">  
        <p>购物车</p> </div></router-link>
      <router-link to="" ><div class="like">  <img src="@/assets/商品详情界面 副本_slices/guanzhu@2x.png" alt=""> 
        <p>关注</p></div></router-link>
   <router-link to="" ><div class="get"  @click ="handleClick()">加入购物车</div></router-link>
  
-     <router-link to="" ><div class="buy">立即购买</div></router-link>
+     <router-link :to="{name:'settled'}" ><div class="buy">立即购买</div></router-link>
   </div>
 
 </div>

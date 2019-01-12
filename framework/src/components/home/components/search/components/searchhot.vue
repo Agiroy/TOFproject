@@ -11,7 +11,6 @@
         </ul>
     </diV>
 </template>
-
 <script>
 import Vuex from "vuex";
 export default {
@@ -30,6 +29,7 @@ export default {
     justify-content: center;
     flex-direction: column;
     margin-top:.25rem;
+    margin-top:.25rem;
 }
 .hot-top{
     width: 6.89rem;
@@ -40,6 +40,12 @@ export default {
     margin-bottom: .4rem;
     
 }
+
+.hot-logo{
+    width: .32rem;
+    height: .34rem;
+}
+
 .hot-top h3{
 height: .34rem;
 font-size:.34rem;
