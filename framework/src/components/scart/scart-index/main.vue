@@ -22,6 +22,52 @@
                     </div>
                 </div>
             </div>
+        </div>  
+        <div class="scart_list" v-for="">
+            <div class="checkbox">
+                <input type="checkbox" :checked="flag" name="" id="">
+            </div>
+            <div class="scartPic">
+                <img src="../../../assets/结账_slices-2/dingdan.png" />
+            </div>
+            <div class="scartDetail">
+                <h2>正宗阳澄湖大闸蟹 秋日盛宴不早不晚</h2>
+                <h3>【尝鲜装】4公4母</h3>
+                <div class="bottom">
+                    <div class="bottom_left">
+                        <span>¥ </span>
+                        <span>499</span>
+                    </div>
+                    <div class="bottom_right">
+                        <button @click="handleReduce()">-</button>
+                        <span>{{this.num}}</span>
+                        <button @click="handleAdd()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="scart_list" v-for="">
+            <div class="checkbox">
+                <input type="checkbox" :checked="flag" name="" id="">
+            </div>
+            <div class="scartPic">
+                <img src="../../../assets/结账_slices-2/dingdan.png" />
+            </div>
+            <div class="scartDetail">
+                <h2>正宗阳澄湖大闸蟹 秋日盛宴不早不晚</h2>
+                <h3>【尝鲜装】4公4母</h3>
+                <div class="bottom">
+                    <div class="bottom_left">
+                        <span>¥ </span>
+                        <span>499</span>
+                    </div>
+                    <div class="bottom_right">
+                        <button @click="handleReduce()">-</button>
+                        <span>{{this.num}}</span>
+                        <button @click="handleAdd()">+</button>
+                    </div>
+                </div>
+            </div>
         </div>        
     </div>   
 </template>
@@ -51,13 +97,15 @@ export default {
         width:100%;
         min-height:.1rem;
         background: #ccc;
+        padding-top: 1rem;
+        padding-bottom: .05rem;
     }
     .scart_list{
         width:100%;
         height:1.91rem;
         display: flex;
         background: #FFF;
-        margin-top: 1rem;
+        margin-bottom: .05rem;
     }
     .scart_list>.checkbox{
         width:.36rem;
