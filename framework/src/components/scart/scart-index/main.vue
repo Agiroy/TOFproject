@@ -16,9 +16,55 @@
                         <span>499</span>
                     </div>
                     <div class="bottom_right">
-                        <button @click="handleReduce()">-</button>
+                        <button @click="handleReduce()"><div class="reduce"></div></button>
                         <span>{{this.num}}</span>
-                        <button @click="handleAdd()">+</button>
+                        <button @click="handleAdd()"><div class="add"></div></button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="scart_list" v-for="">
+            <div class="checkbox">
+                <input type="checkbox" :checked="flag" name="" id="">
+            </div>
+            <div class="scartPic">
+                <img src="../../../assets/结账_slices-2/dingdan.png" />
+            </div>
+            <div class="scartDetail">
+                <h2>正宗阳澄湖大闸蟹 秋日盛宴不早不晚</h2>
+                <h3>【尝鲜装】4公4母</h3>
+                <div class="bottom">
+                    <div class="bottom_left">
+                        <span>¥ </span>
+                        <span>499</span>
+                    </div>
+                    <div class="bottom_right">
+                        <button @click="handleReduce()"><div class="reduce"></div></button>
+                        <span>{{this.num}}</span>
+                        <button @click="handleAdd()"><div class="add"></div></button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="scart_list" v-for="">
+            <div class="checkbox">
+                <input type="checkbox" :checked="flag" name="" id="">
+            </div>
+            <div class="scartPic">
+                <img src="../../../assets/结账_slices-2/dingdan.png" />
+            </div>
+            <div class="scartDetail">
+                <h2>正宗阳澄湖大闸蟹 秋日盛宴不早不晚</h2>
+                <h3>【尝鲜装】4公4母</h3>
+                <div class="bottom">
+                    <div class="bottom_left">
+                        <span>¥ </span>
+                        <span>499</span>
+                    </div>
+                    <div class="bottom_right">
+                        <button @click="handleReduce()"><div class="reduce"></div></button>
+                        <span>{{this.num}}</span>
+                        <button @click="handleAdd()"><div class="add"></div></button>
                     </div>
                 </div>
             </div>
@@ -51,6 +97,8 @@ export default {
         width:100%;
         min-height:.1rem;
         background: #ccc;
+        padding-top: 1rem;
+        padding-bottom: .05rem;
     }
     .scart_list{
         width:100%;
@@ -58,6 +106,7 @@ export default {
         display: flex;
         background: #FFF;
         margin-top: 1rem;
+        margin-bottom: .05rem;
     }
     .scart_list>.checkbox{
         width:.36rem;
@@ -124,6 +173,34 @@ export default {
         border:#7D7D7D solid .02rem;
         border-radius: 50%;
         outline: none;
+        position:relative
+    }
+    .bottom_right>button>.reduce{
+        display: inline-block;
+        background: black;
+        height: .12rem;
+        position: relative;
+        width: .02rem;
+        transform: rotateZ(90deg);
+        text-align: center;
+        line-height: .2rem;
+    }
+    .bottom_right>button>.add{
+        display: inline-block;
+        background: black;
+        height: .12rem;
+        position: relative;
+        width: .02rem;
+    }
+    .bottom_right>button>.add:after{
+        background: black;
+        content: "";
+        height: .12rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: .02rem;
+        transform: rotateZ(90deg)
     }
 </style>
 

@@ -54,56 +54,51 @@ export default {
 };
 </script>
 <style scoped>
-.yourloves_box {
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  overflow: auto;
-}
-.yourloves {
-  width: 100%;
-  min-height: 5rem;
-  padding-top: 0.49rem;
-  padding-left: 0.15rem;
-}
-.yourloves > h4 {
-  font-size: 0.34rem;
-  font-family: PingFang-SC-Regular;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  margin-bottom: 0.17rem;
-  margin-left: 37%;
-}
-.yourloves > .box {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.box > .box_cont {
-  width: 48%;
-  height: 5.01rem;
-  margin-right: 0.14rem;
-  margin-bottom: 0.31rem;
-}
-.box_cont > img {
-  width: 100%;
-  height: 3.5rem;
-}
-.box_cont > p {
-  width: 100%;
-  height: 0.7rem;
-  margin-top: 0.16rem;
-  font-size: .26rem;
-  font-family: PingFang-SC-Regular;
-  font-weight: 400;
-  color: rgba(0, 0, 0, 1);
-  margin-bottom: 0.11rem;
-}
-.box_cont > div > span {
-  font-size: 0.28rem;
-  font-family: PingFang-SC-Regular;
-  font-weight: 700;
-  color: red;
-}
+    .yourloves{
+        width:100%;
+        min-height:5rem;
+        padding-top: .49rem;
+        padding-left:.15rem;   
+        background:rgba(248,247,247,1);
+    }
+    .yourloves>h4{
+       font-size:.34rem;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(0,0,0,1);
+        margin-bottom: .17rem;
+        margin-left:37%;
+    }
+    .yourloves>.box{
+        width:100%;
+        height:100%;
+        display: flex;  
+        flex-wrap:wrap;   
+    }
+    .box>.box_cont{
+        width:48%;
+        height:5.01rem;
+        margin-right: .14rem;
+        margin-bottom: .31rem;
+    }
+    .box_cont>img{
+        width:100%;
+        height:3.5rem;
+    }
+    .box_cont>p{
+        width:100%;
+        height:.7rem;
+        margin-top:.16rem;
+        font-size:26px;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(0,0,0,1);
+        margin-bottom: .11rem;
+    }
+    .box_cont>div>span{
+        font-size:.28rem;
+        font-family:PingFang-SC-Regular;
+        font-weight:400;
+        color:rgba(0,0,0,1);
+    }
 </style>
