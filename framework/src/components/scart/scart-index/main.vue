@@ -16,13 +16,13 @@
                         <span>499</span>
                     </div>
                     <div class="bottom_right">
-                        <button @click="handleReduce()">-</button>
+                        <button @click="handleReduce()"><div class="reduce"></div></button>
                         <span>{{this.num}}</span>
-                        <button @click="handleAdd()">+</button>
+                        <button @click="handleAdd()"><div class="add"></div></button>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>       
         <div class="scart_list" v-for="">
             <div class="checkbox">
                 <input type="checkbox" :checked="flag" name="" id="">
@@ -39,13 +39,13 @@
                         <span>499</span>
                     </div>
                     <div class="bottom_right">
-                        <button @click="handleReduce()">-</button>
+                        <button @click="handleReduce()"><div class="reduce"></div></button>
                         <span>{{this.num}}</span>
-                        <button @click="handleAdd()">+</button>
+                        <button @click="handleAdd()"><div class="add"></div></button>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>       
         <div class="scart_list" v-for="">
             <div class="checkbox">
                 <input type="checkbox" :checked="flag" name="" id="">
@@ -62,9 +62,9 @@
                         <span>499</span>
                     </div>
                     <div class="bottom_right">
-                        <button @click="handleReduce()">-</button>
+                        <button @click="handleReduce()"><div class="reduce"></div></button>
                         <span>{{this.num}}</span>
-                        <button @click="handleAdd()">+</button>
+                        <button @click="handleAdd()"><div class="add"></div></button>
                     </div>
                 </div>
             </div>
@@ -172,6 +172,34 @@ export default {
         border:#7D7D7D solid .02rem;
         border-radius: 50%;
         outline: none;
+        position:relative
+    }
+    .bottom_right>button>.reduce{
+        display: inline-block;
+        background: black;
+        height: .12rem;
+        position: relative;
+        width: .02rem;
+        transform: rotateZ(90deg);
+        text-align: center;
+        line-height: .2rem;
+    }
+    .bottom_right>button>.add{
+        display: inline-block;
+        background: black;
+        height: .12rem;
+        position: relative;
+        width: .02rem;
+    }
+    .bottom_right>button>.add:after{
+        background: black;
+        content: "";
+        height: .12rem;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: .02rem;
+        transform: rotateZ(90deg)
     }
 </style>
 

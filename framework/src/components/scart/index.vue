@@ -5,7 +5,7 @@
     <div class="seller" ref="seller">
       <div class="seller-wrapper">
         <div class="switchover">
-          <component is="ScartNull-gl"></component>
+          <component is="home-gl"></component>
           <yourloves-gl/>
         </div>       
       </div>
