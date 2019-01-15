@@ -43,7 +43,7 @@ import Evaluation from "../components/my/components/evaluation";
 import Service from "../components/my/components/service";
 import Order from "../components/my/components/order";
 import GoodList from "../components/scart/components/settled/goodList"
-
+import Paid from "../components/paid/paid"
 Vue.use(Router)
 
 const router = new Router({
@@ -133,7 +133,7 @@ const router = new Router({
 		    //路由守卫
 		    requireAuth:true
 		  }
-    },
+		},
     {
 		  path:"/light",
 		  name:"light",
@@ -436,6 +436,15 @@ const router = new Router({
         flag:false,
 				requireAuth:false
       }
+		},
+		{
+				path:"/paid",
+				name:"paid",
+				component:Paid,
+				meta:{
+					flag:false,
+					requireAuth:false
+				}
 		},
     {
       path:"**",
