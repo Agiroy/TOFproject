@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="checkbox">
             <label>
-                <input type="checkbox" :checked="checkAll" @click="handleCheckAll()"> 
+                <input type="radio" :checked="checkAll" @click="handleCheckAll()"> 
             </label>
         </div>
         <div class="goodsName">已选择<span>{{result.goodsNum}}</span>件商品</div>
@@ -44,7 +44,13 @@ export default {
         margin-top: -.05rem;
         background:  #ccc;
     }
-    .footer>.checkbox{
+    .checkbox>label>input{
+        width:.36rem;
+        height:.36rem;
+        border:0;
+        margin:.84rem .25rem .71rem .26rem; 
+    }
+    /* .footer>.checkbox{
         width:.36rem;
         height:.36rem;
         border:#7D7D7D solid .02rem;
@@ -62,5 +68,5 @@ export default {
         border:0;
         margin-left:-.05rem;
         margin-top:-.05rem;
-    }
+    } */
 </style>
