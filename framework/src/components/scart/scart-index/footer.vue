@@ -2,8 +2,7 @@
     <div class="footer">
         <div class="checkbox">
             <label>
-                <input type="checkbox">
-                全选
+                <input type="checkbox" :checked="checkAll" @click="handleCheckAll()"> 
             </label>
         </div>
         <div class="goodsName">已选择<span>{{result.goodsNum}}</span>件商品</div>
@@ -15,9 +14,21 @@
 <script>
 import Vuex from "vuex";
 export default {
+    created () {
+        console.log(this.checkAll)
+    },
     computed: {
+        ...Vuex.mapState({
+            checkAll:state=>state.scart.checkAll
+        }),
          ...Vuex.mapGetters({
             result:"scart/result"
+        })
+        
+    },
+    methods: {
+        ...Vuex.mapMutations({
+            handleCheckAll:"scart/handleCheckAll"
         })
     }
 }
@@ -49,7 +60,7 @@ export default {
         background: #FFF;
         border-radius: 50%;
         border:0;
-        margin-left:2rem;
-        vertical-align: middle;
+        margin-left:-.05rem;
+        margin-top:-.05rem;
     }
 </style>

@@ -5,7 +5,7 @@ export default {
         state.goodsList.map((item)=>{
             if(item.flag){
                 goodsNum += item.num;
-                goodsPrice += (item.num* (item.price*10))/10; 
+                goodsPrice = (goodsPrice*10 + ((item.num* (item.price*10))/10)*10)/10; 
             }
         })
 

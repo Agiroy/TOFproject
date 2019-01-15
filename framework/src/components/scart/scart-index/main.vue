@@ -13,7 +13,7 @@
                 <div class="bottom">
                     <div class="bottom_left">
                         <span>¥ </span>
-                        <span>{{item.price}}</span>
+                        <span>{{item.price | price}}</span>
                     </div>
                     <div class="bottom_right">
                         <button @click="handleReduce(index)"><div class="reduce"></div></button>
@@ -47,20 +47,20 @@ export default {
         ...Vuex.mapActions({
             handleDel:"scart/handleDel"
         })
-    }
-    // filters:{
-    //     count(n,p){
+    },
+    filters:{
+        count(n,p){
             
-    //         return "￥"+ (n*(p*10))/10;
-    //     },
-    //     price(n){
-    //         if(!(/\./g.test(n))){
-    //             return n+".00"
-    //         }else{
-    //             return n+"0";
-    //         }        
-    //     }
-    // },
+            return "￥"+ (n*(p*10))/10;
+        },
+        price(n){
+            if(!(/\./g.test(n))){
+                return n+".00"
+            }else{
+                return n+"0";
+            }        
+        }
+    },
 }
 </script>
 
