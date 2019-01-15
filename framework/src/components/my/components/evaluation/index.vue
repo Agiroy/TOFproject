@@ -16,7 +16,7 @@
 						<p class="p3"><span>￥</span><span>25</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>查看订单</button><button>评价</button></p>
+				<p class="bottom"><span>共2件</span><button>查看订单</button><router-link :to="{name:'paid'}"><button>评价</button></router-link></p>
 			</div>
 			
 			<div>
@@ -28,7 +28,7 @@
 						<p class="p3"><span>￥</span><span>50</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>查看订单</button><button>评价</button></p>
+				<p class="bottom"><span>共2件</span><button>查看订单</button><router-link :to="{name:'paid'}"><button>评价</button></router-link></p>
 			</div>
 			
 			<div>
@@ -40,7 +40,7 @@
 						<p class="p3"><span>￥</span><span>100</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>查看订单</button><button>评价</button></p>
+				<p class="bottom"><span>共2件</span><button>查看订单</button><router-link :to="{name:'paid'}"><button>评价</button></router-link></p>
 			</div>
 		</div>
 	</div>

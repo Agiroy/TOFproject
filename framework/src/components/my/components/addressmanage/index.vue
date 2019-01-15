@@ -5,9 +5,10 @@
 			<span>地址</span>
 		</div>
 		<div class="main" v-for="(item,index) in addList.datalist">
-			<p class="p1"><span>{{addList.name}}</span> <span>{{addList.tel}}</span><span>默认</span><img src="../../../../assets/my/jt1@2x.png"></p>
+			<p class="p1"><input type="checkbox"><span class="s1">{{addList.name}}</span> <span class="s2">{{addList.tel}}</span><router-link :to="{name:'modifyaddress',query:{name:addList.name,tel:addList.tel,address:item.city}}"><img src="../../../../assets/my/jt1@2x.png"></router-link></p>
 			<p class="p2">{{item.city}}</p>
 		</div>
+		<p><input type="checkbox" @click="handleDel()"> 删除</p>
 		<div class="add">
 			<router-link to="addaddress">
 				<p>添加新址</p>
@@ -18,6 +19,7 @@
 
 <script>
 import Vuex from "vuex";
+import { MessageBox } from "mint-ui";
 	export default {
 		computed:{
 			...Vuex.mapState({
@@ -27,15 +29,38 @@ import Vuex from "vuex";
 		methods:{
 			handleBack(){
 				this.$router.go(-1);
+			},
+			handleDel(){
+				 MessageBox.confirm('', { 
+					 message: '确认要删除该地址吗？', 
+					 title: '提示', 
+					 confirmButtonText: '确认',
+					 cancelButtonText: '取消' 
+					 }).then(action => { 
+					 if (action == 'confirm') {     //确认的回调
+					 		alert("确认的回调"); 
+					   }
+					 })
+
 			}
 		},
 	}
 </script>
 
-<style scoped>
+<style>
 #addressmanage{
 	width: 100%;
 	height: 100%;
+}
+#addressmanage>p{
+	margin-top: .5rem;
+	padding-left: .3rem;
+	font-size: .25rem;
+	color:rgba(35,16,16,1);
+}
+#addressmanage>p>input{
+	width: .2rem;
+	height: .2rem;
 }
 .nav{
 	width:100%;
@@ -67,7 +92,12 @@ import Vuex from "vuex";
 	border-bottom:.02rem solid #cdcdcd;
 	padding-bottom: .15rem;
 }
-#addressmanage>.main>.p1>span:first-child{
+#addressmanage>.main>.p1>input{
+	width: .2rem;
+	height: .2rem;
+	margin-right: .2rem;
+}
+#addressmanage>.main>.p1>.s1{
 	font-size:.32rem;
 	font-family:PingFang-SC-Medium;
 	font-weight:500;
@@ -75,14 +105,14 @@ import Vuex from "vuex";
 	display: inline-block;
 	margin-right: .3rem;
 }
-#addressmanage>.main>.p1>span:nth-child(2){
+#addressmanage>.main>.p1>.s2{
 	font-size:.34rem;
 	font-family:PingFang-SC-Medium;
 	font-weight:500;
 	color:rgba(51,51,51,1);
 	margin-right: .4rem;
 }
-#addressmanage>.main>.p1>span:nth-child(3){
+#addressmanage>.main>.p1>.s3{
 	display: inline-block;
 	text-align: center;
 	width: .5rem;
@@ -102,7 +132,7 @@ import Vuex from "vuex";
 	color:rgba(102,102,102,1);
 	margin-top: -0.1rem;
 }
-#addressmanage>.main>.p1>img{
+#addressmanage>.main>.p1 img{
 	display: inline-block;
 	width: .1rem;
 	height: .17rem;
@@ -126,5 +156,18 @@ import Vuex from "vuex";
 	font-weight:400;
 	color:rgba(255,255,255,1);
 	padding-top: .2rem;
+}
+.mint-msgbox{
+	width: 5rem;
+	height: 2.5rem;
+	font-size: .3rem;
+}
+.mint-msgbox-title{
+	height: .8rem;
+	font-size: .3rem;
+}
+.mint-msgbox-btn{
+	height: 1rem;
+	font-size: .25rem;
 }
 </style>

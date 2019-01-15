@@ -2,9 +2,7 @@
 	<div id="list">
 		<ul>
 			<li>头像  
-			<router-link to="infochange">
 			     <img class="img1" src="../../../../../assets/my/tx@3x.png">
-			</router-link>
 			</li>
 			<li>手机号   <span>17023221234</span></li>
 			<li>
@@ -12,12 +10,14 @@
 					昵称<img src="../../../../../assets/my/jt1@2x.png">
 				</router-link>
 			</li>
-			<li>
-				<router-link to="addressmanage">
+			<li @click="handleAddress()">
 				地址管理<img src="../../../../../assets/my/jt1@2x.png">
+			</li>
+			<li>
+				<router-link to="realname">
+					实名认证<img src="../../../../../assets/my/jt1@2x.png">
 				</router-link>
 			</li>
-			<li>实名认证<img src="../../../../../assets/my/jt1@2x.png"></li>
 		</ul>
 	</div>
 </template>
@@ -26,13 +26,23 @@
 	export default {
 		data() {
 			return {
-				
+
 			};
+		},
+		methods:{
+			//判断该用户是否有地址
+			handleAddress(){
+				if(false){
+					this.$router.push({path: '/addressmanage'});
+				}else{
+					this.$router.push({path: '/address'});
+				}
+			}
 		}
 	}
 </script>
 
-<style scoped="scoped">
+<style scoped>
 #list{
 	width: 100%;
 	height: 12.4rem;
