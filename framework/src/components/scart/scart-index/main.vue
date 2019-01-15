@@ -1,70 +1,24 @@
 <template>   
-    <div class="list">
-        <div class="scart_list" v-for="">
+    <div class="list"> 
+        <div class="scart_list" v-for="(item,index) in goodsList">
             <div class="checkbox">
-                <input type="checkbox" :checked="flag" name="" id="">
+                <input type="checkbox" :checked="item.flag" @click="handleChecked(index)"/>
             </div>
-            <div class="scartPic">
-                <img src="../../../assets/结账_slices-2/dingdan.png" />
+            <div class="scart_Pic">
+                <img :src="item.img" />
             </div>
             <div class="scartDetail">
-                <h2>正宗阳澄湖大闸蟹 秋日盛宴不早不晚</h2>
-                <h3>【尝鲜装】4公4母</h3>
+                <h2>{{item.goodsName}}</h2>
+                <h3>{{item.goodsAuthor}} <i class="del" @click="handleDel(item.id)">删除</i></h3>
                 <div class="bottom">
                     <div class="bottom_left">
                         <span>¥ </span>
-                        <span>499</span>
+                        <span>{{item.price}}</span>
                     </div>
                     <div class="bottom_right">
-                        <button @click="handleReduce()"><div class="reduce"></div></button>
-                        <span>{{this.num}}</span>
-                        <button @click="handleAdd()"><div class="add"></div></button>
-                    </div>
-                </div>
-            </div>
-        </div>       
-        <div class="scart_list" v-for="">
-            <div class="checkbox">
-                <input type="checkbox" :checked="flag" name="" id="">
-            </div>
-            <div class="scartPic">
-                <img src="../../../assets/结账_slices-2/dingdan.png" />
-            </div>
-            <div class="scartDetail">
-                <h2>正宗阳澄湖大闸蟹 秋日盛宴不早不晚</h2>
-                <h3>【尝鲜装】4公4母</h3>
-                <div class="bottom">
-                    <div class="bottom_left">
-                        <span>¥ </span>
-                        <span>499</span>
-                    </div>
-                    <div class="bottom_right">
-                        <button @click="handleReduce()"><div class="reduce"></div></button>
-                        <span>{{this.num}}</span>
-                        <button @click="handleAdd()"><div class="add"></div></button>
-                    </div>
-                </div>
-            </div>
-        </div>       
-        <div class="scart_list" v-for="">
-            <div class="checkbox">
-                <input type="checkbox" :checked="flag" name="" id="">
-            </div>
-            <div class="scartPic">
-                <img src="../../../assets/结账_slices-2/dingdan.png" />
-            </div>
-            <div class="scartDetail">
-                <h2>正宗阳澄湖大闸蟹 秋日盛宴不早不晚</h2>
-                <h3>【尝鲜装】4公4母</h3>
-                <div class="bottom">
-                    <div class="bottom_left">
-                        <span>¥ </span>
-                        <span>499</span>
-                    </div>
-                    <div class="bottom_right">
-                        <button @click="handleReduce()"><div class="reduce"></div></button>
-                        <span>{{this.num}}</span>
-                        <button @click="handleAdd()"><div class="add"></div></button>
+                        <button @click="handleReduce(index)"><div class="reduce"></div></button>
+                        <span>{{item.num}}</span>
+                        <button @click="handleAdd(index)"><div class="add"></div></button>
                     </div>
                 </div>
             </div>
@@ -76,19 +30,37 @@
 import Vuex from "vuex";
 export default {
     created () {
+        console.log(this.state)    
     },
-     computed: {
+    computed: {
         ...Vuex.mapState({
-            num:state=>state.scart.num,
-            flag:state=>state.scart.flag
+           goodsList:state=>state.scart.goodsList
         })
+       
     },
     methods: {
         ...Vuex.mapMutations({
             handleAdd:"scart/handleAdd",
-            handleReduce:"scart/handleReduce"
+            handleReduce:"scart/handleReduce",
+            handleChecked:"scart/handleChecked"
+        }),
+        ...Vuex.mapActions({
+            handleDel:"scart/handleDel"
         })
     }
+    // filters:{
+    //     count(n,p){
+            
+    //         return "￥"+ (n*(p*10))/10;
+    //     },
+    //     price(n){
+    //         if(!(/\./g.test(n))){
+    //             return n+".00"
+    //         }else{
+    //             return n+"0";
+    //         }        
+    //     }
+    // },
 }
 </script>
 
@@ -128,12 +100,17 @@ export default {
         top:-.05rem;
         left:-.06rem;
     }
-    .scartPic>img{
+    .scart_list>.scart_Pic{
         width:1.45rem;
         height:1.44rem;
         margin:.29rem .15rem 0 0;
     }
-    .scartDetail{
+    .scart_Pic>img{
+        width:1.45rem;
+        height:1.44rem;
+       
+    }
+    .scartDetail{ 
         width:5rem;
         height:100%;
         padding-top: .27rem;
@@ -146,10 +123,19 @@ export default {
         margin-bottom: .14rem;
     }
     .scartDetail>h3{
+        width:4.6rem;
         font-family: PingFang-SC-Regular;
         font-weight:400;
         color:rgba(0,0,0,1);
         font-size: .22rem;
+    }
+    .scartDetail>h3>.del{
+        /* display: inline-block; */
+        font-style: normal;
+        width:.5rem;
+        height:.1rem;
+        float:right;
+        background:#FFF;
     }
     .bottom{
         width:4.35rem;

@@ -1,8 +1,7 @@
 <template>
     <div class="goods">
         <scartList-gl/>
-        <footer-gl></footer-gl>
-     
+        <footer-gl></footer-gl>   
     </div>
 </template>
 
@@ -11,6 +10,10 @@ import scartList from "./main";
 import footer from "./footer";
 
 export default {
+    created () {
+        console.log(this)
+        this.$store.dispatch("scart/handleGoodsList")   
+    },
     components:{
         "scartList-gl": scartList,       
         "footer-gl":footer

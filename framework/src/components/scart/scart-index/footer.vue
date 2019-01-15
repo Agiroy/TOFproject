@@ -6,8 +6,8 @@
                 全选
             </label>
         </div>
-        <div class="goodsName">已选择<span></span>件商品</div>
-        <div class="price">总价<span></span></div>
+        <div class="goodsName">已选择<span>{{result.goodsNum}}</span>件商品</div>
+        <div class="price">总价<span>{{result.goodsPrice}}</span></div>
        <router-link :to="{name:'settled'}" style="width: 2rem;font-size:.28rem;font-weight: 700;text-align: center;line-height: 250%;margin-right:.2rem;height: 70%;color:#000;font-weight:400;background:#ffd900;"><div class="btnPay">去结算</div></router-link>
     </div>
 </template>
@@ -15,6 +15,11 @@
 <script>
 import Vuex from "vuex";
 export default {
+    computed: {
+         ...Vuex.mapGetters({
+            result:"scart/result"
+        })
+    }
 }
 </script>
 <style scoped>
@@ -45,7 +50,6 @@ export default {
         border-radius: 50%;
         border:0;
         margin-left:2rem;
-        vertical-align: middle
-    
+        vertical-align: middle;
     }
 </style>
