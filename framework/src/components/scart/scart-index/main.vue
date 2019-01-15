@@ -105,7 +105,6 @@ export default {
         height:1.91rem;
         display: flex;
         background: #FFF;
-        margin-top: 1rem;
         margin-bottom: .05rem;
     }
     .scart_list>.checkbox{
