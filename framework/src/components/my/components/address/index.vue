@@ -56,7 +56,7 @@
 	margin-left: 2.89rem;
 	margin-top: .3rem;
 	color: #231010;
-	font-size:17px;
+	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);
@@ -66,10 +66,10 @@
 	margin-top: 1.13rem;
 	width: 6.72rem;
 	height: 5.23rem;
-	border: 1px dashed #000;
+	border: .01rem dashed #000;
 }
 .n2>p{
-	font-size:17px;
+	font-size:.34rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(61,61,61,1);
@@ -83,7 +83,7 @@
 	text-align: center;
 	background:rgba(252,221,37,1);
 	border-radius:40px;
-	font-size:16px;
+	font-size:.32rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:bold;
 	color:rgba(61,61,61,1);

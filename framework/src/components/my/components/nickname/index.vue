@@ -13,23 +13,38 @@
 			<input type="text" placeholder="输入昵称">
 			<p>昵称长度请控制在10个字符以内</p>
 		</div>
-		<div>
+		<div @click="handleSet()">
 			确定
 		</div>
 	</div>
 </template>
 
 <script>
+	import { Toast } from 'mint-ui';
 	export default {
 		data() {
 			return {
 				
 			};
+		},
+		methods:{
+			handleSet(){
+				Toast({
+				  message: '设置成功',
+				  duration: 1000,
+				}),
+				setTimeout(()=>{
+					this.cb();
+				},1000)
+			},
+			cb(){
+				this.$router.go(-1);
+			}
 		}
 	}
 </script>
 
-<style scoped>
+<style>
 #top{
 	width:100%;
 	height: 1rem;
@@ -92,10 +107,15 @@
 	background:rgba(255,217,0,1);
 	border-radius:.4rem;
 	margin: .6rem auto;
-	font-size:16px;
+	font-size:.32rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(0,0,0,1);
 }
-
+.mint-toast-text{
+	width:2rem;
+	height:.6rem;
+	font-size: .3rem;
+	display: block;
+}
 </style>

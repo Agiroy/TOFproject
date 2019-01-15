@@ -2,7 +2,7 @@
 	<div id="addaddress">
 		<div class="nav">
 			<img  @click="handleback()" src="../../../../assets/my/jt@2x.png">
-			<span>新增地址</span>
+			<span>修改地址</span>
 		</div>
 		<div id="list">
 			<div>
@@ -24,7 +24,7 @@
 						<span class="s2" v-show="!flag"></span>
 				</p>
 			</div>
-			<div class="save" @click="handlesave()">保存</div>
+			<div class="save" @click="handlesave()">修改成功</div>
 		</div>
 	</div>
 </template>
@@ -60,17 +60,21 @@
 			},
 			handlesave(){
 					Toast({
-					  message: '保存成功',
+					  message: '修改成功',
 					  duration: 1000,
 					});
 					setTimeout(()=>{
-						this.$router.push({path: '/addressmanage'});
+						this.cb();
 					},1000)
+			},
+			cb(){
+				this.$router.go(-1);
 			}
 			
 		}
 	}
 </script>
+
 <style>
 #addaddress{
 	width: 100%;
@@ -203,7 +207,7 @@
 
 .mint-toast-text{
 	width:2rem;
-	height:.8rem;
+	height:.7rem;
 	font-size: .3rem;
 }
 </style>
