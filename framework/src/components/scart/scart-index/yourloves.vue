@@ -89,7 +89,7 @@ export default {
         width:100%;
         height:.7rem;
         margin-top:.16rem;
-        font-size:26px;
+        font-size:.26rem;
         font-family:PingFang-SC-Regular;
         font-weight:400;
         color:rgba(0,0,0,1);

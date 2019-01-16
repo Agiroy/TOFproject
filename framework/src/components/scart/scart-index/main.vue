@@ -49,10 +49,6 @@ export default {
         })
     },
     filters:{
-        count(n,p){
-            
-            return "￥"+ (n*(p*10))/10;
-        },
         price(n){
             if(!(/\./g.test(n))){
                 return n+".00"
@@ -60,7 +56,7 @@ export default {
                 return n+"0";
             }        
         }
-    },
+    }
 }
 </script>
 
