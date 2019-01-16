@@ -29,9 +29,6 @@
 <script>
 import Vuex from "vuex";
 export default {
-    created () {
-        console.log(this.state)    
-    },
     computed: {
         ...Vuex.mapState({
            goodsList:state=>state.scart.goodsList

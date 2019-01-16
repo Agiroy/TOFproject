@@ -11,7 +11,6 @@ import footer from "./footer";
 
 export default {
     created () {
-        console.log(this)
         this.$store.dispatch("scart/handleGoodsList")   
     },
     components:{

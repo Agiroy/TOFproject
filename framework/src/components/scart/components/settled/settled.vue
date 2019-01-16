@@ -16,30 +16,20 @@ import Top from "./../settled/components/top";
 import Main from "./../settled/components/main";
 import PayWay from "./../settled/components/payWay";
 import paySuccess from "./../settled/components/paysuccess";
-
+import Vuex from "vuex";
 
 export default {
-    created () {
-       this.Observer.$on("pay",()=>{
-           this.flag = !this.flag;
-       })
+    computed: {
+      ...Vuex.mapState({
+        flag:state=>state.scart.flag
+      })
     },
   components: {
     "top-com": Top,
     "main-com": Main,
     "payWay-gl": PayWay,
     "paySuccess-gl": paySuccess
-  },
-  data() {
-    return {
-      flag: false
-    }
   }
-//   methods: {
-//     handlePay() {
-//       this.flag = !this.flag;
-//     }
-//   }
 }
 </script>
  

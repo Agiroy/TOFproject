@@ -6,22 +6,22 @@
                 <span>选择付款方式</span>
             </div>
             <div class="hr"></div>
-            <div class="pay_others">
+            <div class="pay_others" @click="handleChat()">
                 <img class="wx" src="./../../../../../../static/images/classify/icon_wx.png" alt="">
                 <span>微信</span>
             </div>
             <div class="hr"></div>
-            <div class="pay_others">
+            <div class="pay_others" @click="handlezfb()">
                 <img src="./../../../../../../static/images/classify/icon_zfb.png" alt="">
                 <span>支付宝</span>
             </div>
-            <div class="hr"></div>
-            <div class="pay_others">
+            <div class="hr" ></div >
+            <div class="pay_others" @click="handlezgyh()">
                 <img src="./../../../../../../static/images/classify/icon_zgyh.png" alt="">
                 <span>中国银行储蓄卡(0584)</span>
             </div>
             <div class="hr"></div>
-            <div class="pay_others">
+            <div class="pay_others" @click="handlezgjs()">
                 <img src="./../../../../../../static/images/classify/icon_zgjs.png" alt="">
                 <span>中国建设银行储蓄卡(1234)</span>
             </div>
@@ -29,12 +29,15 @@
     </div>
 </template>
 <script>
+import Vuex from "vuex";
 export default {
     methods: {
-        handleBack(){
-            
-            this.Observer.$emit("pay")
-        }
+        ...Vuex.mapMutations({
+            handleChat:"scart/handleChat",
+            handlezfb:"scart/handlezfb",
+            handlezgyh:"scart/handlezgyh",
+            handlezgjs:"scart/handlezgjs",
+        })
     }
 }
 </script>

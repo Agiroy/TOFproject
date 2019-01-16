@@ -73,7 +73,7 @@
     </div>
     <div class="main_mothods">
       <i>支付方式：</i>
-      <span @click="handleSelect()">请选择</span>
+      <span @click="handleSelect()">{{payWay}}</span>
       <router-link to="#" class="main_pic2_pic3">
         <img @click="handleSelect()" src="../../../../../assets/首页_slices/qianwang@2x.png">
       </router-link>
@@ -89,16 +89,23 @@
   </div>
 </template>
  <script>
+ import Vuex from "vuex";
 export default {
   data() {
     return {
       flag: false
     }
   },
+  computed: {
+        ...Vuex.mapState({
+           payWay:state=>state.scart.payWay
+        })
+       
+    },
   methods: {
-    handleSelect() {     
-      this.Observer.$emit("pay")   
-    }
+    ...Vuex.mapMutations({
+      handleSelect:"scart/handleSelect"
+    })
   }
 };
 </script> 
@@ -311,11 +318,13 @@ export default {
   line-height: 0.33rem;
 }
 .main_mothods > span {
-  width: 0.76rem;
+  width: 3.76rem;
   height: 0.25rem;
   font-weight: 400;
   color: rgba(102, 102, 102, 1);
-  margin-left: 3.98rem;
+  float:right;
+  text-align: right;
+  margin-right:1rem;
 }
 .main_mothods > .main_pic2_pic3 > img {
   width: 0.2rem;

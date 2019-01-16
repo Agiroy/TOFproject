@@ -5,8 +5,9 @@
                 <div class="pay_title">
                     <router-link to="scart">
                         <img class="pro" src="./../../../../../../static/images/classify/icon_fh.png">
+                        <span class="complate">完成</span>
                     </router-link>
-                    <span>完成</span>
+                    
                 </div>
                 <div class="pay_cont">
                     <img src="./../../../../../../static/images/classify/icon_zgjs.png" alt="">
@@ -17,7 +18,7 @@
                 <div class="hr"></div>
                 <div class="pay_others">
                     <span>付款方式</span>
-                    <span>中国建设银行</span>
+                    <span>{{payWay}}</span>
                 </div>
                 <div class="hr"></div>
                 <div class="pay_others">
@@ -31,8 +32,14 @@
     
 </template>
 <script>
+import Vuex from "vuex";
 export default {
-    
+    computed: {
+        ...Vuex.mapState({
+           payWay:state=>state.scart.payWay
+        })
+       
+    },
 }
 </script>
 <style scoped>
@@ -67,7 +74,7 @@ export default {
         top:.41rem;
         left:.04rem;
     }
-    .pay_title>span{
+    .complate{
         height:.32rem;
         position: absolute;
         right:.02rem;

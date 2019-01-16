@@ -29,5 +29,24 @@ export default {
         }else{
             state.goodsList[index].num--
         }
+    },
+    handleSelect(state){
+        state.flag = !state.flag;
+    },
+    handleChat(state){
+        state.payWay = "微信";
+        state.flag = !state.flag;
+    },
+    handlezfb(state){
+        state.payWay = "支付宝";
+        state.flag = !state.flag;
+    },
+    handlezgyh(state){
+        state.payWay = "中国银行储蓄卡";
+        state.flag = !state.flag;
+    },
+    handlezgjs(state){
+        state.payWay = "中国建设银行储蓄卡";
+        state.flag = !state.flag;
     }
 }
