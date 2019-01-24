@@ -1,5 +1,9 @@
 import axios from "axios";
+// import mock from './mock'
 export default {
+    // handleGoodsList({commit}){
+    //     commit("handleGoodsList",mock.data);
+    // },
     handleGoodsList({commit}){
         axios({
             method:"get",

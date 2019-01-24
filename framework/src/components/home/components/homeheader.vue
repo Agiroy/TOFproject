@@ -7,7 +7,7 @@
             </router-link>
         </div>
         <div class="home-message">
-            <router-link to="">
+            <router-link to="news">
                 <img src="@/assets/首页_slices/b2.png">
             </router-link>
         </div>

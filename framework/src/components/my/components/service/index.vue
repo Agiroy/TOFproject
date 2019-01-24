@@ -16,7 +16,7 @@
 						<p class="p3"><span>￥</span><span>25</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>正在处理中...</span><button>商品详情</button></p>
+				<p class="bottom"><span>正在处理中...</span><button><router-link :to="'/goods_detail/'">"商品详情</router-link></button></p>
 			</div>
 			
 			<div>

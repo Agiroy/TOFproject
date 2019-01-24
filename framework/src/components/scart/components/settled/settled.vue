@@ -3,10 +3,10 @@
     <top-com/>
     <main-com/>
     <!-- 灰色背景 -->
-    <div class="mask" v-show="flag"></div>
+    <div class="mask" v-show="payFlag"></div>
     <!-- 支付方式 -->
     <transition name="payWay">
-      <payWay-gl v-show="flag"></payWay-gl>
+      <payWay-gl v-show="payFlag"></payWay-gl>
     </transition>
   </div>
 </template>
@@ -21,7 +21,7 @@ import Vuex from "vuex";
 export default {
     computed: {
       ...Vuex.mapState({
-        flag:state=>state.scart.flag
+        payFlag:state=>state.scart.payFlag
       })
     },
   components: {

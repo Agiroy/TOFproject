@@ -2,5 +2,6 @@ export default {
     goodsList:[],
     checkAll:true,
     payWay:"请选择",
-    flag:false
+    flag:true,
+    payFlag:false
 }

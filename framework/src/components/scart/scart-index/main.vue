@@ -2,7 +2,7 @@
     <div class="list"> 
         <div class="scart_list" v-for="(item,index) in goodsList">
             <div class="checkbox">
-                <input type="radio" :checked="item.flag" @click="handleChecked(index)"/>
+                <input type="checkbox" :checked="item.flag" @click="handleChecked(index)"/>
             </div>
             <div class="scart_Pic">
                 <img :src="item.img" />
@@ -77,6 +77,7 @@ export default {
         height:.36rem;
         border:0;
         margin:.84rem .25rem .71rem .26rem; 
+        background:red;
     } 
     /* .scart_list>.checkbox{
         width:.36rem;

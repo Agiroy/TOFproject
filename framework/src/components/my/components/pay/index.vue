@@ -16,7 +16,7 @@
 						<p class="p3"><span>￥</span><span>25</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>确认支付</button></p>
+				<p class="bottom"><span>共2件</span><button><router-link to="/settled">确认支付</router-link></button></p>
 			</div>
 			
 			<div>
@@ -28,7 +28,7 @@
 						<p class="p3"><span>￥</span><span>50</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>确认支付</button></p>
+				<p class="bottom"><span>共2件</span><button><router-link to="/settled">确认支付</router-link></button></p>
 			</div>
 			
 			<div>
@@ -40,7 +40,7 @@
 						<p class="p3"><span>￥</span><span>100</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>确认支付</button></p>
+				<p class="bottom"><span>共2件</span><button><router-link to="/settled">确认支付</router-link></button></p>
 			</div>
 		</div>
 	</div>

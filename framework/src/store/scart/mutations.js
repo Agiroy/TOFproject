@@ -31,22 +31,22 @@ export default {
         }
     },
     handleSelect(state){
-        state.flag = !state.flag;
+        state.payFlag = !state.payFlag;
     },
     handleChat(state){
         state.payWay = "微信";
-        state.flag = !state.flag;
+        state.payFlag = !state.payFlag;
     },
     handlezfb(state){
         state.payWay = "支付宝";
-        state.flag = !state.flag;
+        state.payFlag = !state.payFlag;
     },
     handlezgyh(state){
         state.payWay = "中国银行储蓄卡";
-        state.flag = !state.flag;
+        state.payFlag = !state.payFlag;
     },
     handlezgjs(state){
         state.payWay = "中国建设银行储蓄卡";
-        state.flag = !state.flag;
+        state.payFlag = !state.payFlag;
     }
 }

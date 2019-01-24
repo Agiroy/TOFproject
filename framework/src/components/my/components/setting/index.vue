@@ -70,7 +70,7 @@
 	font-weight:400;
 	color:rgba(120,120,120,1);
 	line-height:1rem;
-	border-bottom: ;
+	/* border-bottom: ; */
 }
 .main>p:nth-child(2){
 	padding-left:.17rem;
