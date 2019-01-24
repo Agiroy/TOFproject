@@ -133,7 +133,7 @@
 	font-weight:400;
 	color:rgba(64,64,64,1);
 	margin-left: .11rem;
-	line-height: ;
+	/* line-height: ; */
 }
 #remain>.consume>div>p>span{
 	display: block;

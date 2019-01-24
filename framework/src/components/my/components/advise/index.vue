@@ -9,18 +9,28 @@
 		<div class="list">
 			<textarea placeholder="亲，欢迎提出遇到的系统问题或者功能建议，我们将通过首页右上角的“消息”回复您。谢谢！">
 			</textarea>
-			<p>发送</p>
+			<button class="btn" @click="handleBtn()">发送</button>
 			<p>欢迎提出遇到的系统问题或者功能建议，我们将进一步听取用户的合理意见和建议，完善并优化我们的产品及功能，谢谢！</p>
 		</div>
 	</div>
 </template>
 
 <script>
+	import {Toast} from 'mint-ui'
 	export default {
 		data() {
 			return {
 				
 			};
+		},
+		methods: {
+			handleBtn(){
+				Toast({
+						message: '发送成功',
+						duration: 1500,
+						iconClass: 'mintui mintui-success'
+				});
+			}
 		}
 	}
 </script>
@@ -71,11 +81,12 @@
 	color:rgba(162,158,158,1);
 	outline: none;
 }
-#advise>.list >p{
+#advise>.list >.btn{
 	width: 6.66rem;
 	height: .86rem;
 	background:rgba(205,201,201,1);
 	border-radius:.08rem;
+	border:0;
 	font-size:.32rem;
 	font-family:PingFangSC-Regular;
 	font-weight:400;
@@ -84,7 +95,7 @@
 	line-height: .86rem;
 	margin-top: 1.5rem;
 }
-#advise>.list>p:last-child{
+#advise>.list>p{
 	width:6.75rem;
 	height:1.16rem;
 	line-height: .4rem;

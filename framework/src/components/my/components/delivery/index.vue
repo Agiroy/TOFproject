@@ -16,7 +16,7 @@
 						<p class="p3"><span>￥</span><span>25</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>提醒发货</button></p>
+				<p class="bottom"><span>共2件</span><button @click="handleSend()">提醒发货</button></p>
 			</div>
 			
 			<div>
@@ -28,7 +28,7 @@
 						<p class="p3"><span>￥</span><span>50</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>提醒发货</button></p>
+				<p class="bottom"><span>共2件</span><button @click="handleSend()">提醒发货</button></p>
 			</div>
 			
 			<div>
@@ -40,19 +40,30 @@
 						<p class="p3"><span>￥</span><span>100</span></p>
 					</div>
 				</div>
-				<p class="bottom"><span>共2件</span><button>提醒发货</button></p>
+				<p class="bottom"><span>共2件</span><button @click="handleSend()">提醒发货</button></p>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+	import {Toast} from 'mint-ui'
 	export default {
 		data() {
 			return {
 				
 			};
+		},
+		methods: {
+			handleSend(){
+				Toast({
+						message: '提醒成功',
+						duration: 1500,
+						iconClass: 'mintui mintui-success'
+				});
+			}
 		}
+		
 	}
 </script>
 

@@ -16,11 +16,6 @@ export default {
     components:{
         "scartList-gl": scartList,       
         "footer-gl":footer
-    },
-    data(){
-        return{
-            flag:true
-        }
     }
 }
 </script>

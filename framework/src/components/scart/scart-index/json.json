@@ -1,60 +1,28 @@
 {
   "goods": [
-   {
+    {
       "id": 0,
-      "goodsName": "旺仔牛奶1",
-      "goodsAuthor": "【尝鲜装】4公4母",
+      "goodsName": "涓夊彧鏉鹃紶",
+      "goodsAuthor": "涓夊彧鏉鹃紶",
       "price": 66.6,
       "num": 1,
-      "img":"/static/images/classify/dingdan.png"
-    }, {
+      "img": "/static/images/classify/dingdan.png"
+    },
+    {
       "id": 1,
-      "goodsName": "旺仔牛奶2",
-      "goodsAuthor": "【尝鲜装】4公4母",
+      "goodsName": "涓夊彧鏉鹃紶",
+      "goodsAuthor": "涓夊彧鏉鹃紶",
       "price": 66.6,
       "num": 1,
       "img": "/static/images/classify/dingdan.png"
     },
     {
-      "id": 2,
-      "goodsName": "正宗阳澄湖大闸蟹 秋日盛宴不早不晚",
-      "goodsAuthor": "【尝鲜装】4公4母",
-      "price": 88,
-      "num": 1,
-      "img": "/static/images/classify/dingdan.png"
-    },
-    {
-      "id": 3,
-      "goodsName": "旺仔牛奶3",
-      "goodsAuthor": "【尝鲜装】4公4母",
-      "price": 66.6,
-      "num": 1,
-      "img": "/static/images/classify/dingdan.png"   },
- {
       "id": 4,
-      "goodsName": "旺仔牛奶4",
-      "goodsAuthor": "【尝鲜装】4公4母",
+      "goodsName": "涓夊彧鏉鹃紶",
+      "goodsAuthor": "涓夊彧鏉鹃紶",
       "price": 66.6,
       "num": 1,
-      "img": "/static/images/classify/dingdan.png"   },   {
-      "id": 5,
-      "goodsName": "旺仔牛奶5",
-      "goodsAuthor": "【尝鲜装】4公4母",
-      "price": 66.6,
-      "num": 1,
-      "img": "/static/images/classify/dingdan.png"  },
-  {
-      "id": 6,
-      "goodsName": "正宗阳澄湖大闸蟹 秋日盛宴不早不晚",
-      "goodsAuthor": "【尝鲜装】4公4母",
-      "price": 66.6,
-      "num": 1,
-      "img":"/static/images/classify/dingdan.png" },  {
-      "id": 7,
-      "goodsName": "正宗阳澄湖大闸蟹 秋日盛宴不早不晚",
-      "goodsAuthor": "【尝鲜装】4公4母",
-      "price": 66.6,
-      "num": 1,
-      "img":"/static/images/classify/dingdan.png"  }
+      "img": "/static/images/classify/dingdan.png"
+    }
   ]
 }

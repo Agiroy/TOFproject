@@ -2,7 +2,7 @@
     <div class="pay_way">
         <div class="box">
             <div class="pay_title">
-                <img @click="handleBack()" src="./../../../../../../static/images/classify/icon_fh.png" alt="">
+                <img @click="handleSelect()" src="./../../../../../../static/images/classify/icon_fh.png" alt="">
                 <span>选择付款方式</span>
             </div>
             <div class="hr"></div>
@@ -33,6 +33,7 @@ import Vuex from "vuex";
 export default {
     methods: {
         ...Vuex.mapMutations({
+            handleSelect:'scart/handleSelect',
             handleChat:"scart/handleChat",
             handlezfb:"scart/handlezfb",
             handlezgyh:"scart/handlezgyh",
