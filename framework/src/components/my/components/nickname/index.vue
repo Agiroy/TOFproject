@@ -5,7 +5,7 @@
 				<img src="../../../../assets/my/jt@2x.png">
 			</router-link>
 			<span>设置昵称</span>
-			<router-link to="login">
+			<router-link to="info">
 				<span class="login">登录</span>
 			</router-link>
 		</div>
@@ -13,33 +13,18 @@
 			<input type="text" placeholder="输入昵称">
 			<p>昵称长度请控制在10个字符以内</p>
 		</div>
-		<div @click="handleSet()">
+		<div>
 			确定
 		</div>
 	</div>
 </template>
 
 <script>
-	import { Toast } from 'mint-ui';
 	export default {
 		data() {
 			return {
 				
 			};
-		},
-		methods:{
-			handleSet(){
-				Toast({
-				  message: '设置成功',
-				  duration: 1000,
-				}),
-				setTimeout(()=>{
-					this.cb();
-				},1000)
-			},
-			cb(){
-				this.$router.go(-1);
-			}
 		}
 	}
 </script>
@@ -62,14 +47,14 @@
 	margin-left: 2.7rem;
 	margin-top: .25rem;
 	color: #231010;
-	font-size:.34rem;
+	font-size:17px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);
 }
 #top .login{
 	display: inline-block;
-	font-size:.24rem;
+	font-size:12px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(41,41,41,1);
@@ -83,16 +68,15 @@
 	width: 6.66rem;
 	height: .86rem;
 	border:1px solid rgba(204,204,204,1);
-	border-radius:.4rem;
+	border-radius:40px;
 	padding: .28rem .46rem;
-	font-size:.32rem;
+	font-size:16px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(120,120,120,1);
-	outline:none;
 }
 #nickname>div:nth-child(2) p{
-	font-size:.24rem;
+	font-size:12px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(120,120,120,1);
@@ -105,17 +89,12 @@
 	padding-left: 3rem;
 	line-height: .86rem;
 	background:rgba(255,217,0,1);
-	border-radius:.4rem;
+	border-radius:40px;
 	margin: .6rem auto;
-	font-size:.32rem;
+	font-size:16px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(0,0,0,1);
 }
-.mint-toast-text{
-	width:2rem;
-	height:.6rem;
-	font-size: .3rem;
-	display: block;
-}
+
 </style>

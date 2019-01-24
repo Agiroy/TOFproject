@@ -15,8 +15,8 @@ export default {
 }
 </script>
 
-<style scoped>
-#app{
+<style>
+#app {
   width: 100%;
   height: 100%;   
 }

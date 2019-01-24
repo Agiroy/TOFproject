@@ -14,7 +14,7 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style>
 .login{
     width: 100%;
     height: 100%;

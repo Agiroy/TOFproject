@@ -1,47 +1,29 @@
 <template>
-  <div class="car">
-    <cartop-com/>
-
-    <div class="seller" ref="seller">
-      <div class="seller-wrapper">
-        <div class="switchover">
-          <component is="home-gl"></component>
-          <yourloves-gl/>
-        </div>       
-      </div>
-    </div>
-  </div>
+    <div id="scart">
+        <top-com/>
+        <nav-com/>
+        <main-com/>
+        <bottom-com/>
+        </div>
 </template>
 
 <script>
-import CarTop from "./components/car_top";
-import Home from "./scart-index/home";
-import ScartNull from "./scart-index/scartNull";
-import Yourloves from "./scart-index/yourloves";
-import BScroll from "better-scroll";
+import Top from './components/top';
+import Nav from './components/nav';
+import Main from './components/main';
+import Bottom from './components/bottom';
+
 export default {
-  components: {
-    "cartop-com": CarTop,
-    "home-gl": Home,
-    "ScartNull-gl":ScartNull,
-    "yourloves-gl":Yourloves
-  }
-};
+    components:{
+    "top-com":Top,
+    "nav-com":Nav,
+    "main-com":Main,
+    "bottom-com":Bottom,
+    },
+}
 </script>
 
 
-<style scoped>
-.car {
-  width: 100%;
-  height: 100%;
-}
-.switchover{
-  width:100%;
-  min-height:10rem;
-  overflow: auto;
-}
-.scart {
-  width: 100%;
-  height: 100%;
-}
+<style lang="">
+   
 </style>

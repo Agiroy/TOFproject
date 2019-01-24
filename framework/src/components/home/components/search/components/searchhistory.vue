@@ -15,46 +15,17 @@
 
 <script>
 import Vuex from "vuex";
-import MintUI from "mint-ui";
-import { MessageBox } from 'mint-ui';
 export default {
     computed:{
-        ...Vuex.mapState({  
+        ...Vuex.mapState({
             searchhistory:state=>state.home.searchhistory
         })
     },
     methods:{
         ...Vuex.mapMutations({
-            historyDelete:"home/historyDel"
-        }),
-        historyDel(){
-            const htmls = `
-                <div class="box">
-                    <div class="isunbind">确定清空历史搜索吗？</div>
-                </div>
-                `;
-            MessageBox.confirm('', {
-                message: htmls,
-                title: '',
-                showConfirmButton:true,
-                showCancelButton:true,
-                cancelButtonClass:'cancelButton',
-                confirmButtonClass:'confirmButton',
-                confirmButtonText:'确定',
-                cancelButtonText:'取消'
-            })
-                .then(action => {
-                    if (action == 'confirm') {
-                        this.historyDelete();
-                }
-            })
-                .catch(err => {
-                    if (err == 'cancel') {
-                    
-                }
-             });
-        }               
-    },   
+            historyDel:"home/historyDel"
+        })
+    }
 }
 </script>
 
@@ -116,30 +87,5 @@ margin: .11rem 0 0 4.6rem;
     margin:.04rem .05rem 0 0;
 
 }
-.mint-msgbox{
-    width: 5rem;
-    height: 2.1rem;
-}
-.mint-msgbox-content{
-    border:none;
-    padding: .3rem .1rem 0;
-}
-.cancelButton{
-    background: #959595;
-    width:50%;
-    height: .6rem;
-    color: #fff;
-    border-radius: .05rem;
-    border: none;
-    margin: .2rem;
-  }
-  .confirmButton{
-    background: #d9534f;
-    width:50%;
-    height: .6rem;
-    color: #fff;
-    border-radius: .05rem;
-    border: none;
-    margin: .2rem;
-  }
+
 </style>

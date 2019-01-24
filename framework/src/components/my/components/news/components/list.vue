@@ -35,14 +35,14 @@
 	}
 </script>
 
-<style scoped>
+<style>
 #main>ul>li{
 	width: 6.4rem;
 	height: 1.5rem;
 	margin: 0 auto;
 	align-items: center;
 	padding-top: .29rem;
-	border-bottom: .02rem solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 #main>ul>li>div{
 	width: .88rem;
@@ -60,14 +60,14 @@
 #main>ul>li>span{
 	display: inline-block;
 	margin-left: .39rem;
-	font-size:.32rem;
+	font-size:16px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(51,51,51,1);
 }
 #main>ul>li>p{
 	margin-top: .25rem;
-	font-size:.24rem;
+	font-size:12px;
 	/* margin-left: .39rem; */
 	margin-left: 1.23rem;
 	font-family:PingFang-SC-Regular;

@@ -1,7 +1,9 @@
 <template>
 	<div id="setting">
 		<div class="nav">
-			<img  @click="handleback()" src="../../../../assets/my/jt@2x.png">
+			<router-link to="my">
+				<img src="../../../../assets/my/jt@2x.png">
+			</router-link>
 			<span>设置</span>
 		</div>
 		<div class="main">
@@ -9,7 +11,7 @@
 			<p>清空设置  <span>8.00 M</span></p>
 		</div>
 		<div class="back">
-			<router-link to="login">退出当前账号</router-link>
+			退出当前账号
 		</div>
 	</div>
 </template>
@@ -18,18 +20,13 @@
 	export default {
 		data() {
 			return {
-				pathname:'my'
-			}
-		},
-	methods:{
-		handleback(){
-			this.$router.go(-1);
+				
+			};
 		}
 	}
-}
 </script>
 
-<style scoped>
+<style>
 #setting{
 	width: 100%;
 	height: 100%;
@@ -52,35 +49,34 @@
 	margin-left: 2.89rem;
 	margin-top: .25rem;
 	color: #231010;
-	font-size:.34rem;
+	font-size:17px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);
 }
 .main>p{
 	margin-top:.03rem;
-	/* line-height:1rem ; */
 }
 .main>p:nth-child(1){
 	padding-left:.17rem;
 	height: 1rem;
 	background: #fff;
-	font-size: .24rem;
+	font-size: .12rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(120,120,120,1);
-	line-height:1rem;
+	line-height:50px;
 	border-bottom: ;
 }
 .main>p:nth-child(2){
 	padding-left:.17rem;
 	height: 1rem;
 	background: #fff;
-	font-size:.3rem;
+	font-size:15px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(41,41,41,1);
-	line-height:.5rem;
+	line-height:50px;
 }
 .main>p:nth-child(2) span{
 	display: inline-block;
@@ -90,9 +86,9 @@
 	width:6.66rem;
 	height:.86rem;
 	background:rgba(255,217,0,1);
-	border-radius:.4rem;
+	border-radius:40px;
 	margin:1rem auto;
-	font-size:.32rem;
+	font-size:16px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(41,41,41,1);

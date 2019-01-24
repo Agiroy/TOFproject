@@ -15,18 +15,11 @@ navs:[ {name:"all",title:"全部"   },{name:"food",title:"食材"   },{name:"lig
 }
 </script>
 <style lang="">
- .nav{
-     width: 100%;
-     height:0.88rem;
-     background: #fff;
-     position: absolute;
-     z-index: 3;
-     height:0.88rem;
+ .nav{height:0.88rem;
  display: flex;
  justify-content: space-around;
  justify-items: center;
  border-bottom:0.01rem solid rgba(228, 228, 228, 1); 
-
 }
 .nav li {font-size:0.28rem;
 font-family:PingFangSC-Regular;

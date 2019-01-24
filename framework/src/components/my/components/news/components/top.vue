@@ -1,7 +1,9 @@
 <template>
 	<div id="top">
 		<div class="nav">
-			<img @click="handleBack()" src="../../../../../assets/my/jt@2x.png">
+			<router-link to="my">
+				<img src="../../../../../assets/my/jt@2x.png">
+			</router-link>
 			<span>消息</span>
 			<router-link to="setting">
 				<img class='pic' src="../../../../../assets/my/dd@2x.png">
@@ -16,16 +18,11 @@
 			return {
 				
 			};
-		},
-		methods:{
-			handleBack(){
-				this.$router.go(-1);
-			}
 		}
 	}
 </script>
 
-<style scoped>
+<style>
 #top{
 	width: 100%;
 	height: 100%;
@@ -53,7 +50,7 @@
 	margin-left: 2.89rem;
 	margin-top: .42rem;
 	color: #231010;
-	font-size:.34rem;
+	font-size:17px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(35,16,16,1);

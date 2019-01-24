@@ -67,7 +67,7 @@
 .top>.t2>.p1{
 	width:2.04rem;
 	height:.26rem;
-	font-size:.34rem;
+	font-size:17px;
 	font-family:PingFang-SC-Medium;
 	font-weight:500;
 	color:rgba(0,0,0,1);
@@ -79,8 +79,8 @@
 	font-weight:500;
 	width:1.56rem;
 	height:.38rem;
-	font-size: .3rem;
-	line-height:.38rem;
+	font-size: 15px;
+	line-height: 19px;
 	text-align: center;
 	color: #FFFBE6;
 	background:rgba(51,51,51,1);

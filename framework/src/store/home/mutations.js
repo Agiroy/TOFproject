@@ -11,12 +11,13 @@ export default {
     handleHis(state){
         state.searchhistory.unshift(state.searchList);
         state.searchList="";
+        console.log(state.searchhistory)
         if(state.searchhistory.length>8){
             state.searchhistory.splice(8.1);
         }
     },
     historyDel(state){
-        state.searchhistory=[];
+        state.searchhistory=[]
     }
     
 }

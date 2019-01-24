@@ -1,24 +1,15 @@
 <template>
 	<div id="list">
 		<ul>
-			<li>头像  
-			<router-link to="infochange">
-			     <img class="img1" src="../../../../../assets/my/tx@3x.png">
-			</router-link>
-			</li>
-			<li>手机号   <span>17023221234</span></li>
-			<li>
-				<router-link to="nickname">
-					昵称<img src="../../../../../assets/my/jt1@2x.png">
-				</router-link>
-			</li>
-			<li>
-				<router-link to="address">
-				地址管理<img src="../../../../../assets/my/jt1@2x.png">
-				</router-link>
-			</li>
+			<li>头像  <img class="img1" src="../../../../../assets/my/tx@3x.png"></li>
+			<li>手机号   <span>170666666666</span></li>
+			<li>昵称<img src="../../../../../assets/my/jt1@2x.png"></li>
+			<li>地址管理<img src="../../../../../assets/my/jt1@2x.png"></li>
 			<li>实名认证<img src="../../../../../assets/my/jt1@2x.png"></li>
 		</ul>
+		<div id="mask">
+			
+		</div>
 	</div>
 </template>
 
@@ -33,10 +24,9 @@
 </script>
 
 <style scoped="scoped">
-#list{
+ #list{
 	width: 100%;
-	height: 12.4rem;
-	background:#efefef;
+	height: 7.8rem; 
 }
 #list>ul>li{
 	padding: .33rem;
@@ -51,9 +41,9 @@
 #list>ul>li>span{
 	float: right;
 }
-#list>ul>li img{
+#list>ul>li>img{
 	width:.15rem;
-	height:.25rem;
+	height: .25rem;
 	margin-left: 6.7rem;
 	margin-top: -.17rem;
 }
@@ -62,5 +52,15 @@
 	height: .8rem;
 	margin-left: 6.2rem;
 	margin-top:-.65rem ;
+} 
+#list>#mask{
+	width: 100%;
+	height: 8.7rem;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .5;
+	z-index:10;
 }
 </style>

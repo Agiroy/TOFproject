@@ -3,8 +3,6 @@ import Router from 'vue-router'
 import Home from "../components/home";
 import Classify from "../components/classify";
 import Scart  from "../components/scart";
-import Settled  from "../components/scart/components/settled/settled";
-import PaySuccess from "../components/scart/components/settled/components/paysuccess.vue";
 import My from "../components/my";
 import Err from "../components/error/err.vue";
 import Login from "../components/login/login";
@@ -12,51 +10,28 @@ import Register from "../components/register/register";
 import Firstlogin from "../components/Firstlogin/Firstlogin";
 import Search from "../components/home/components/search";
 import Message from "../components/my/components/message";
-import Welcome from "../components/welcome";
 
 import Money from "../components/my/components/money";
 import Setting from "../components/my/components/setting";
 import Info from "../components/my/components/info";
 import Integral from "../components/my/components/integral";
+import Infochange from "../components/my/components/infochange";
 import News from "../components/my/components/news";
 import Address from "../components/my/components/address";
 import Addaddress from "../components/my/components/addaddress";
-import Modifyaddress from "../components/my/components/modifyaddress";
 import Nickname from "../components/my/components/nickname";
 import Advise from "../components/my/components/advise";
-import Remain from "../components/my/components/remain";
-import Addressmanage from "../components/my/components/addressmanage";
-import Realname from "../components/my/components/realname";
-
-
-
-
-import Delivery from "../components/my/components/delivery";
-import Pay from "../components/my/components/pay";
-import Nologin from "../components/my/components/nologin";
 import All from "../components/all/all";
 import Food from "../components/food/food";
 import Light from "../components/light/light";
 import Drink from "../components/drink/drink";
-import Goods_detail from "../components/goods_detail/goods_detail";
-import Evaluation from "../components/my/components/evaluation";
-import Service from "../components/my/components/service";
-import Order from "../components/my/components/order";
-import GoodList from "../components/scart/components/settled/goodList"
-import Paid from "../components/paid/paid"
 Vue.use(Router)
 
 const router = new Router({
   routes: [
     {
       path: '/',
-			name:"welcome",
-			component:Welcome,
-			meta:{
-        //tab栏的显示
-        flag:false,
-        requireAuth:false
-      }
+      redirect:"/home"
     },
     {
       path:"/home",
@@ -79,50 +54,6 @@ const router = new Router({
 		    requireAuth:true
 		  }
     },
-		{
-		  path:"/remain",
-		  name:"remain",
-		  component:Remain,
-		  meta:{
-		    //tab栏的显示
-		    flag:false,
-		    //路由守卫
-		    requireAuth:true
-		  }
-		},
-		{
-		  path:"/addressmanage",
-		  name:"addressmanage",
-		  component:Addressmanage,
-		  meta:{
-		    //tab栏的显示
-		    flag:false,
-		    //路由守卫
-		    requireAuth:true
-		  }
-		},
-		{
-		  path:"/realname",
-		  name:"realname",
-		  component:Realname,
-		  meta:{
-		    //tab栏的显示
-		    flag:false,
-		    //路由守卫
-		    requireAuth:true
-		  }
-		},
-			{
-		path:"/modifyaddress",
-		name:"modifyaddress",
-		component:Modifyaddress,
-		meta:{
-			//tab栏的显示
-			flag:false,
-			//路由守卫
-			requireAuth:true
-		}
-	},
     {
 		  path:"/food",
 		  name:"food",
@@ -133,7 +64,7 @@ const router = new Router({
 		    //路由守卫
 		    requireAuth:true
 		  }
-		},
+    },
     {
 		  path:"/light",
 		  name:"light",
@@ -168,6 +99,17 @@ const router = new Router({
       }
     },
     {
+      path:"/search",
+      name:"search",
+      component:Search,
+      meta:{
+        //tab栏的显示
+        flag:true,
+        //路由守卫
+        requireAuth:true
+      }
+    },
+    {
       path:"/classify",
       name:"classify",
       component:Classify,
@@ -177,62 +119,10 @@ const router = new Router({
         requireAuth:true
       }
     },
-		{
-		  path:"/pay",
-		  name:"pay",
-		  component:Pay,
-		  meta:{
-		    //tab栏的显示
-		    flag:false,
-		    requireAuth:true
-		  }
-		},
-		{
-		  path:"/nologin",
-		  name:"nologin",
-		  component:Nologin,
-		  meta:{
-		    //tab栏的显示
-		    flag:true,
-		    requireAuth:false
-		  }
-		},
-		{
-		  path:"/delivery",
-		  name:"delivery",
-		  component:Delivery,
-		  meta:{
-		    //tab栏的显示
-		    flag:false,
-		    requireAuth:true
-		  }
-		},
 	{
 	  path:"/advise",
 	  name:"advise",
 	  component:Advise,
-	  meta:{
-	    //tab栏的显示
-	    flag:false,
-	    //路由守卫
-	    requireAuth:true
-	  }
-	},
-	{
-	  path:"/order",
-	  name:"order",
-	  component:Order,
-	  meta:{
-	    //tab栏的显示
-	    flag:false,
-	    //路由守卫
-	    requireAuth:true
-	  }
-	},
-	{
-	  path:"/service",
-	  name:"service",
-	  component:Service,
 	  meta:{
 	    //tab栏的显示
 	    flag:false,
@@ -284,6 +174,17 @@ const router = new Router({
 	    requireAuth:true
 	  }
 	},
+	{
+	  path:"/infochange",
+	  name:"infochange",
+	  component:Infochange,
+	  meta:{
+	    //tab栏的显示
+	    flag:false,
+	    //路由守卫
+	    requireAuth:true
+	  }
+	},
     {
       path:"/scart",
       name:"scart",
@@ -294,29 +195,7 @@ const router = new Router({
         //路由守卫
         requireAuth:true
       }
-		},
-		{
-      path:"/settled",
-      name:"settled",
-      component:Settled,
-      meta:{
-        //tab栏的显示
-        flag:true,
-        //路由守卫
-        requireAuth:true
-      }
-		},
-		{
-			path:"/paysuccess",
-			name:'paysuccess',
-			component:PaySuccess,
-			meta:{
-        //tab栏的显示
-        flag:true,
-        //路由守卫
-        requireAuth:true
-      }
-		},
+    },
     {
       path:"/my",
       name:"my",
@@ -361,6 +240,7 @@ const router = new Router({
 		    requireAuth:true
 		  }
 		},
+		,
 		{
 		  path:"/integral",
 		  name:"integral",
@@ -377,8 +257,7 @@ const router = new Router({
       name:"login",
       component:Login,
       meta:{
-        flag:false,
-				requireAuth:false
+        flag:false
       }
     },
     {
@@ -386,39 +265,17 @@ const router = new Router({
       name:"register",
       component:Register,
       meta:{
-        flag:false,
-				requireAuth:false
+        flag:false
       }
     },
-		 {
-		  path:"/evaluation",
-		  name:"evaluation",
-		  component:Evaluation,
-		  meta:{
-		    flag:false,
-				requireAuth:true
-		  }
-		},
     {
       path:"/Firstlogin",
       name:"Firstlogin",
       component:Firstlogin,
       meta:{
-        flag:false,
-				requireAuth:false
+        flag:false
       }
 		},
-		{
-			//商品列表GoodList
-      path:"/GoodList",
-      name:"GoodList",
-      component:GoodList,
-      meta:{
-        flag:false,
-				requireAuth:false
-      }
-		},
-		
 		{
      //我的消息
 			path:"/message",
@@ -427,24 +284,6 @@ const router = new Router({
       meta:{
         flag:false
       }
-		},
-		{
-      path:"/goods_detail/:id",
-      name:"goods_detail",
-      component:Goods_detail,
-      meta:{
-        flag:false,
-				requireAuth:false
-      }
-		},
-		{
-				path:"/paid",
-				name:"paid",
-				component:Paid,
-				meta:{
-					flag:false,
-					requireAuth:false
-				}
 		},
     {
       path:"**",

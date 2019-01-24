@@ -1,54 +1,121 @@
 <template>
-    <div class="season">
-        <Banner-com/>
-        <div class="recommendAll">
-            <Recommend-com v-for="(item,index) in recommendList" :key='index' >  
-                <div class="season_p"><p>商品推荐</p></div>   
-                <span class="season_title" slot>{{item.title}}</span>
-                <div class="season_foodImg">
-                    <img :src="item.foodImg">
-                </div>
-                <div class="season_author">{{item.author}}</div>
-                <h3>{{listIndex}}</h3>
-            </Recommend-com> 
+<div class="classify_wrap">
+  <Search-com/>
+    <div class="wrapper  wrapperClassify" ref="wrapper">
+      
+        <div class="season content" >     
+            <Banner-com >
+            </Banner-com>
+            <div class="recommendAll">
+             <!--  <router-link :to=""></router-link>--> 
+                    <Recommend-com v-for="(item,index) in recommendList" :key='index' @click.native="handleClick()"  > 
+                        <div class="recommendwrap"    > 
+                            <div class="season_p"><p>商品推荐</p></div>   
+                            <span class="season_title" slot>{{item.title}}</span>
+                            <div class="season_foodImg">
+                                <img :src="item.imgUrl">
+                            </div>
+                            <div class="season_author">{{item.author}}</div>
+               
+                        </div>
+                    </Recommend-com>
+                    <div class="listfooterImg" v-show="flag" > 
+                        <img src="../../../static/images/classify/1.gif">                
+                    </div>    
+                    <div class="listfootertxt" v-show="!flag" > 
+                        <p>您已经碰到我的底线了</p>          
+                    </div>
+                <!-- <div class="fillFooter"></div> -->
+             <!--   -->
+             
+            </div>
+
         </div>
     </div>
+    </div>
+
 </template>
 
 <script>
-import  Banner  from './components/banner';
+import  Banner  from './components/banner'
 import Recommend from './components/recommend'
+import Search from './components/search'
 import Vuex from 'vuex';
-
+import BScroll from 'better-scroll'
+ 
 export default {
     //获取推荐商品
     data(){
         return {
-            // listIndex: this.recommendList
+          
         }
+    },
+    created() {
+         this.handleHomeData()
     },
     computed: {
         ...Vuex.mapState({
             'recommendList': state=>state.classify.recommend,
-            'listIndex': state=>state.classify.recommend.length
+            'listIndex': state=>state.classify.recommend.length,
+            'pageindex': state=>state.classify.pageindex,
+            'flag': state=>state.classify.flag
         }) 
+     },
+     watch: {
+         recommendList(newVal,oldVal){
+              this.scroll.finishPullUp();
+         }
      },
     components:{
         "Banner-com": Banner,
-         "Recommend-com": Recommend
-    }
+         "Recommend-com": Recommend,
+         "Search-com": Search
+    },
+    mounted() {
+            window.addEventListener('scroll', this.handleScroll);
+        
+           this.scroll = new BScroll(this.$refs.wrapper,{
+                 //只有设置成true pullingUp才能使用
+                pullUpLoad:true,
+                click: true,//允许点击事件
+        
+            });
+            this.scroll.on("pullingUp",()=>{
+                this.handleUpdataData();
+            })
+   
+    },
+      methods: {
+          ...Vuex.mapActions({
+              handleHomeData: "classify/handleHomeData",
+              handleUpdataData: "classify/handleUpdataData",
+              handleClick: "classify/handleClick"
+          }),
+            handleClick(){
+                //点击推荐商品，跳转详情页
+                //  this.$router.push('xq')
+              
+            }
+      },
+     
 }
 </script>
 
 
 <style  >
-    
-    .season{
-
+    .classify_wrap{
+        width:100%;
+        height: 100%; 
+        
+    }
+    .wrapperClassify{
+      width:100%;
+      height: 100%; 
+      
     }
     .recommendAll{
         overflow:hidden;
-        padding-bottom: 1.9rem;
+        padding-bottom: 1.3rem;
         background: #F8F7F7; 
     }
     .recommend{
@@ -57,9 +124,15 @@ export default {
         width: 100%;
         height: 3.34rem;
         background: #fff;
+   
+    }
+    .recommendwrap{
+        width: 100%;
+        height: 100%;
+ 
     }
     /**商品推荐 */
-    .recommend>.season_p{
+    .recommend>.recommendwrap>.season_p{
         position: absolute;
         width: 1.7rem;
         height: .4rem;
@@ -67,7 +140,7 @@ export default {
         text-align: center;
         background: #FF0000;
     }
-      .recommend>.season_p>p{
+      .recommend>.recommendwrap>.season_p>p{
         line-height:.4rem;
         color: #FDFDFD;
         font-size: .28rem;
@@ -98,7 +171,7 @@ export default {
 
     }
     .season_author{
-        width: 2.78rem;
+        width: 2.88rem;
         height: .3rem;
         position:absolute;
         top:2.02rem;
@@ -107,8 +180,26 @@ export default {
         font-size: .29rem;
         line-height: .42rem;
         font-weight:400;
-        font-family:PingFang-SC-Regular;
+        font-family:'PingFang-SC-Regular';
     }
-    .list_2{
+    .fillFooter{
+        height: .6rem;
+        width:100%;
+
+    }
+    /**加载图片 */
+    .listfooterImg,.listfootertxt{
+        width : 100%;
+        height:  .6rem;
+        display: flex;
+        justify-content: center;
+    }
+    .listfooterImg>img{
+        width: .4rem;
+        height: .4rem;
+    }
+    .listfootertxt>p{
+        line-height: 1rem;
+        color: #ccc;
     }
 </style>

@@ -25,7 +25,7 @@
 	}
 </script>
 
-<style scoped>
+<style>
 #advise{
 	width: 100%;
 	height: 100%;
@@ -47,7 +47,7 @@
 	margin-left: 2.89rem;
 	margin-top: .3rem;
 	color: #231010;
-	font-size:.34rem;
+	font-size:17px;
 	font-family:PingFang-SC-Regular;
 	font-weight:500;
 	color:rgba(35,16,16,1);
@@ -63,20 +63,19 @@
 	width: 6.86rem;
 	height: 3rem;
 	background:rgba(255,255,255,1);
-	border-radius:.08rem;
+	border-radius:8px;
 	border: none;
-	font-size:.26rem;
+	font-size:13px;
 	font-family:PingFangSC-Regular;
 	font-weight:400;
 	color:rgba(162,158,158,1);
-	outline: none;
 }
 #advise>.list >p{
 	width: 6.66rem;
 	height: .86rem;
 	background:rgba(205,201,201,1);
-	border-radius:.08rem;
-	font-size:.32rem;
+	border-radius:8px;
+	font-size:16px;
 	font-family:PingFangSC-Regular;
 	font-weight:400;
 	color:rgba(252,245,245,1);
@@ -88,7 +87,7 @@
 	width:6.75rem;
 	height:1.16rem;
 	line-height: .4rem;
-	font-size:.26rem;
+	font-size:13px;
 	font-family:PingFangSC-Regular;
 	font-weight:400;
 	color:rgba(162,158,158,1);

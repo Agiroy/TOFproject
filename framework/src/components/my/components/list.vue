@@ -1,5 +1,5 @@
 <template>
-	<div id="list1">
+	<div id="list">
 		<ul>
 			<li>
 				<router-link to="money">
@@ -12,12 +12,7 @@
 					积分<img src="../../../assets/my/jt1@2x.png">
 				</router-link>
 			</li>
-			
-			<li>
-				<router-link to="remain">
-					余额<img src="../../../assets/my/jt1@2x.png">
-				</router-link>
-			</li>
+			<li>余额<img src="../../../assets/my/jt1@2x.png"></li>
 			<li>
 				<router-link to="advise">
 					意见反馈<img src="../../../assets/my/jt1@2x.png">
@@ -42,18 +37,18 @@
 	}
 </script>
 <style scoped>
-#list1{
+#list{
 	width: 6.96rem;
 	margin: .2rem auto;
 }
-#list1>ul{
+#list>ul{
 	width: 100%;
 	height: 6rem;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(102,102,102,1);
 }
-#list1>ul>li{
+#list>ul>li{
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
 	color:rgba(102,102,102,1);
@@ -61,19 +56,19 @@
 	width: 100%;
 	color: #666666;
 	height: 1.12rem;
-	line-height: 1.12rem;
+	line-height: 56px;
 	border-bottom: .01rem solid #ECECEC;
 }
-#list1>ul>li img{
+#list>ul>li img{
 	display: inline-block;
 	width: .1rem;
 	height: .18rem;
 	margin-left: 5.6rem;
 }
-#list1>ul>li:nth-child(4) img{
+#list>ul>li:nth-child(4) img{
 	margin-left: 5rem;
 }
-#list1>ul>li:nth-child(5) img{
+#list>ul>li:nth-child(5) img{
 	margin-left:5rem;
 }
 </style>

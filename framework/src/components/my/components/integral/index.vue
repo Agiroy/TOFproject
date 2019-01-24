@@ -1,24 +1,10 @@
 <template>
 	<div id="integral">
 		<div class="nav">
-			<img @click="handleBack()" src="../../../../assets/my/jt@2x.png">
+			<router-link to="my">
+				<img src="../../../../assets/my/jt@2x.png">
+			</router-link>
 			<span>积分明细</span>
-		</div>
-		<div class="main">
-			<div>  
-				<p class="p1">现有积分</p>
-				<p class="p2"><span>200</span></p>
-				<p class="p4"></p>
-				<p class="p3">当前积分可抵扣0.2元    (1000积分=1元)</p>
-			</div>
-		</div>
-		<div class="consume">
-			<p>积分明细</p>
-			<div>
-				<img src="../../../../assets/my/t1@2x.png">
-				<p>新鲜水果红心红肉菠萝蜜，8斤装 限时特惠<span>￥50</span></p>
-				<span>-50</span>
-			</div>
 		</div>
 	</div>
 </template>
@@ -29,23 +15,18 @@
 			return {
 				
 			};
-		},
-		methods:{
-			handleBack(){
-				this.$router.go(-1);
-			}
 		}
 	}
 </script>
 
-<style scoped>
+<style>
 #money{
 	width: 100%;
 	height: 100%;
 }
 .nav{
 	width:100%;
-	height: 1rem;
+	height: .88rem;
 	display: flex;
 	background:#FFD900;
 	background:rgba(255,217,0,1);
@@ -53,102 +34,15 @@
 .nav img{
 	width: .17rem;
 	height: .34rem;
-	margin: .42rem .17rem;
+	margin: .3rem .17rem;
 }
 .nav>span{
 	display: inline-block;
-	margin-left: 2.89rem;
-	margin-top: .36rem;
-	color: #231010;
-	font-size:.34rem;
+	margin-left: 2rem;
+	margin-top: .2rem;
+	font-size:16px;
 	font-family:PingFang-SC-Regular;
 	font-weight:400;
-	color:rgba(35,16,16,1);
-}
-#integral>.main{
-	width:6.61rem;
-	height:2.6rem;
-	background:linear-gradient(-90deg,rgba(255,220,89,1),rgba(255,184,99,1));
-	border-radius:.08rem;
-	margin: .3rem auto;
-}
-#integral>.main>div{
-	padding-left: .31rem;
-	padding-top: .2rem;
-}
-#integral>.main>div .p1{
-	font-size:.3rem;
-	font-family:PingFang-SC-Bold;
-	font-weight:bold;
-	color:rgba(251,250,250,1);
-}
-#integral>.main>div .p2{
-	font-size:.7rem;
-	font-family:PingFang-SC-Regular;
-	font-weight:400;
-	color:rgba(251,250,250,1)
-}
-#integral>.main>div .p3{
-	font-size:.3rem;
-	font-family:PingFang-SC-Regular;
-	font-weight:400;
-	color:rgba(251,250,250,1);
-	margin-top: .33rem;
-}
-#integral>.main>div .p4{
-	width:6.08rem;
-	height:.02rem;
-	background:rgba(255,255,249,1);
-	margin: 0 auto;
-}
-#integral>.consume>p{
-	width: 100%;
-	height: .3rem;
-	font-size:.32rem;
-	font-family:PingFang-SC-Regular;
-	font-weight:400;
-	color:rgba(64,64,64,1);
-	padding-left: .27rem;
-}
-#integral>.consume>div{
-	width:6.89rem;
-	height:1.6rem;
-	background:rgba(255,228,201,1);
-	border-radius:8px;
-	margin:.3rem auto;
-	padding: .24rem .23rem;
-	display: flex;
-	margin-bottom: .38rem;
-}
-#integral>.consume>div>img{
-	width: 1.12rem;
-	height: 1.12rem;
-}
-#integral>.consume>div>p{
-	width: 3.01rem;
-	height: .65rem;
-	font-size:.24rem;
-	font-family:PingFang-SC-Regular;
-	font-weight:400;
-	color:rgba(64,64,64,1);
-	margin-left: .11rem;
-	line-height: ;
-}
-#integral>.consume>div>p>span{
-	display: block;
-	font-size:.24rem;
-	font-family:PingFang-SC-Regular;
-	font-weight:400;
-	color:rgba(64,64,64,1);
-	margin-top: .1rem;
-}
-#integral>.consume>div>span{
-	display: inline-block;
-	font-size:.36rem;
-	font-family:PingFang-SC-Regular;
-	font-weight:400;
-	color:rgba(64,64,64,1);
-	margin-left: 1.4rem;
-	margin-top: .30rem;
+	color:rgba(61,61,61,1);
 }
 </style>
