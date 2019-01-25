@@ -2,7 +2,11 @@
     <div class="footer">
         <div class="checkbox">
             <label>
-                <input type="checkbox" :checked="checkAll" @click="handleCheckAll()"> 
+                <input type="checkbox" :checked="checkAll" @click="handleCheckAll()">
+                <span>
+                    <i class="iconfont no icon-checkbox"></i>
+                    <i class="iconfont yes icon-check_box"></i>
+                </span>
             </label>
         </div>
         <div class="goodsName">已选择<span>{{result.goodsNum}}</span>件商品</div>
@@ -42,7 +46,39 @@ export default {
     }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
+    label {
+        width: 0.36rem;
+        height: 0.36rem;
+        border: 0;
+        margin: 0.84rem 0.25rem 0.71rem 0.26rem;
+        input {
+            display: none;
+            
+            & + span {
+            > i {
+                font-size: .4rem;
+                &.no {
+                color: #ddd;
+                }
+                &.yes {
+                color: orange;
+                display: none;
+                }
+            }
+            }
+            &:checked + span {
+            > i {
+                &.no {
+                display: none;
+                }
+                &.yes {
+                display: inline-block;
+                }
+            }
+            }
+        }
+    }
     .footer{
         width: 100%;
         height: 1.1rem;

@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "better-scroll": "^1.13.4",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
     "mint-ui": "^2.2.13",
     "mockjs": "^1.0.1-beta3",
     "swiper": "^4.4.6",
@@ -69,5 +71,7 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": ".postcssrc.js",
+  "license": "ISC"
 }
