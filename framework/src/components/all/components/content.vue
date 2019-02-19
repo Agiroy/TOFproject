@@ -1,23 +1,23 @@
 <template>
     <div class="content">
 <ul id="show" class="yg yg_l">
-	    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id" :key="index">
+	    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.bossId" :key="index">
 			<li  v-if="index%2==0">
 				<div style="position: relative;">
-		            <img :src="item.c_url" alt="">  </div>
-			   <p>{{item.c_name}}</p>
-            	<p class="price">￥{{item.c_price}}</p>
+		        <img :src=" 'http://132.232.146.152:85/group1/M00/00/00/'+item.pictureAddress" alt="">  </div>
+			   <p>{{item.goodsName}}</p>
+            	<p class="price">￥{{item.goodsPrice}}</p>
 			</li>
 	</router-link>
 		</ul>
 		<ul class="yg yg_r">
-		  <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.c_id" :key="index">
+		  <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.bossId" :key="index">
 			<li  v-if="index%2==1" >
 				<div style="position: relative;">
-		            <img :src="item.c_url" alt=""> 
+		            <img :src=" 'http://132.232.146.152:85/group1/M00/00/00/'+item.pictureAddress" alt=""> 
 		        </div>
-			     <p>{{item.c_name}}</p>
-            	<p class="price">￥{{item.c_price}}</p>
+			     <p>{{item.goodsName}}</p>
+            	<p class="price">￥{{item.goodsPrice}}</p>
 			</li>
 			</router-link>
 		</ul>
@@ -27,6 +27,7 @@
 </template>
 <script>
  import axios from "axios";
+ import qs from "qs";
 export default {
     data(){
         return {   
@@ -37,19 +38,20 @@ export default {
     	methods:{
  getwz:function(){
 var  that=this;
+ var data = "type=list";
+
    axios({
           method:"post",
-          url:"https://www.easy-mock.com/mock/5c36b509ba536b0f6ca629b0/commodity/commodity",
-          data:{
-			        },
+          url:"http://132.232.146.152/user/index/list",
+          data:data,
           headers:{
             "Content-type":"application/x-www-form-urlencoded"
           },
  
         }).then((data)=>{
             console.log(data); 
-          that.showwz = data.data.commodity;
-		  that.wznum =data.data.length;
+          that.showwz = data.list
+		  that.wznum =data.list.length;
  
         })
          
@@ -129,3 +131,18 @@ color:rgba(241,87,102,1);
 	        font-size: 0.3rem;
 	    }
 </style>
+var data = qs.stringify({
+
+    uPhone: "18538740124",
+
+   userPassword:"123"
+
+});
+axios({
+    url:'/api/login',
+    method:"post", 
+    data:data,
+        headers:{
+            "Content-Type":"application/x-www-form-urlencoded"
+        }
+ } )

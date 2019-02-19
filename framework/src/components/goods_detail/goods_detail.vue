@@ -35,7 +35,7 @@ export default {
 var  that=this;
    axios({
           method:"post",
-          url:"https://www.easy-mock.com/mock/5c36b509ba536b0f6ca629b0/commodity/commodity",
+          url:"http://132.232.146.152/user/index/list",
           data:{
 			        },
           headers:{
@@ -45,12 +45,12 @@ var  that=this;
         }).then((data)=>{
      
           console.log(data); 
-          that.showwz = data.data.commodity;
-          that.wznum =data.data.commodity.length; 
-       for(var i=0;i<data.data.commodity.length;i++)    {
-          if(that.id==data.data.commodity[i].c_id){
+      that.showwz = data.list
+		  that.wznum =data.list.length;
+       for(var i=0;i<data.list.length;i++)    {
+          if(that.id==data.list[i].bossId){
               console.log(
-                 that.showwz[i].c_price     
+                 that.showwz[i].bossId    
 
               );
           }
