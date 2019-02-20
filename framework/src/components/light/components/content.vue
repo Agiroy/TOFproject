@@ -1,7 +1,7 @@
 <template>
     <div class="content">
 <ul id="show" class="yg yg_l">
-	    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.bossId" :key="index">
+	    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.goodsId" :key="index">
 			<li  v-if="index%2==0">
 				<div style="position: relative;">
 		        <img :src=" 'http://132.232.146.152:85/group1/M00/00/00/'+item.pictureAddress" alt="">  </div>
@@ -11,7 +11,7 @@
 	</router-link>
 		</ul>
 		<ul class="yg yg_r">
-		    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.bossId" :key="index">
+		    <router-link v-for="(item,index) in showwz" :to="'/goods_detail/'+item.goodsId" :key="index">
 			<li  v-if="index%2==1" >
 				<div style="position: relative;">
 		            <img :src=" 'http://132.232.146.152:85/group1/M00/00/00/'+item.pictureAddress" alt=""> 
@@ -42,7 +42,7 @@ var  that=this;
 
     axios({
           method:"post",
-          url:"http://132.232.146.152/user/detail",
+          url:"http://132.232.146.152/user/index/list",
           data:data,
           headers:{
             "Content-type":"application/x-www-form-urlencoded"

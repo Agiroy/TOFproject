@@ -16,11 +16,41 @@
 <script>
 import { Toast } from 'mint-ui';
 export default {
-  props:[
+	data(){
+		return{
+			flag:true
+		}
+	},
+  props:[  "mes",
   "val"]
   ,
    methods: {
  handleClick() {
+ if(localStorage.getItem('hou')){  
+ 
+ var arr = JSON.parse(localStorage.getItem('hou'));
+   
+ 
+   for(var i = 0; i < arr.length; i++) {
+			if(this.mes.goodsId== arr[i].id) {
+				arr[i].goodsCount += 1;
+				this.flag=false;
+				break;
+			}}
+ 
+    if(this.flag==true){
+  arr.push({id: this.mes.goodsId,goodsName:this.mes.goodsName,goodsPrice:this.mes.goodsPrice,goodsCount:this.mes.goodsCount});
+ }
+ localStorage.setItem('hou', JSON.stringify(arr))
+
+
+ }
+ else{
+ const info = [{id: this.mes.goodsId,goodsName:this.mes.goodsName,goodsPrice:this.mes.goodsPrice,goodsCount:this.mes.goodsCount}];
+localStorage.setItem('hou', JSON.stringify(info));	
+ }
+ 
+
 Toast({
 message: '添加成功！',
 position: 'middle',

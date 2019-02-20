@@ -2,18 +2,21 @@
 <div class="goods_main">
  
    	<img class="back" src="../../../assets/ico_fh2@2x.png"  @click="handlelead()">
-<div class="goods_image">   <h2>商品ID为:{{val}}</h2></div>
+<div class="goods_image"> <!--  <h2>商品ID为:{{val}}</h2>-->
+ 
+	 <img :src=" 'http://132.232.146.152:85/group1/M00/00/00/'+mes.pictureAddress" alt=""> 
+</div>
 
-<div class="concrete_details" >
-<div class="title">极地能量超级圣果新疆阿勒泰大果沙棘冷榨果汁饮料</div>
-<p class="price">￥456</p>
+<div class="concrete_details"   >
+<div class="title">{{mes.goodsName}}</div>
+<p class="price">￥   {{mes.goodsPrice}}</p>
 <p class="advantage">
     <span>正品保证</span>  <span>全场包邮</span>  <span>七天退换货</span>
 </p>
 </div>
 <div class="notice">
-   <h2>重要提醒</h2>
-       <p>新疆阿勒泰大果沙棘呈椭圆柱形状 颗粒饱满 颜色鲜艳 与圆形小果沙棘有鲜明区别</p>
+   <h2>关于商品</h2>
+       <p>  {{mes.goodsAccount}}</p>
 </div>
 <img class="dec"  src="@/assets/商品详情界面 副本_slices/wu@2x.png" alt="">
 </div>
@@ -21,12 +24,17 @@
 <script>
 export default {
   props:[
+  "mes",
   "val"]
   ,  	methods:{
  	handlelead(){
  	this.$router.go(-1);
  	}
  	}
+  ,mounted(){
+   console.log(   this.mes )	 
+ 
+  }
     }</script>
     <style>
     body{background:rgba(248,247,247,1);}
@@ -93,5 +101,6 @@ z-index: 3;
 width:0.27rem;
 height:0.47rem;}
 .dec{width: 100%;}
+.goods_image>img{width: 100%;height: 100%;}
     </style>
     

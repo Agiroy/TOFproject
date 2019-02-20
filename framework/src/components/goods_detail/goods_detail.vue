@@ -1,7 +1,7 @@
 <template>
 	<div id="goods_detail">
-<Main-com :val="id"></Main-com>
- <Bottom-com :val="id"></Bottom-com>
+<Main-com :val="id" :mes="detail"></Main-com>
+ <Bottom-com :val="id" :mes="detail"></Bottom-com>
 	</div>
 
 
@@ -22,20 +22,22 @@ export default {
         return {
         showwz:[],
     	wznum:'',
-       id:''
+       id:'',
+       detail:{}
         }
     },
     created() { 
     let {id} = this.$route.params; 
-    console.log(this.$route) ;
+//  console.log(this.$route) ;
     this.id = id;
     },
        	methods:{
  getwz:function(){
-var  that=this;
+ var that =this;
+var  id=this.id;
    axios({
-          method:"post",
-          url:"http://132.232.146.152/user/index/list",
+          method:"get",
+          url:" http://132.232.146.152/user/detail?goodsId="+id,
           data:{
 			        },
           headers:{
@@ -44,18 +46,10 @@ var  that=this;
  
         }).then((data)=>{
      
-          console.log(data); 
-      that.showwz = data.list
-		  that.wznum =data.list.length;
-       for(var i=0;i<data.list.length;i++)    {
-          if(that.id==data.list[i].bossId){
-              console.log(
-                 that.showwz[i].bossId    
+          console.log(data.detail); 
+    that.detail = data.detail
+   
 
-              );
-          }
-}
- 
         })
          
         }
